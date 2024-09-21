@@ -1,0 +1,411 @@
+mkdir -p /home/linjinyu/IC_contest/110_Job_Assignment_Machine/syn;
+rm -rf /home/linjinyu/IC_contest/110_Job_Assignment_Machine/syn/*; \
+cd /home/linjinyu/IC_contest/110_Job_Assignment_Machine/build; \
+cp /home/linjinyu/IC_contest/110_Job_Assignment_Machine/script/synopsys_dc.setup /home/linjinyu/IC_contest/110_Job_Assignment_Machine/build/.synopsys_dc.setup; \
+dcnxt_shell -f /home/linjinyu/IC_contest/110_Job_Assignment_Machine/script/dc_syn.tcl;
+
+                            Design Compiler (R) NXT 
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+set top JAM
+JAM
+#Read All Files
+read_file -format verilog  ../src/${top}.v
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Loading verilog file '/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v
+Warning:  /home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v:112: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 60 in file
+	'/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            61            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine JAM line 55 in file
+		'/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine JAM line 88 in file
+		'/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   job_counter_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine JAM line 109 in file
+		'/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      cost_reg       | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       pat_reg       | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       pat_reg       | Flip-flop |  12   |  Y  | N  | N  | Y  | N  | N  | N  |
+|    min_cost_reg     | Flip-flop |  10   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine JAM line 156 in file
+		'/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   right_index_reg   | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine JAM line 176 in file
+		'/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+|    replace_min_reg    | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+| replace_min_index_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|      JAM/49      |   8    |    3    |      3       |
+|     JAM/139      |   8    |    3    |      3       |
+|     JAM/137      |   8    |    3    |      3       |
+|     JAM/138      |   8    |    3    |      3       |
+|     JAM/142      |   8    |    3    |      3       |
+|     JAM/149      |   8    |    3    |      3       |
+|     JAM/162      |   8    |    3    |      3       |
+|     JAM/162      |   8    |    3    |      3       |
+|     JAM/183      |   8    |    3    |      3       |
+|     JAM/183      |   8    |    3    |      3       |
+|     JAM/187      |   8    |    3    |      3       |
+|     JAM/187      |   8    |    3    |      3       |
+|     JAM/188      |   8    |    3    |      3       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.db:JAM'
+Loaded 1 design.
+Current design is 'JAM'.
+JAM
+#read_file -format sverilog  JAM.v
+current_design [get_designs ${top}]
+Current design is 'JAM'.
+{JAM}
+link
+
+  Linking design 'JAM'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  JAM                         /home/linjinyu/IC_contest/110_Job_Assignment_Machine/src/JAM.db
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#Setting Clock Constraints
+source -echo -verbose ../script/${top}.sdc
+# operating conditions and boundary conditions #
+set cycle 10.0
+10.0
+create_clock -name CLK  -period $cycle   [get_ports  CLK] 
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      0.5  [all_clocks]
+1
+set_ideal_network           [get_ports CLK]
+1
+#Don't touch the basic env setting as below
+set_input_delay  0   -clock CLK [remove_from_collection [all_inputs] [get_ports CLK]] -clock_fall
+1
+set_output_delay 0    -clock CLK [all_outputs]  -clock_fall
+1
+set_load         1   [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Wed Jan 31 21:55:47 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              11
+    Cells do not drive (LINT-1)                                    11
+--------------------------------------------------------------------------------
+
+Warning: In design 'JAM', cell 'C2117' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2123' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2155' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2166' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2172' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2176' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2209' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2245' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2248' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2262' does not drive any nets. (LINT-1)
+Warning: In design 'JAM', cell 'C2281' does not drive any nets. (LINT-1)
+1
+set high_fanout_net_threshold 0
+0
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+#Synthesis all design
+compile -map_effort high -area_effort high
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT                                                               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 834                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 64                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 211                                    |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+
+Information: There are 11 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'JAM'
+Information: Added key list 'DesignWare' to design 'JAM'. (DDB-72)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'JAM_DW01_add_0'
+  Processing 'JAM_DW01_cmp6_0'
+  Processing 'JAM_DW01_add_1'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:02   15833.3      0.00       0.0   11617.1                                0.00  
+    0:00:02   15833.3      0.00       0.0   11617.1                                0.00  
+    0:00:02   15833.3      0.00       0.0   11617.1                                0.00  
+    0:00:02   15833.3      0.00       0.0   11617.1                                0.00  
+    0:00:02   15833.3      0.00       0.0   11617.1                                0.00  
+    0:00:03    8853.6      5.01      67.8   11315.7                                0.00  
+    0:00:03    9069.2      2.41      29.5   11221.4                                0.00  
+    0:00:03    9147.3      2.59      33.7   11210.2                                0.00  
+    0:00:03    9152.4      2.30      25.4   11210.2                                0.00  
+    0:00:03    9113.3      1.58      22.0   11206.6                                0.00  
+    0:00:03    9138.8      1.55      16.0   11206.6                                0.00  
+    0:00:03    9098.1      1.90      26.5   11206.2                                0.00  
+    0:00:03    9220.3      1.74      19.6   11206.2                                0.00  
+    0:00:03    9206.7      1.69      24.2   11206.2                                0.00  
+    0:00:03    9325.5      1.71      18.9   11206.2                                0.00  
+    0:00:03    9425.7      1.42      14.8   11206.2                                0.00  
+    0:00:03    9537.7      1.34      13.7   11206.2                                0.00  
+    0:00:03    9537.7      1.31      13.3   11193.6                                0.00  
+    0:00:03    9536.0      1.27      12.7   11193.6                                0.00  
+    0:00:03    9575.0      0.94       6.5   11193.6                                0.00  
+    0:00:03    9641.2      0.90       5.4   11193.6                                0.00  
+    0:00:03    9683.7      0.89       5.2   11193.6                                0.00  
+    0:00:03    9743.1      0.83       4.4   11193.6                                0.00  
+    0:00:03    9743.1      0.81       4.2   11193.6                                0.00  
+    0:00:03    9743.1      0.81       4.2   11193.6                                0.00  
+    0:00:03    9743.1      0.81       4.2   11193.6                                0.00  
+    0:00:03    9880.6      0.79       3.7    2270.9                                0.00  
+    0:00:03    9933.2      0.71       3.8       0.0                                0.00  
+    0:00:03    9933.2      0.71       3.8       0.0                                0.00  
+    0:00:03    9933.2      0.71       3.8       0.0                                0.00  
+    0:00:03    9933.2      0.71       3.8       0.0                                0.00  
+    0:00:04   10089.3      0.00       0.0       0.0                                0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:04   10089.3      0.00       0.0       0.0                                0.00  
+    0:00:04   10089.3      0.00       0.0       0.0                                0.00  
+    0:00:04    9985.8      0.00       0.0    2024.6                                0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:04    9985.8      0.00       0.0    2024.6                                0.00  
+    0:00:04   10024.8      0.00       0.0       0.0                                0.00  
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:04   10024.8      0.00       0.0       0.0                                0.00  
+    0:00:04   10024.8      0.00       0.0       0.0                                0.00  
+    0:00:04    9834.7      0.04       0.1       0.0                                0.00  
+    0:00:04    9755.0      0.03       0.1       0.0                                0.00  
+    0:00:04    9738.0      0.00       0.0       0.0                                0.00  
+    0:00:04    9727.8      0.00       0.0       0.0                                0.00  
+    0:00:04    9721.0      0.00       0.0       0.0                                0.00  
+    0:00:04    9721.0      0.00       0.0       0.0                                0.00  
+    0:00:04    9721.0      0.00       0.0       0.0                                0.00  
+    0:00:04    9444.3      0.36       0.5       0.0                                0.00  
+    0:00:04    9444.3      0.36       0.5       0.0                                0.00  
+    0:00:04    9444.3      0.36       0.5       0.0                                0.00  
+    0:00:04    9444.3      0.36       0.5       0.0                                0.00  
+    0:00:04    9444.3      0.36       0.5       0.0                                0.00  
+    0:00:04    9444.3      0.36       0.5       0.0                                0.00  
+    0:00:04    9520.7      0.00       0.0       0.0                                0.00  
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+#compile -map_effort high -area_effort high -inc
+#compile_ultra
+write -format ddc     -hierarchy -output "${top}_syn.ddc"
+Writing ddc file 'JAM_syn.ddc'.
+1
+write_sdf -version 1.0 -context verilog  ../syn/${top}_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/linjinyu/IC_contest/110_Job_Assignment_Machine/syn/JAM_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write -format verilog -hierarchy -output ../syn/${top}_syn.v
+Writing verilog file '/home/linjinyu/IC_contest/110_Job_Assignment_Machine/syn/JAM_syn.v'.
+1
+report_area > area.log
+report_timing > timing.log
+report_qor   >  ${top}_syn.qor
+Warning: Cannot use command line editor for terminal type 'xterm'.  (UI-74)
+dcnxt_shell>  
+****************************************
+Report : area
+Design : JAM
+Version: T-2022.03
+Date   : Wed Jan 31 21:56:04 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           94
+Number of nets:                           918
+Number of cells:                          817
+Number of combinational cells:            749
+Number of sequential cells:                64
+Number of macros/black boxes:               0
+Number of buf/inv:                        131
+Number of references:                     100
+
+Combinational area:               7438.006721
+Buf/Inv area:                      889.437591
+Noncombinational area:            2082.709766
+Macro/Black Box area:                0.000000
+Net Interconnect area:          116713.916443
+
+Total cell area:                  9520.716487
+Total area:                     126234.632930
+1
+dcnxt_shell> 
+Memory usage for this session 171 Mbytes.
+Memory usage for this session including child processes 171 Mbytes.
+CPU usage for this session 6 seconds ( 0.00 hours ).
+Elapsed time for this session 27 seconds ( 0.01 hours ).
+
+Thank you...

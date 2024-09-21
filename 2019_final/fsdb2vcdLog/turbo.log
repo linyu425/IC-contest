@@ -1,0 +1,6 @@
+Command Line: /home/nfs_cad/synopsys/verdi/cur/platform/LINUXAMD64/bin/fsdb2vcd /home/linjinyu/IC_contest/2019_final/IOTDF_F2.fsdb
+uname(Linux caidcpuserver1 5.15.0-97-generic #107~20.04.1-Ubuntu SMP Fri Feb 9 14:20:11 UTC 2024 x86_64)
+Load signals (0,0)-(2,890879908) time 0.314053 0.537239 0.025210 delta 166678528 166678528 total 379027456 379027456
+Write signals (0,0)-(2,890879908) time 52.294600 18.738956 0.175240 delta 0 0 total 379027456 379027456
+Unload (0,0)-(2,890879908) time 0.008343 0.000312 0.008031 delta 0 0 total 227328000 227328000
+au time 53.111085 19.295701 0.218886 delta 71266304 71266304 total 132325376 132325376

@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INCDIR
+/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src
+-DEFINE
+FSDB_FILE=\"SET.fsdb\"
+-DEFINE
+MD1

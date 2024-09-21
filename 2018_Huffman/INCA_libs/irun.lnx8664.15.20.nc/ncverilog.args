@@ -1,0 +1,13 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+tb.v
+./build/huffman_syn.v
+-v
+tsmc13_neg.v
++nc64bit
++access+r
++define+tb3
++define+FSDB_FILE=\"huffman.fsdb\"
++define+SDF

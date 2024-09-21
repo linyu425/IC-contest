@@ -1,0 +1,11 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/sim/tb_term.sv
+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/src/SME.v
++incdir+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/src
++nc64bit
++access+r
++define+FSDB_FILE=\"SME.fsdb\"
++define+MD1

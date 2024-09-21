@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(16Mar2024:23:17:54):( ncverilog /home/linjinyu/IC_contest/109_GeoFence/sim/tb.sv /home/linjinyu/IC_contest/109_GeoFence/src/DW_sqrt.v /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v +incdir+/home/linjinyu/IC_contest/109_GeoFence/src +nc64bit +access+r +define+FSDB_FILE="geofence.fsdb" )
+s2::(16Mar2024:23:19:38):( ncverilog /home/linjinyu/IC_contest/109_GeoFence/sim/tb.sv /home/linjinyu/IC_contest/109_GeoFence/syn/geofence_syn.v -sv /usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +nc64bit +access+r +define+FSDB_FILE="geofence.fsdb" +define+SDF +define+SDFFILE="/home/linjinyu/IC_contest/109_GeoFence/syn/geofence_syn.sdf" )

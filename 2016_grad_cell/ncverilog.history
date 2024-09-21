@@ -1,0 +1,56 @@
+s1(19Jul2023:16:50:03):  ncverilog testfixture.v LBP.v +define+FSDB +access+r +nc64bit 
+s2(21Jul2023:12:13:59):  ncverilog testfixture.v LBP.v +define+FSDB +access+r +nc64bit~ 
+s3(21Jul2023:12:16:01):  ncverilog testfixture.v LBP.v +define+FSDB +access+r +nc64bit~ 
+s4(21Jul2023:12:40:18):  ncverilog testfixture.v LBP.v +define+FSDB +access+r +nc64bit~ 
+s5(21Jul2023:12:41:49):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s6(21Jul2023:12:45:09):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s7(21Jul2023:12:46:20):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s8(21Jul2023:12:49:07):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s9(21Jul2023:12:50:19):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s10(21Jul2023:12:52:15):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s11(21Jul2023:13:13:59):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s12(21Jul2023:13:17:57):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s13(21Jul2023:14:10:17):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s14(21Jul2023:14:20:48):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s15(21Jul2023:14:48:16):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s16(21Jul2023:14:53:01):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s17(21Jul2023:14:58:30):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s18(21Jul2023:15:08:00):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s19(21Jul2023:15:13:16):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s20(21Jul2023:15:18:54):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s21(21Jul2023:15:50:15):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s22(24Jul2023:12:58:33):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s23(25Jul2023:14:06:01):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s24(25Jul2023:14:07:13):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s25(25Jul2023:14:11:29):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s26(25Jul2023:14:11:54):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s27(25Jul2023:14:15:42):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s28(25Jul2023:14:19:28):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s29(25Jul2023:14:19:31):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s30(25Jul2023:14:19:46):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s31(25Jul2023:14:22:58):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s32(25Jul2023:14:23:49):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s33(25Jul2023:14:26:29):  ncverilog tb_term.sv SME_syn.v -v tsmc13_neg.v +ncmaxdelays +define+SDF +access+r +nc64bit 
+s34(25Jul2023:14:27:02):  ncverilog tb_term.sv SME_syn.v -v tsmc13_neg.v +ncmaxdelays +define+SDF +access+r +nc64bit 
+s35(25Jul2023:14:28:07):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s36(25Jul2023:14:32:14):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s37(25Jul2023:14:32:52):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s38(25Jul2023:14:33:11):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s39(25Jul2023:14:33:36):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s40(25Jul2023:14:34:19):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s41(25Jul2023:14:36:59):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s42(25Jul2023:14:37:48):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s43(25Jul2023:14:38:09):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s44(25Jul2023:14:39:54):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s45(25Jul2023:14:52:08):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s46(25Jul2023:14:52:58):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s47(25Jul2023:14:53:19):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s48(25Jul2023:14:54:08):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s49(25Jul2023:14:58:09):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s50(25Jul2023:15:00:08):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s51(25Jul2023:16:33:06):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s52(25Jul2023:16:34:25):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s53(25Jul2023:16:35:30):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 
+s54(02Aug2023:15:26:16):  ncverilog tb_term.sv SME.v +define+tb1+FSDB +access+r +nc64bit 
+s55(02Aug2023:15:27:21):  ncverilog testfixture.v LBP.v +nc64bit +access+r +FSDB_FILE 
+s56(02Aug2023:15:34:31):  ncverilog testfixture.v LBP_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit 

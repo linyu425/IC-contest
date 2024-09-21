@@ -1,0 +1,21 @@
+
+Name of design : IOTDF
+Number of cell instance masters in the library : 54
+Number of cell instances in the design : 4195
+Target IR drop : 200.000 mV
+Processing net VDD ...
+Average power dissipation in IOTDF :    80.00 mW
+Power supply voltage :     2.00 V
+Average current in IOTDF :    40.00 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 1
+Maximum IR drop in IOTDF : 40.17 mV
+Maximum current in IOTDF : 40.000 mA
+Processing net VSS ...
+Average power dissipation in IOTDF :    80.00 mW
+Power supply voltage :     2.00 V
+Average current in IOTDF :    40.00 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 1
+Maximum IR drop in IOTDF : 54.18 mV
+Maximum current in IOTDF : 40.000 mA
+Memory usage for design data :      37797.888 Kbytes
+Overall takes     0.03 seconds

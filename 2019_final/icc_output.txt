@@ -1,0 +1,4178 @@
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+source ./build/.synopsys_dc.setup
+Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+1
+create_mw_lib  -technology /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13_CIC.tf  -mw_reference_library {/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13gfsg_fram} -bus_naming_style {[%d]}  -open  IOTDF
+Start to load technology file /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13_CIC.tf.
+Warning: ContactCode 'CONT1' is missing the attribute 'unitMinResistance'. (line 839) (TFCHK-014)
+Warning: ContactCode 'CONT1' is missing the attribute 'unitNomResistance'. (line 839) (TFCHK-014)
+Warning: ContactCode 'CONT1' is missing the attribute 'unitMaxResistance'. (line 839) (TFCHK-014)
+Warning: Cut layer 'VIA12' has a non-cross primary default ContactCode 'via1'. (line 857) (TFCHK-092)
+Warning: Layer 'METAL1' has a pitch 0.41 that does not match the recommended wire-to-via pitch 0.365 or 0.405. (TFCHK-049)
+Warning: Layer 'METAL2' has a pitch 0.46 that does not match the recommended wire-to-via pitch 0.41 or 0.455. (TFCHK-049)
+Warning: Layer 'METAL4' has a pitch 0.46 that does not match the recommended wire-to-via pitch 0.41 or 0.455. (TFCHK-049)
+Warning: Layer 'METAL6' has a pitch 0.46 that does not match the recommended wire-to-via pitch 0.41 or 0.455. (TFCHK-049)
+Warning: Layer 'METAL7' has a pitch 0.41 that does not match the recommended wire-to-via pitch 0.54 or 0.5. (TFCHK-049)
+Warning: Layer 'METAL8' has a pitch 1 that does not match the recommended wire-to-via pitch 0.89. (TFCHK-049)
+Warning: Layer 'METAL3' has a pitch 0.41 that does not match the doubled pitch 0.82 or tripled pitch 1.23. (TFCHK-050)
+Warning: Layer 'METAL4' has a pitch 0.46 that does not match the doubled pitch 0.92 or tripled pitch 1.38. (TFCHK-050)
+Warning: Layer 'METAL5' has a pitch 0.41 that does not match the doubled pitch 0.82 or tripled pitch 1.23. (TFCHK-050)
+Warning: Layer 'METAL6' has a pitch 0.46 that does not match the doubled pitch 0.92 or tripled pitch 1.38. (TFCHK-050)
+Warning: Layer 'METAL7' has a pitch 0.41 that does not match the doubled pitch 0.82 or tripled pitch 1.23. (TFCHK-050)
+Warning: Layer 'METAL8' has a pitch 1 that does not match the doubled pitch 0.92 or tripled pitch 1.38. (TFCHK-050)
+Technology file /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13_CIC.tf has been loaded successfully.
+{IOTDF}
+import_designs -format verilog -top IOTDF -cell IOTDF ./syn/IOTDF_syn.v
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Loading db file '/home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/nfs_cad/synopsys/icc/cur/libraries/syn/gtech.db'
+Loading db file '/home/nfs_cad/synopsys/icc/cur/libraries/syn/standard.sldb'
+Type of creating bus for undefined cells : 0
+
+*****  Verilog HDL translation! *****
+
+*****    Start Pass 1 *****
+
+*****  Pass 1 Complete *****
+Elapsed =    0:00:00, CPU =    0:00:00
+
+*****  Verilog HDL translation! *****
+
+*****    Start Pass 2 *****
+
+*****  Pass 2 Complete *****
+
+*****   Verilog HDL translation completed! *****
+Elapsed =    0:00:00, CPU =    0:00:00
+Hierarchy Preservation is turned ON
+The quick-attach skip-search mode has been turned on.
+  Start axu naming escaping style change ...
+  End axu naming escaping style change, status is 1
+Checking single pin net for cell 'IOTDF.CEL' now...
+Total number of cell instances: 4195
+Total number of nets: 4510
+Total number of ports: 144 (include 0 PG ports)
+Total number of hierarchical cell instances: 1
+
+The quick-attach skip-search mode has been turned off.
+INFO:  total find 0 pg nets connected with tie net.
+Elapsed =    0:00:01, CPU =    0:00:00
+Preparing data for query................... 
+Information: Read verilog completed successfully.
+1
+set_tlu_plus_files -max_tluplus /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tluplus/t013s8mg_fsg_typical.tluplus -tech2itf_map /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tluplus/t013s8mg_fsg.map
+1
+read_sdc IOTDF_APR.sdc
+Information: linking reference library : /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13gfsg_fram. (PSYN-878)
+
+  Linking design 'IOTDF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  IOTDF                       IOTDF.CEL
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb
+
+ Info: hierarchy_separator was changed to /
+
+Reading SDC version 2.0...
+Error: unknown command 'remove_from_collection' (CMD-005)
+Error: unknown command 'remove_from_collection' (CMD-005)
+Using operating conditions 'slow' found in library 'slow'.
+ Info: hierarchy_separator was changed to /
+1
+# 2. Design Planning
+create_floorplan -flip_first_row -left_io2core 5 -bottom_io2core 5 -right_io2core 5 -top_io2core 5
+0 pads are constrained in TDF table
+There are 0 IO pads 0 corner pads in total
+Start to create wire tracks ...
+GRC reference (1310,1310), dimensions (3690, 3690)
+Number of terminals created: 144.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Name    Original Ports
+IOTDF              144
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Completed pin assignment.
+Elapsed =    0:00:00, CPU =    0:00:00
+Planner Summary:
+This floorplan is created by using tile name (unit).
+        Row Direction = HORIZONTAL
+        Control Parameter =  Aspect Ratio
+        Core Utilization = 0.708
+        Number Of Rows = 64
+        Core Width = 238.74
+        Core Height = 236.16
+        Aspect Ratio = 0.989
+        Double Back ON
+        Flip First Row = YES
+        Start From First Row = NO
+Planner run through successfully.
+1
+#estimate_fp_area -estimate_optimization 
+create_fp_placement #(把東西塞進去)
+Error: extra positional option '#(把東西塞進去)' (CMD-012)
+derive_pg_connection -power_net {VDD} -ground_net {VSS} -power_pin {VDD} -ground_pin {VSS}
+Information: connected 4195 power ports and 4195 ground ports
+1
+create_fp_virtual_pad -nets VDD -point {200.0 5.0}
+1
+create_fp_virtual_pad -nets VSS -point {300.0 5.0}
+1
+set_fp_rail_constraints -add_layer -layer METAL5 -direction horizontal -max_strap 10 -min_strap 8 -max_width 2 -min_width 2 -spacing minimum
+1
+set_fp_rail_constraints -add_layer -layer METAL4 -direction vertical -max_strap 10 -min_strap 8 -max_width 2 -min_width 2 -spacing minimum
+1
+set_fp_rail_constraints -set_ring -nets {VDD VSS} -horizontal_ring_layer {METAL5} -vertical_ring_layer {METAL4} -ring_width 2 -extend_strap core_ring
+1
+synthesize_fp_rail -nets {VDD VSS} -voltage_supply 2 -synthesize_power_plan -power_budget 80
+Geometry mapping begins.
+Removing all the files with the prefix IOTDF in the directory ./pna_output
+Parasitics Operating Condition is max
+Using [3 x 3] Fat Wire Table for METAL1
+Using [3 x 3] Fat Wire Table for METAL2
+Using [3 x 3] Fat Wire Table for METAL3
+Using [3 x 3] Fat Wire Table for METAL4
+Using [3 x 3] Fat Wire Table for METAL5
+Using [3 x 3] Fat Wire Table for METAL6
+Using [3 x 3] Fat Wire Table for METAL7
+
+TLU+ File = /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tluplus/t013s8mg_fsg_typical.tluplus
+TLU+ File = 
+
+--------- Sanity Check on TLUPlus Files -------------
+1. Checking the conducting layer names in ITF and mapping file ... 
+[ Passed! ]
+2. Checking the via layer names in ITF and mapping file ... 
+[ Passed! ]
+3. Checking the consistency of Min Width and Min Spacing between MW-tech and ITF ... 
+[ Passed! ]
+----------------- Check Ends ------------------
+TLU+ based extraction:
+Resistance based on max model.
+Using operating temperature of  25.00 degree Celsius.
+Getting the info of via resistance from TLU+ model
+lower mask id 0, upper mask id 1, via layer 30, resistivity 11.070000
+lower mask id 1, upper mask id 2, via layer 51, resistivity 0.680000
+lower mask id 2, upper mask id 3, via layer 52, resistivity 0.680000
+lower mask id 3, upper mask id 4, via layer 53, resistivity 0.680000
+lower mask id 4, upper mask id 5, via layer 54, resistivity 0.680000
+lower mask id 5, upper mask id 6, via layer 55, resistivity 0.680000
+lower mask id 6, upper mask id 7, via layer 56, resistivity 0.680000
+lower mask id 7, upper mask id 8, via layer 57, resistivity 0.420000
+Ignoring all CONN views
+Number of pad instances: 0
+Geometry mapping took     0.06 seconds
+
+Name of design : IOTDF
+Number of cell instance masters in the library : 54
+Number of cell instances in the design : 4195
+Power Network Synthesis Begins ...
+Target IR drop : 200.000 mV
+Processing net VDD ...
+Average power dissipation in IOTDF :    80.00 mW
+Power supply voltage :     2.00 V
+Average current in IOTDF :    40.00 mA
+Total power of the unplaced cells :      80.000 mW
+25 percent of initial power plan synthesis is done.
+100 percent of initial power plan synthesis is done.
+Performing Wire Cutting and Resizing of net VDD for Honoring Blockage Constraints
+Processing 9x9 straps
+Number of power pads reaching to the power ports of the leaf cells or blocks: 1
+Total assigned virtual connection port current is 40.000000
+Total assigned connected port current is 0.000000
+Total assigned current is 40.000000
+Total floating virtual connection port current is 0.000000
+Total floating connected port current is 0.000000
+Simulation begin ...
+Virtual Pad at (200.000 5.000) layer METAL8 Supplies   40.00 mA Current (100.00%)
+Total Current from Pad Cells:    0.00 mA (0.00%)
+Total Current from Virtual Pads:   40.00 mA (100.00%)
+Maximum IR drop in IOTDF : 40.17 mV
+Maximum current in IOTDF : 40.000 mA
+Maximum EM of wires in IOTDF : 2.000000e+02 A/cm, layer METAL8
+Maximum EM of vias in IOTDF : 7.716049e+06 A/cm_square, layer VIA78
+The PNS synthesizes the net VDD successfully
+The maximum IR drop of the synthesized net VDD is  40.167 mV
+Processing net VSS ...
+Average power dissipation in IOTDF :    80.00 mW
+Power supply voltage :     2.00 V
+Average current in IOTDF :    40.00 mA
+Total power of the unplaced cells :      80.000 mW
+Performing Wire Cutting of net VSS for Honoring Blockage Constraints
+Number of power pads reaching to the power ports of the leaf cells or blocks: 1
+Total assigned virtual connection port current is 40.000000
+Total assigned connected port current is 0.000000
+Total assigned current is 40.000000
+Total floating virtual connection port current is 0.000000
+Total floating connected port current is 0.000000
+Simulation begin ...
+Virtual Pad at (300.000 5.000) layer METAL7 Supplies   40.00 mA Current (100.00%)
+Total Current from Pad Cells:    0.00 mA (0.00%)
+Total Current from Virtual Pads:   40.00 mA (100.00%)
+Maximum IR drop in IOTDF : 54.18 mV
+Maximum current in IOTDF : 40.000 mA
+Maximum EM of wires in IOTDF : 2.000000e+02 A/cm, layer METAL7
+Maximum EM of vias in IOTDF : 6.925208e+06 A/cm_square, layer VIA67
+The PPS synthesizes the net VSS successfully
+The maximum IR drop of the synthesized net VSS is  54.181
+
+The statistics of PNS results
+Global Constraints Setting
+Remove Floating Segments:       On
+Use Stack Via:                  On
+Same PG Width Sizing:           On
+Optimize Track Usage:           Off
+Keep Ring Outside Core Area:    Off
+No Straps Over Hard Macros:     Off
+No Straps Over Plan Groups:     Off
+No Straps Over Soft Macros:     Off
+Ignore Blockage:                Off
+Target IR drop :  200.00 mV
+Net name : VDD
+IR drop of the synthesized net :   40.17 mV
+Core ring segment: Horizontal: METAL5, Width: 2.000 microns
+Core ring segment: Vertical: METAL4, Width: 2.000 microns
+Layer: METAL5, Direction: Horizontal, # of Straps: 9, PG spacing
+The maximum width of straps: 2.000 microns
+The average width of straps: 2.000 microns
+Layer: METAL4, Direction: Vertical, # of Straps: 9, PG spacing
+The maximum width of straps: 2.000 microns
+The average width of straps: 2.000 microns
+The percentage of routing tracks used by the power net VDD for layer METAL8: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL7: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL6: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL5: 12.43%
+The percentage of routing tracks used by the power net VDD for layer METAL4: 12.18%
+The percentage of routing tracks used by the power net VDD for layer METAL3: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL2: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL1: 0.00%
+The average percentage of routing tracks used by net VDD : 3.08%
+Net name : VSS
+IR drop of the synthesized net :   54.18 mV
+Core ring segment: Horizontal: METAL5, Width: 2.000 microns
+Core ring segment: Vertical: METAL4, Width: 2.000 microns
+Layer: METAL5, Direction: Horizontal, # of Straps: 9, PG spacing
+The maximum width of straps: 2.000 microns
+The average width of straps: 2.000 microns
+Layer: METAL4, Direction: Vertical, # of Straps: 9, PG spacing
+The maximum width of straps: 2.000 microns
+The average width of straps: 2.000 microns
+The percentage of routing tracks used by the power net VSS for layer METAL8: 0.00%
+The percentage of routing tracks used by the power net VSS for layer METAL7: 0.00%
+The percentage of routing tracks used by the power net VSS for layer METAL6: 0.00%
+The percentage of routing tracks used by the power net VSS for layer METAL5: 12.53%
+The percentage of routing tracks used by the power net VSS for layer METAL4: 11.95%
+The percentage of routing tracks used by the power net VSS for layer METAL3: 0.00%
+The percentage of routing tracks used by the power net VSS for layer METAL2: 0.00%
+The percentage of routing tracks used by the power net VSS for layer METAL1: 0.00%
+The average percentage of routing tracks used by net VSS : 3.06%
+Generating instance power and IR drop file ./pna_output/IOTDF.inst_hl.pna
+Memory usage for design data :      37797.888 Kbytes
+Generating Power Routing Tcl commands file ./pna_output/create_pns_pg.tcl
+Overall takes     0.03 seconds
+Please read IOTDF.PNS.log for detail information
+Creating PNS Replay file ./pna_output/pns_replay.tcl
+Power network synthesis is done successfully.
+Reading power network analysis highlight file: ./pna_output/IOTDF.VDD.pw_hl.pna ...
+Setting the IR threshold of drop ratio display to 0.100 mV
+Successfully create error file ./pna_output/VDD.VD.report
+Successfully loaded voltage drop map
+Report display map data ...
+Successfully created the VD report file icc_gui.output
+1
+commit_fp_rail
+Committing the synthesized power plan ... 
+4195 cells out of bound
+Done with committing power plan!
+1
+remove_fp_virtual_pad -all
+1
+preroute_standard_cells -extend_for_multiple_connections -extension_gap 16 -connect horizontal -remove_floating_pieces -do_not_route_over_macros -fill_empty_rows -port_filter_mode off -cell_master_filter_mode off -cell_instance_filter_mode off -voltage_area_filter_mode off -route_type {P/G Std. Cell Pin Conn}
+Using [3 x 3] Fat Wire Table for METAL1
+Using [3 x 3] Fat Wire Table for METAL2
+Using [3 x 3] Fat Wire Table for METAL3
+Using [3 x 3] Fat Wire Table for METAL4
+Using [3 x 3] Fat Wire Table for METAL5
+Using [3 x 3] Fat Wire Table for METAL6
+Using [3 x 3] Fat Wire Table for METAL7
+Substitute FatContact (via1_fat) with (via1)
+Substitute FatContact (via2_fat) with (via2)
+Substitute FatContact (via3_fat) with (via3)
+Substitute FatContact (via4_fat) with (via4)
+Substitute FatContact (via5_fat) with (via5)
+Substitute FatContact (via6_fat) with (via6)
+Substitute FatContact (via7_fat) with (via7)
+4195 cells out of bound
+
+Info: using template cell OAI32XL for empty rows
+Prerouting standard cells horizontally: 
+ [12.50%]  
+ [25.00%]  
+ [37.50%]  
+ [50.00%]  
+ [62.50%]  
+ [75.00%]  
+ [87.50%]  
+ [100.00%]  
+ [done] 
+
+[Prerouter] CPU = 00:00:00, Elapsed = 00:00:00
+        Peak Memory =      246M Data =        1M
+1
+# 3. Placement
+place_opt
+Information: linking reference library : /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13gfsg_fram. (PSYN-878)
+
+  Linking design 'IOTDF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  IOTDF                       IOTDF.CEL
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb
+
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+
+The options for place_opt:
+--------------------------
+POPT:  place_opt effort level               : Medium
+POPT:  Congestion removal                   : No
+POPT:  Layer Optimization                   : Yes
+POPT:  Area recovery                        : No
+POPT:  Optimize dft                         : No
+POPT:  Clock Tree Synthesis                 : No
+POPT:  Optimize power                       : No
+---------------------------------------------------
+
+Settings of some common used Tcl variables for place_opt:
+---------------------------------------------------------
+---------------------------------------------------------
+
+  Loading design 'IOTDF'
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+Information: Library Manufacturing Grid(GridResolution) : 5
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Information: Design Library and main library resistance units are matched - 1.000 kohm. 
+Information: Capacitance Unit from Milkyway design library: 'pf' 
+Information: Design Library and main library capacitance units are matched - 1.000 pf. 
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL1 : 0.00022 0.00022 (RCEX-011)
+Information: Library Derived Res for layer METAL1 : 0.00065 0.00065 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL7 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL7 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL8 : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Res for layer METAL8 : 6.7e-05 6.7e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00044 0.00044 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00028 0.00028 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00078 0.00078 (RCEX-011)
+
+ Beginning Coarse Placement
+  --------------------------
+
+Information: Running stand-alone coarse placer in a separate process using temp directory '/tmp'. (PSYN-605)
+Warning: Scan DEF information is required. (PSYN-1099)
+...25%...50%...75%...100% done.
+
+  Coarse Placement Complete
+  --------------------------
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+ Beginning Buffering Optimizations
+ ---------------------------------
+
+ Estimating Design ...... 
+ Done
+
+ Updating Timing ........ 
+ Done
+
+ Collecting Buffer Trees ... Found 38
+
+ Processing Buffer Trees ... 
+
+    [4]  10% ...
+    [8]  20% ...
+    [12]  30% ...
+    [16]  40% ...
+    [20]  50% ...
+    [24]  60% ...
+    [28]  70% ...
+    [32]  80% ...
+    [36]  90% ...
+    [38] 100% Done ...
+
+
+Information: Automatic high-fanout synthesis deletes 29 cells. (HFS-802)
+Information: Automatic high-fanout synthesis adds 63 new cells. (PSYN-864)
+
+
+Information: Analyzing channel congestion ... 
+Information: Channel congestion analysis found no blockages
+
+
+  ------------------------------------------
+  Automatic minimum/maximum layer assignment
+  ------------------------------------------
+    Derived Minimum Lower Layer   : METAL7
+    Derived Maximum Upper Layer   : METAL8
+  ------------------------------------------
+  Total 6 nets to be assigned.
+  Total 6 nets assigned with min/max constraint.
+  Total 6 nets assigned with min/max constraint by tool.
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+
+  Design  WNS: 4.08  TNS: 145.17  Number of Violating Paths: 148
+
+  Nets with DRC Violations: 1
+  Total moveable cell area: 40574.6
+  Total fixed cell area: 0.0
+  Total physical cell area: 40574.6
+  Core area: (5000 5000 243740 241160)
+
+
+  No hold constraints
+
+
+  Timing and DRC Optimization (Stage 1)
+  --------------------------------------
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   40574.6      4.08     145.2       0.0                          
+
+
+  Beginning Phase 1 Design Rule Fixing  (max_transition)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   40574.6      4.08     145.2       0.0                          
+    0:00:04   40574.6      4.08     145.2       0.0                          
+
+  Optimization Complete
+  ---------------------
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   40574.6      4.08     145.2       0.0                          
+    0:00:05   41087.3      1.06      63.1       0.0 temp_avg_reg[131]/D      
+    0:00:05   41391.1      0.00       0.0       0.0                          
+    0:00:05   41296.0      0.00       0.0       0.0                          
+    0:00:05   41296.0      0.00       0.0       0.0                          
+    0:00:05   41296.0      0.00       0.0       0.0                          
+    0:00:05   41296.0      0.00       0.0       0.0                          
+    0:00:05   41073.7      0.00       0.0       0.0                          
+    0:00:05   41073.7      0.00       0.0       0.0                          
+    0:00:05   41073.7      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 0
+  Total moveable cell area: 41073.7
+  Total fixed cell area: 0.0
+  Total physical cell area: 41073.7
+  Core area: (5000 5000 243740 241160)
+
+
+  No hold constraints
+
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+
+ Beginning Coarse Placement
+  --------------------------
+
+Information: Running stand-alone coarse placer in a separate process using temp directory '/tmp'. (PSYN-605)
+Warning: Scan DEF information is required. (PSYN-1099)
+50%...67%...83%...100% done.
+
+  Coarse Placement Complete
+  --------------------------
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+ 
+****************************************
+  Report : Chip Summary
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:52 2024
+****************************************
+Std cell utilization: 72.85%  (24198/(33216-0))
+(Non-fixed + Fixed)
+Std cell utilization: 72.85%  (24198/(33216-0))
+(Non-fixed only)
+Chip area:            33216    sites, bbox (5.00 5.00 243.74 241.16) um
+Std cell area:        24198    sites, (non-fixed:24198  fixed:0)
+                      4252     cells, (non-fixed:4252   fixed:0)
+Macro cell area:      0        sites
+                      0        cells
+Placement blockages:  0        sites, (excluding fixed std cells)
+                      0        sites, (include fixed std cells & chimney area)
+                      0        sites, (complete p/g net blockages)
+Routing blockages:    0        sites, (partial p/g net blockages)
+                      0        sites, (routing blockages and signal pre-route)
+Lib cell count:       94 
+Avg. std cell width:  3.17 um 
+Site array:           unit     (width: 0.46 um, height: 3.69 um, rows: 64)
+Physical DB scale:    1000 db_unit = 1 um 
+
+ 
+****************************************
+  Report : pnet options
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:52 2024
+****************************************
+
+
+--------------------------------------------------------------------
+Layer      Blockage   Min_width   Min_height   Via_additive     Density
+--------------------------------------------------------------------
+METAL1     none          ---         ---       via additive      ---
+METAL2     none          ---         ---       via additive      ---
+METAL3     none          ---         ---       via additive      ---
+METAL4     none          ---         ---       via additive      ---
+METAL5     none          ---         ---       via additive      ---
+METAL6     none          ---         ---       via additive      ---
+METAL7     none          ---         ---       via additive      ---
+METAL8     none          ---         ---       via additive      ---
+Legalizing 4252 illegal cells...
+Starting legalizer.
+Initial legalization:  100% (0 sec)
+Optimizations pass 1: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 2: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 3: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Legalization complete (0 total sec)
+ 
+****************************************
+  Report : Legalize Displacement
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:52 2024
+****************************************
+
+avg cell displacement:    0.984 um ( 0.27 row height)
+max cell displacement:    4.712 um ( 1.28 row height)
+std deviation:            0.520 um ( 0.14 row height)
+number of cell moved:      4252 cells (out of 4252 cells)
+
+Total 0 cells has large displacement (e.g. > 11.070 um or 3 row height)
+
+
+Information: Analyzing channel congestion ... 
+Information: Channel congestion analysis found no blockages
+
+
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 1
+  Total moveable cell area: 41073.7
+  Total fixed cell area: 0.0
+  Total physical cell area: 41073.7
+  Core area: (5000 5000 243740 241160)
+
+
+  No hold constraints
+
+
+  Timing and DRC Optimization (Stage 1)
+  --------------------------------------
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09   41073.7      0.00       0.0       0.1                          
+
+
+  Beginning Phase 1 Design Rule Fixing  (max_transition)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09   41073.7      0.00       0.0       0.1                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+
+  Optimization Complete
+  ---------------------
+
+  Placement Optimization (Stage 1)
+  ---------------------------------
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+ 
+****************************************
+  Report : Chip Summary
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:53 2024
+****************************************
+Std cell utilization: 72.85%  (24198/(33216-0))
+(Non-fixed + Fixed)
+Std cell utilization: 72.85%  (24198/(33216-0))
+(Non-fixed only)
+Chip area:            33216    sites, bbox (5.00 5.00 243.74 241.16) um
+Std cell area:        24198    sites, (non-fixed:24198  fixed:0)
+                      4252     cells, (non-fixed:4252   fixed:0)
+Macro cell area:      0        sites
+                      0        cells
+Placement blockages:  0        sites, (excluding fixed std cells)
+                      0        sites, (include fixed std cells & chimney area)
+                      0        sites, (complete p/g net blockages)
+Routing blockages:    0        sites, (partial p/g net blockages)
+                      0        sites, (routing blockages and signal pre-route)
+Lib cell count:       95 
+Avg. std cell width:  3.16 um 
+Site array:           unit     (width: 0.46 um, height: 3.69 um, rows: 64)
+Physical DB scale:    1000 db_unit = 1 um 
+
+ 
+****************************************
+  Report : pnet options
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:53 2024
+****************************************
+
+
+--------------------------------------------------------------------
+Layer      Blockage   Min_width   Min_height   Via_additive     Density
+--------------------------------------------------------------------
+METAL1     none          ---         ---       via additive      ---
+METAL2     none          ---         ---       via additive      ---
+METAL3     none          ---         ---       via additive      ---
+METAL4     none          ---         ---       via additive      ---
+METAL5     none          ---         ---       via additive      ---
+METAL6     none          ---         ---       via additive      ---
+METAL7     none          ---         ---       via additive      ---
+METAL8     none          ---         ---       via additive      ---
+ 
+****************************************
+  Report : Legalize Displacement
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:53 2024
+****************************************
+
+No cell displacement.
+
+
+  Placement Optimization Complete
+  -------------------------------
+
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 0
+  Total moveable cell area: 41073.7
+  Total fixed cell area: 0.0
+  Total physical cell area: 41073.7
+  Core area: (5000 5000 243740 241160)
+
+
+  No hold constraints
+
+
+  Timing and DRC Optimization (Stage 2)
+  --------------------------------------
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+    0:00:09   41073.7      0.00       0.0       0.0                          
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+
+  Optimization Complete
+  ---------------------
+
+  Placement Optimization (Stage 2)
+  ---------------------------------
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+ 
+****************************************
+  Report : Chip Summary
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:54 2024
+****************************************
+Std cell utilization: 72.85%  (24198/(33216-0))
+(Non-fixed + Fixed)
+Std cell utilization: 72.85%  (24198/(33216-0))
+(Non-fixed only)
+Chip area:            33216    sites, bbox (5.00 5.00 243.74 241.16) um
+Std cell area:        24198    sites, (non-fixed:24198  fixed:0)
+                      4252     cells, (non-fixed:4252   fixed:0)
+Macro cell area:      0        sites
+                      0        cells
+Placement blockages:  0        sites, (excluding fixed std cells)
+                      0        sites, (include fixed std cells & chimney area)
+                      0        sites, (complete p/g net blockages)
+Routing blockages:    0        sites, (partial p/g net blockages)
+                      0        sites, (routing blockages and signal pre-route)
+Lib cell count:       95 
+Avg. std cell width:  3.16 um 
+Site array:           unit     (width: 0.46 um, height: 3.69 um, rows: 64)
+Physical DB scale:    1000 db_unit = 1 um 
+
+ 
+****************************************
+  Report : pnet options
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:54 2024
+****************************************
+
+
+--------------------------------------------------------------------
+Layer      Blockage   Min_width   Min_height   Via_additive     Density
+--------------------------------------------------------------------
+METAL1     none          ---         ---       via additive      ---
+METAL2     none          ---         ---       via additive      ---
+METAL3     none          ---         ---       via additive      ---
+METAL4     none          ---         ---       via additive      ---
+METAL5     none          ---         ---       via additive      ---
+METAL6     none          ---         ---       via additive      ---
+METAL7     none          ---         ---       via additive      ---
+METAL8     none          ---         ---       via additive      ---
+ 
+****************************************
+  Report : Legalize Displacement
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:54:54 2024
+****************************************
+
+No cell displacement.
+
+
+  Placement Optimization Complete
+  -------------------------------
+
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 1
+  Total moveable cell area: 41073.7
+  Total fixed cell area: 0.0
+  Total physical cell area: 41073.7
+  Core area: (5000 5000 243740 241160)
+
+
+  No hold constraints
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+Warning: Die area is not integer multiples of min site height (3690), object's width and height(248740,246160). (PSYN-523)
+Warning: Die area is not integer multiples of min site width (460), object's width and height(248740,246160). (PSYN-523)
+
+**************************************************** 
+Check_legality: Report for Fixed Placement Cells
+Information: Use the -verbose option to get details about the legality violations. (PSYN-054)
+**************************************************** 
+(fixed placement) Cells Not on Row            : 0
+(fixed placement) Cell Overlaps               : 0
+(fixed placement) Cells overlapping blockages : 0
+(fixed placement) Orientation Violations      : 0
+(fixed placement) Site Violations             : 0
+(fixed placement) Power Strap Violations      : 0
+****************************************************** 
+
+****************************************************** 
+Check_legality: Report for Non-fixed Placement Cells
+Information: Use the -verbose option to get details about the legality violations. (PSYN-054)
+****************************************************** 
+Number of Cells Not on Row            : 0
+Number of Cell Overlaps               : 0
+Number of Cells overlapping blockages : 0
+Number of Orientation Violations      : 0
+Number of Site Violations             : 0
+Number of Power Strap Violations      : 0
+******************************************** 
+Information: Updating database...
+1
+derive_pg_connection -power_net {VDD} -ground_net {VSS} -power_pin {VDD} -ground_pin {VSS}
+Information: connected 109 power ports and 109 ground ports
+1
+set_max_area 0
+1
+set physopt_area_critical_range 0.1
+0.1
+# 4. CTS
+set_fix_hold [all_clocks ]
+1
+clock_opt -fix_hold_all_clocks -no_clock_route
+Warning: Starting from the 2011.09-SP4 release, clock_opt will NOT perform congestion-driven placement by default. (PSYN-1111)
+
+The options for clock_opt:
+--------------------------
+COPT:  Clock Tree Synthesis                 : Yes
+COPT:  Post CTS Optimization                : Yes
+COPT:  Concurrent Clock/Data Optimization   : No
+COPT:  Operation Condition                  : max
+COPT:  Balance Inter Clock Delay            : No
+COPT:  Route Clock Nets                     : No
+COPT:  Update Clock Latency                 : No
+COPT:  Optimize Hold for All Clocks         : Yes
+COPT:  Optimize Hold Timing Only            : No
+COPT:  Optimize DFT                         : No
+COPT:  Area Recovery                        : No
+COPT:  Size Only                            : No
+COPT:  In Place Size Only                   : No
+COPT:  Congestion removal                   : No
+COPT:  Optimize Power                       : No
+---------------------------------------------------
+
+Executing ICC clock_opt...
+medium
+*
+Building clock tree...
+Operating Condition is max
+Information: There is no scenario with cts_mode set to true, CTS will use old cts_scenario flow. (CTS-1115)
+CTS Operating Condition(s): MAX(Worst) 
+
+  Loading design 'IOTDF'
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+Information: Library Manufacturing Grid(GridResolution) : 5
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Information: Design Library and main library resistance units are matched - 1.000 kohm. 
+Information: Capacitance Unit from Milkyway design library: 'pf' 
+Information: Design Library and main library capacitance units are matched - 1.000 pf. 
+Setting the GR Options
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL1 : 0.00021 0.00021 (RCEX-011)
+Information: Library Derived Res for layer METAL1 : 0.00062 0.00062 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.00033 0.00033 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00028 0.00028 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.00036 0.00036 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.00033 0.00033 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00028 0.00028 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.00036 0.00036 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 0.00033 0.00033 (RCEX-011)
+Information: Library Derived Cap for layer METAL7 : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Res for layer METAL7 : 0.00036 0.00036 (RCEX-011)
+Information: Library Derived Cap for layer METAL8 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL8 : 6.4e-05 6.4e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00042 0.00042 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00027 0.00027 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00078 0.00078 (RCEX-011)
+LR: Layer METAL3: Average tracks per gcell 9.1, utilization 0.00
+LR: Layer METAL4: Average tracks per gcell 8.2, utilization 0.06
+LR: Layer METAL5: Average tracks per gcell 9.1, utilization 0.09
+LR: Layer METAL6: Average tracks per gcell 8.2, utilization 0.00
+LR: Layer METAL7: Average tracks per gcell 9.1, utilization 0.00
+LR: Layer METAL8: Average tracks per gcell 3.8, utilization 0.00
+LR: Clock routing service standing by
+Using cts integrated global router
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+CTS: Blockage Aware Algorithm
+Top-Level OCV Path Sharing not effective when timing derating is too low
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+CTS: all inverters have too large rise/fall delay skew
+CTS: inverter CLKINVX16: rise/fall delay skew = 0.249563 (> 0.200000) 
+CTS: all inverters have too large rise/fall delay skew
+CTS: inverter CLKINVX16: rise/fall delay skew = 0.249563 (> 0.200000) 
+CTS: Region Aware Algorithm is automatically turned off when design has no region or only has one region.
+CTS: Prepare sources for clock domain clk
+CTS: Prepare sources for clock domain clk
+clean drc fixing cell first...
+In all, 0 drc fixing cell(s) are cleaned
+In all, 0 drc fixing cell(s) beyond exception pins are cleaned
+
+CTS: Prepare sources for clock domain clk
+CTS: Prepare sources for clock domain clk
+
+Pruning library cells (r/f, pwr)
+    Min drive = 0.345554.
+    Pruning DLY4X1 because drive of 0.128163 is less than 0.345554.
+    Pruning DLY3X1 because drive of 0.132085 is less than 0.345554.
+    Pruning DLY2X1 because drive of 0.134504 is less than 0.345554.
+    Pruning DLY1X1 because drive of 0.134612 is less than 0.345554.
+    Pruning CLKBUFX2 because drive of 0.242748 is less than 0.345554.
+    Pruning BUFX2 because drive of 0.303891 is less than 0.345554.
+    Pruning DLY4X4 because of a gain of 34.75.
+    Pruning BUFX3 because it is (w/ power-considered) inferior to DLY2X4.
+    Pruning DLY3X4 because of a gain of 29.16.
+    Pruning DLY2X4 because it is (w/ power-considered) inferior to CLKBUFX4.
+    Pruning DLY1X4 because it is inferior (w/ power-considered) to CLKBUFX4.
+    Pruning BUFX6 because it is inferior (w/ power-considered) to CLKBUFX8.
+    Pruning BUFX16 because it is (w/ power-considered) inferior to CLKBUFX12.
+    Final pruned buffer set (11 buffers):
+        CLKBUFX3
+        CLKBUFX4
+        BUFX4
+        CLKBUFX6
+        CLKBUFX8
+        BUFX8
+        BUFX12
+        CLKBUFX12
+        BUFX20
+        CLKBUFX16
+        CLKBUFX20
+
+Pruning library cells (r/f, pwr)
+    Min drive = 0.345554.
+    Pruning INVXL because drive of 0.0907169 is less than 0.345554.
+    Pruning INVX1 because drive of 0.16456 is less than 0.345554.
+    Pruning CLKINVX1 because drive of 0.184628 is less than 0.345554.
+    Pruning CLKINVX2 because drive of 0.276882 is less than 0.345554.
+    Pruning INVX2 because it is (w/ power-considered) inferior to CLKINVX3.
+    Pruning INVX3 because it is (w/ power-considered) inferior to CLKINVX4.
+    Pruning INVX6 because it is (w/ power-considered) inferior to CLKINVX8.
+    Pruning INVX16 because it is (w/ power-considered) inferior to CLKINVX12.
+    Final pruned buffer set (11 buffers):
+        CLKINVX3
+        CLKINVX4
+        INVX4
+        CLKINVX6
+        CLKINVX8
+        INVX8
+        INVX12
+        CLKINVX12
+        INVX20
+        CLKINVX16
+        CLKINVX20
+CTS: BA: Net 'clk'
+CTS: BA: Root net includes 1 sinks.
+CTS: BA: Max delay at toplevel pins = 0.000000
+CTS: BA: Max skew at toplevel pins = 0.000000
+
+CTS: Starting clock tree synthesis ...
+CTS:   Conditions       = worst(1)
+CTS: Global design rule constraints [rise fall]
+CTS:   max transition   = worst[0.500 0.500]     GUI = worst[0.500 0.500]     SDC = undefined/ignored
+CTS:   leaf max trans   = worst[0.500 0.500]     GUI = worst[0.500 0.500]     SDC = undefined/ignored
+CTS:   max capacitance  = worst[0.600 0.600]     GUI = worst[0.600 0.600]     SDC = undefined/ignored
+CTS:   max fanout       = 2000                   GUI = 2000                   SDC = undefined/ignored
+CTS: Global timing/clock tree constraints
+CTS:   clock skew       = worst[0.000]
+CTS:   insertion delay  = worst[0.000]
+CTS:   levels per net   = 400
+CTS: Design infomation
+CTS:  total gate levels = 1
+CTS: Root clock net clk
+CTS:  clock gate levels = 1
+CTS:    clock sink pins = 399
+CTS:    level  1: gates = 1
+CTS: Buffer/Inverter list for CTS for clock net clk:
+CTS:   CLKBUFX20
+CTS:   CLKINVX20
+CTS:   CLKBUFX16
+CTS:   CLKINVX16
+CTS:   BUFX20
+CTS:   INVX20
+CTS: Buffer/Inverter list for DelayInsertion for clock net clk:
+CTS:   CLKINVX20
+CTS:   CLKINVX16
+CTS:   INVX20
+CTS:   CLKINVX12
+CTS:   INVX16
+CTS:   CLKBUFX20
+CTS:   BUFX20
+CTS:   CLKBUFX16
+CTS:   INVX12
+CTS:   BUFX16
+CTS:   CLKBUFX12
+CTS:   BUFX12
+CTS:   INVX8
+CTS:   BUFX8
+CTS:   CLKINVX8
+CTS:   INVX6
+CTS:   BUFX6
+CTS:   CLKBUFX8
+CTS:   CLKINVX1
+CTS:   CLKINVX6
+CTS:   INVX4
+CTS:   INVX2
+CTS:   INVX3
+CTS:   CLKBUFX6
+CTS:   BUFX4
+CTS:   INVXL
+CTS:   BUFX3
+CTS:   CLKINVX2
+CTS:   INVX1
+CTS:   CLKINVX3
+CTS:   BUFX2
+CTS:   CLKINVX4
+CTS:   CLKBUFX4
+CTS:   CLKBUFX2
+CTS:   DLY1X1
+CTS:   CLKBUFX3
+CTS:   DLY1X4
+CTS:   DLY2X1
+CTS:   DLY3X1
+CTS:   DLY2X4
+CTS:   DLY4X1
+CTS:   DLY3X4
+CTS:   DLY4X4
+Information: Removing clock transition on clock clk ... (CTS-103)
+Information: Removing clock transition on clock clk ... (CTS-103)
+
+CTS: gate level 1 clock tree synthesis
+CTS:          clock net = clk
+CTS:        driving pin = clk
+CTS: gate level 1 design rule constraints [rise fall]
+CTS:   max transition   = worst[0.500 0.500]
+CTS:   leaf max transition = worst[0.500 0.500]
+CTS:   max capacitance  = worst[0.600 0.600]
+CTS:   max fanout       = 2000
+CTS: gate level 1 timing constraints
+CTS:   clock skew       = worst[0.000]
+CTS:   insertion delay  = worst[0.000]
+CTS:   levels per net   = 400
+CTS: nominal transition = 0.094933
+
+CTS: Clock tree synthesis completed successfully
+CTS:   CPU time:     0 seconds
+CTS: Reporting clock tree violations ...
+CTS:   Global design rules:
+CTS:     maximum transition delay [rise,fall] = [0.5,0.5]
+CTS:     maximum capacitance = 0.6
+CTS:     maximum fanout = 2000
+CTS:     maximum buffer levels per net = 400
+CTS:  
+CTS: Summary of clock tree violations: 
+CTS:  Total number of transition violations  = 0 
+CTS:  Total number of capacitance violations = 0 
+CTS: ------------------------------------------------
+CTS: Clock Tree Synthesis Summary
+CTS: ------------------------------------------------
+CTS:       1 clock domain synthesized
+CTS:       1 gated clock nets synthesized
+CTS:       1 buffer trees inserted
+CTS:       4 buffers used (total size = 76.383)
+CTS:       5 clock nets total capacitance = worst[1.378 1.378]
+CTS: ------------------------------------------------
+CTS: Clock-by-Clock Summary
+CTS: ------------------------------------------------
+CTS: Root clock net clk
+CTS:       1 gated clock nets synthesized
+CTS:       1 buffer trees inserted
+CTS:       4 buffers used (total size = 76.383)
+CTS:       5 clock nets total capacitance = worst[1.378 1.378]
+
+CTS: ==================================================
+CTS:   Elapsed time: 0 seconds
+CTS:   CPU time:     0 seconds on caidcpuserver1
+CTS: ==================================================
+CTS: Reporting clock tree violations ...
+CTS:   Global design rules:
+CTS:     maximum transition delay [rise,fall] = [0.5,0.5]
+CTS:     maximum capacitance = 0.6
+CTS:     maximum fanout = 2000
+CTS:     maximum buffer levels per net = 400
+CTS:  
+CTS: Summary of clock tree violations: 
+CTS:  Total number of transition violations  = 0 
+CTS:  Total number of capacitance violations = 0 
+CTS: ==================================================
+CTS: Start DRC fixing beyond exceptions
+CTS: Blockage Aware Algorithm
+CTS: Top-Level OCV Path Sharing not effective when timing derating is too low
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+CTS: all inverters have too large rise/fall delay skew
+CTS: inverter CLKINVX16: rise/fall delay skew = 0.249563 (> 0.200000) 
+CTS: Region Aware Algorithm is automatically turned off when design has no region or only has one region.
+CTS: Prepare sources for clock domain clk
+CTS: Prepare sources for clock domain clk
+
+Pruning library cells (r/f, pwr)
+    Min drive = 0.345554.
+    Pruning DLY4X1 because drive of 0.128163 is less than 0.345554.
+    Pruning DLY3X1 because drive of 0.132085 is less than 0.345554.
+    Pruning DLY2X1 because drive of 0.134504 is less than 0.345554.
+    Pruning DLY1X1 because drive of 0.134612 is less than 0.345554.
+    Pruning CLKBUFX2 because drive of 0.242748 is less than 0.345554.
+    Pruning BUFX2 because drive of 0.303891 is less than 0.345554.
+    Pruning DLY4X4 because of a gain of 34.75.
+    Pruning BUFX3 because it is (w/ power-considered) inferior to DLY2X4.
+    Pruning DLY3X4 because of a gain of 29.16.
+    Pruning DLY2X4 because it is (w/ power-considered) inferior to CLKBUFX4.
+    Pruning DLY1X4 because it is inferior (w/ power-considered) to CLKBUFX4.
+    Pruning BUFX6 because it is inferior (w/ power-considered) to CLKBUFX8.
+    Pruning BUFX16 because it is (w/ power-considered) inferior to CLKBUFX12.
+    Final pruned buffer set (11 buffers):
+        CLKBUFX3
+        CLKBUFX4
+        BUFX4
+        CLKBUFX6
+        CLKBUFX8
+        BUFX8
+        BUFX12
+        CLKBUFX12
+        BUFX20
+        CLKBUFX16
+        CLKBUFX20
+
+Pruning library cells (r/f, pwr)
+    Min drive = 0.345554.
+    Pruning INVXL because drive of 0.0907169 is less than 0.345554.
+    Pruning INVX1 because drive of 0.16456 is less than 0.345554.
+    Pruning CLKINVX1 because drive of 0.184628 is less than 0.345554.
+    Pruning CLKINVX2 because drive of 0.276882 is less than 0.345554.
+    Pruning INVX2 because it is (w/ power-considered) inferior to CLKINVX3.
+    Pruning INVX3 because it is (w/ power-considered) inferior to CLKINVX4.
+    Pruning INVX6 because it is (w/ power-considered) inferior to CLKINVX8.
+    Pruning INVX16 because it is (w/ power-considered) inferior to CLKINVX12.
+    Final pruned buffer set (11 buffers):
+        CLKINVX3
+        CLKINVX4
+        INVX4
+        CLKINVX6
+        CLKINVX8
+        INVX8
+        INVX12
+        CLKINVX12
+        INVX20
+        CLKINVX16
+        CLKINVX20
+CTS: Prepare sources for clock domain clk
+
+CTS: ==================================================
+CTS: DRC fixing beyond exceptions completed successfully
+CTS:   Elapsed time: 1 seconds
+CTS:   CPU time:     0 seconds on caidcpuserver1
+CTS: ==================================================
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL1 : 0.00021 0.00021 (RCEX-011)
+Information: Library Derived Res for layer METAL1 : 0.00062 0.00062 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.00033 0.00033 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00028 0.00028 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.00036 0.00036 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.00033 0.00033 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00028 0.00028 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.00036 0.00036 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 0.00033 0.00033 (RCEX-011)
+Information: Library Derived Cap for layer METAL7 : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Res for layer METAL7 : 0.00036 0.00036 (RCEX-011)
+Information: Library Derived Cap for layer METAL8 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL8 : 6.4e-05 6.4e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00042 0.00042 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00027 0.00027 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00078 0.00078 (RCEX-011)
+ CTS Successful 
+Optimizing clock tree...
+Operating Condition is max
+No valid clocks specified, all clocks will be optimized
+CTS: CTS Operating Condition(s): MAX(Worst) 
+Clock name : clk 
+enable delay detour in ctdn
+CTS: Top-Level OCV Path Sharing not effective when timing derating is too low
+CTS: Top-Level OCV Path Sharing not effective when timing derating is too low
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+CTS: all inverters have too large rise/fall delay skew
+CTS: inverter CLKINVX16: rise/fall delay skew = 0.249563 (> 0.200000) 
+CTS: Region Aware Algorithm is automatically turned off when design has no region or only has one region.
+CTS: Prepare sources for clock domain clk
+CTS: Prepare sources for clock domain clk
+
+Pruning library cells (r/f, pwr)
+    Min drive = 0.345554.
+    Pruning DLY4X1 because drive of 0.128163 is less than 0.345554.
+    Pruning DLY3X1 because drive of 0.132085 is less than 0.345554.
+    Pruning DLY2X1 because drive of 0.134504 is less than 0.345554.
+    Pruning DLY1X1 because drive of 0.134612 is less than 0.345554.
+    Pruning CLKBUFX2 because drive of 0.242748 is less than 0.345554.
+    Pruning BUFX2 because drive of 0.303891 is less than 0.345554.
+    Pruning DLY4X4 because of a gain of 34.75.
+    Pruning BUFX3 because it is (w/ power-considered) inferior to DLY2X4.
+    Pruning DLY3X4 because of a gain of 29.16.
+    Pruning DLY2X4 because it is (w/ power-considered) inferior to CLKBUFX4.
+    Pruning DLY1X4 because it is inferior (w/ power-considered) to CLKBUFX4.
+    Pruning BUFX6 because it is inferior (w/ power-considered) to CLKBUFX8.
+    Pruning BUFX16 because it is (w/ power-considered) inferior to CLKBUFX12.
+    Final pruned buffer set (11 buffers):
+        CLKBUFX3
+        CLKBUFX4
+        BUFX4
+        CLKBUFX6
+        CLKBUFX8
+        BUFX8
+        BUFX12
+        CLKBUFX12
+        BUFX20
+        CLKBUFX16
+        CLKBUFX20
+
+Pruning library cells (r/f, pwr)
+    Min drive = 0.345554.
+    Pruning INVXL because drive of 0.0907169 is less than 0.345554.
+    Pruning INVX1 because drive of 0.16456 is less than 0.345554.
+    Pruning CLKINVX1 because drive of 0.184628 is less than 0.345554.
+    Pruning CLKINVX2 because drive of 0.276882 is less than 0.345554.
+    Pruning INVX2 because it is (w/ power-considered) inferior to CLKINVX3.
+    Pruning INVX3 because it is (w/ power-considered) inferior to CLKINVX4.
+    Pruning INVX6 because it is (w/ power-considered) inferior to CLKINVX8.
+    Pruning INVX16 because it is (w/ power-considered) inferior to CLKINVX12.
+    Final pruned buffer set (11 buffers):
+        CLKINVX3
+        CLKINVX4
+        INVX4
+        CLKINVX6
+        CLKINVX8
+        INVX8
+        INVX12
+        CLKINVX12
+        INVX20
+        CLKINVX16
+        CLKINVX20
+CTO-ID:    
+Choosing the following cells for CTO Delay Insertion and ICDB: 
+CTO-  :     BUFX12, 
+CTO-  :     BUFX16, 
+CTO-  :     BUFX2, 
+CTO-  :     BUFX20, 
+CTO-  :     BUFX3, 
+CTO-  :     BUFX4, 
+CTO-  :     BUFX6, 
+CTO-  :     BUFX8, 
+CTO-  :     CLKBUFX12, 
+CTO-  :     CLKBUFX16, 
+CTO-  :     CLKBUFX2, 
+CTO-  :     CLKBUFX20, 
+CTO-  :     CLKBUFX3, 
+CTO-  :     CLKBUFX4, 
+CTO-  :     CLKBUFX6, 
+CTO-  :     CLKBUFX8, 
+CTO-  :     CLKINVX1, 
+CTO-  :     CLKINVX12, 
+CTO-  :     CLKINVX16, 
+CTO-  :     CLKINVX2, 
+CTO-  :     CLKINVX20, 
+CTO-  :     CLKINVX3, 
+CTO-  :     CLKINVX4, 
+CTO-  :     CLKINVX6, 
+CTO-  :     CLKINVX8, 
+CTO-  :     DLY1X1, 
+CTO-  :     DLY1X4, 
+CTO-  :     DLY2X1, 
+CTO-  :     DLY2X4, 
+CTO-  :     DLY3X1, 
+CTO-  :     DLY3X4, 
+CTO-  :     DLY4X1, 
+CTO-  :     DLY4X4, 
+CTO-  :     INVX1, 
+CTO-  :     INVX12, 
+CTO-  :     INVX16, 
+CTO-  :     INVX2, 
+CTO-  :     INVX20, 
+CTO-  :     INVX3, 
+CTO-  :     INVX4, 
+CTO-  :     INVX6, 
+CTO-  :     INVX8, 
+CTO-  :     INVXL, 
+CTO-  :     
+
+Initializing multicorner optimizer...
+Using primary buffers equivalent to 'BUFX2'.
+Using primary inverters equivalent to 'CLKINVX1'.
+Technology-based gate delay scale factors (normalized to the highest):
+  Corner 'max': 1.000
+Technology-based wire delay scale factors (normalized to the highest):
+  Corner 'max': 1.000
+Information: Float pin scale factor for the 'max' operating condition of scenario 'default' is set to 1.000 (CTS-375)
+Information: Float pin scale factor for the 'min' operating condition of scenario 'default' is set to 1.000 (CTS-375)
+Using the following scale factors for float pins:
+  Corner 'max': 1.000
+Worst clock corner:  max
+Worst RC delay corner:  max
+Using normal effort optimization
+Using pre-route mode
+Using non-mv_mode
+Target max transition = 0.189865
+Using the CTS integrated router
+
+Selecting library cells for optimization
+    Pruning weak driver DLY4X1.
+    Pruning weak driver DLY3X1.
+    Pruning weak driver DLY2X1.
+    Pruning weak driver DLY1X1.
+    Pruning weak driver CLKBUFX2.
+    Pruning weak driver BUFX2.
+    Pruning slow or multistage gate DLY4X4.
+    Pruning slow or multistage gate DLY3X4.
+    Final pruned buffer set (16 buffers):
+        CLKBUFX3
+        BUFX3
+        DLY2X4
+        CLKBUFX4
+        DLY1X4
+        BUFX4
+        CLKBUFX6
+        CLKBUFX8
+        BUFX6
+        BUFX8
+        BUFX12
+        BUFX16
+        CLKBUFX12
+        BUFX20
+        CLKBUFX16
+        CLKBUFX20
+
+    Pruning weak driver INVXL.
+    Pruning weak driver INVX1.
+    Pruning weak driver CLKINVX1.
+    Pruning weak driver CLKINVX2.
+    Final pruned inverter set (15 inverters):
+        INVX2
+        CLKINVX3
+        INVX3
+        CLKINVX4
+        INVX4
+        CLKINVX6
+        INVX6
+        CLKINVX8
+        INVX8
+        INVX12
+        INVX16
+        CLKINVX12
+        INVX20
+        CLKINVX16
+        CLKINVX20
+
+
+Initializing parameters for clock clk:
+Root pin: clk
+Using max_transition: 0.500 ns
+Using leaf_max_transition for clock clk: 0.500 ns
+Using the following target skews for global optimization:
+  Corner 'max': 0.079 ns
+Using the following target skews for incremental optimization:
+  Corner 'max': 0.000 ns
+Using the following optimization options:
+  gate sizing                   :  on
+  gate relocation               :  on
+  preserve levels               :  off
+  area recovery                 :  on
+  relax insertion delay         :  off
+  balance rc                    :  off
+Information: The -balance_rc option is set to false by default, because there are single CTS corner(s). (CTS-1121)
+Using max_transition 0.500 ns
+Using leaf_max_transition for clock clk : 0.500 ns
+
+
+Starting optimization for clock clk.
+Using max_transition 0.500 ns
+Using leaf_max_transition for clock clk : 0.500 ns
+
+****************************************
+* Preoptimization report (clock 'clk') *
+****************************************
+  Corner 'max'
+    Estimated Skew (r/f/b) = (0.014 0.000 0.014)
+    Estimated Insertion Delay (r/f/b) = (0.388  -inf 0.388)
+  Corner 'RC-ONLY'
+    Estimated Skew (r/f/b) = (0.004 0.000 0.004)
+    Estimated Insertion Delay (r/f/b) = (0.006  -inf 0.006)
+  Wire capacitance =  0.8 pf
+  Total capacitance = 1.4 pf
+  Max transition = 0.269 ns
+  Cells = 5 (area=76.383003)
+  Inverters = 4 (area=76.383003)
+  Inverter Types
+  ==============
+    CLKINVX12: 3
+    CLKINVX8: 1
+
+Report DRC violations for clock clk (initial)
+Total 0 DRC violations for clock clk (initial)
+ Start (0.374, 0.389), End (0.374, 0.389) 
+
+RC optimization for clock 'clk'
+Corner sensitivity to RC skew (normalized to the first corner):
+  Corner 'max': +0.000
+20%   40%   60%   80%   100%   
+20%   40%   60%   80%   100%   
+Coarse optimization for clock 'clk'
+20%   40%   60%   80%   100%   
+20%   40%   60%   80%   100%   
+20%   40%   60%   80%   100%   
+20%   40%   60%   80%   100%   
+ No back-to-back buffer chains found
+ Start (0.183, 0.192), End (0.183, 0.192) 
+
+Detailed optimization for clock 'clk'
+20%   40%   60%   80%   100%   
+Using max_transition 0.500 ns
+Using leaf_max_transition for clock clk : 0.500 ns
+Starting optimization pass for clock clk:
+Start path based optimization 
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+20%   40%   60%   80%   100%   
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+Using max_transition 0.500 ns
+Using leaf_max_transition for clock clk : 0.500 ns
+Switch to low metal layer for clock 'clk':
+
+ Total 2 out of 5 nets switched to low metal layer for clock 'clk' with largest cap change 0.00 percent
+ Start (0.179, 0.188), End (0.179, 0.188) 
+
+Area recovery optimization for clock 'clk':
+20%   40%   60%   80%   100%   
+
+ Total 0 buffers removed (all paths) for clock 'clk'
+
+*************************************************
+* Multicorner optimization report (clock 'clk') *
+*************************************************
+  Corner 'max'
+    Estimated Skew (r/f/b) = (0.009 0.000 0.009)
+    Estimated Insertion Delay (r/f/b) = (0.188  -inf 0.188)
+  Corner 'RC-ONLY'
+    Estimated Skew (r/f/b) = (0.004 0.000 0.004)
+    Estimated Insertion Delay (r/f/b) = (0.008  -inf 0.008)
+  Wire capacitance =  0.8 pf
+  Total capacitance = 1.5 pf
+  Max transition = 0.152 ns
+  Cells = 5 (area=118.818001)
+  Inverters = 4 (area=118.818001)
+  Inverter Types
+  ==============
+    CLKINVX20: 3
+    INVX20: 1
+
+
+++ Longest path for clock clk in corner 'max':
+ object                               fan cap  trn inc  arr r location
+ clk (port)                                     24   0    0 r ( 238  245) 
+ clk (port)                                      8   5    5 r ( 238  245) 
+ clk (net)                              1  78                 
+ CLKINVX8_G1B2I1/A (INVX20)                     11   3    8 r ( 124  128) 
+ CLKINVX8_G1B2I1/Y (INVX20)                     98  61   69 f ( 125  128) 
+ clk_G1B1I1 (net)                       3 225                 
+ CLKINVX12_G1B1I1/A (CLKINVX20)                 98   2   71 f ( 126  132) 
+ CLKINVX12_G1B1I1/Y (CLKINVX20)                152 112  183 r ( 125  132) 
+ clk_G1B2I1 (net)                      130 425                
+ iot_out_reg[81]/CK (DFFSRX1)                  152   5  188 r (  92    6) 
+
+
+++ Shortest path for clock clk in corner 'max':
+ object                               fan cap  trn inc  arr r location
+ clk (port)                                     24   0    0 r ( 238  245) 
+ clk (port)                                      8   5    5 r ( 238  245) 
+ clk (net)                              1  78                 
+ CLKINVX8_G1B2I1/A (INVX20)                     11   3    8 r ( 124  128) 
+ CLKINVX8_G1B2I1/Y (INVX20)                     98  61   69 f ( 125  128) 
+ clk_G1B1I1 (net)                       3 225                 
+ CLKINVX12_G1B1I3/A (CLKINVX20)                 99   4   73 f (  42  121) 
+ CLKINVX12_G1B1I3/Y (CLKINVX20)                139 105  178 r (  43  121) 
+ clk_G1B2I3 (net)                      131 386                
+ temp_reg[38]/CK (DFFRX1)                      140   1  179 r (  48  117) 
+
+
+++ Longest path for clock clk in corner 'RC-ONLY':
+ object                               fan cap  trn inc  arr r location
+ clk (port)                                     24   0    0 r ( 238  245) 
+ clk (port)                                      0   0    0 r ( 238  245) 
+ clk (net)                              1  78                 
+ CLKINVX8_G1B2I1/A (INVX20)                      5   2    2 r ( 124  128) 
+ CLKINVX8_G1B2I1/Y (INVX20)                      0   0    2 f ( 125  128) 
+ clk_G1B1I1 (net)                       3 225                 
+ CLKINVX12_G1B1I3/A (CLKINVX20)                  7   3    5 f (  42  121) 
+ CLKINVX12_G1B1I3/Y (CLKINVX20)                  0   0    5 r (  43  121) 
+ clk_G1B2I3 (net)                      131 386                
+ iot_out_reg[86]/CK (DFFSRX1)                    8   3    8 r (  17    6) 
+
+
+++ Shortest path for clock clk in corner 'RC-ONLY':
+ object                               fan cap  trn inc  arr r location
+ clk (port)                                     24   0    0 r ( 238  245) 
+ clk (port)                                      0   0    0 r ( 238  245) 
+ clk (net)                              1  78                 
+ CLKINVX8_G1B2I1/A (INVX20)                      5   2    2 r ( 124  128) 
+ CLKINVX8_G1B2I1/Y (INVX20)                      0   0    2 f ( 125  128) 
+ clk_G1B1I1 (net)                       3 225                 
+ CLKINVX12_G1B1I1/A (CLKINVX20)                  3   1    3 f ( 126  132) 
+ CLKINVX12_G1B1I1/Y (CLKINVX20)                  0   0    3 r ( 125  132) 
+ clk_G1B2I1 (net)                      130 425                
+ temp_reg[90]/CK (DFFRX1)                        1   0    4 r ( 115  125) 
+
+Report DRC violations for clock clk (final)
+Total 0 DRC violations for clock clk (final)
+
+  Legalizing Placement
+  --------------------
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+ 
+****************************************
+  Report : Chip Summary
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:17 2024
+****************************************
+Std cell utilization: 73.06%  (24268/(33216-0))
+(Non-fixed + Fixed)
+Std cell utilization: 73.00%  (24198/(33216-70))
+(Non-fixed only)
+Chip area:            33216    sites, bbox (5.00 5.00 243.74 241.16) um
+Std cell area:        24268    sites, (non-fixed:24198  fixed:70)
+                      4256     cells, (non-fixed:4252   fixed:4)
+Macro cell area:      0        sites
+                      0        cells
+Placement blockages:  0        sites, (excluding fixed std cells)
+                      70       sites, (include fixed std cells & chimney area)
+                      0        sites, (complete p/g net blockages)
+Routing blockages:    0        sites, (partial p/g net blockages)
+                      0        sites, (routing blockages and signal pre-route)
+Lib cell count:       95 
+Avg. std cell width:  3.16 um 
+Site array:           unit     (width: 0.46 um, height: 3.69 um, rows: 64)
+Physical DB scale:    1000 db_unit = 1 um 
+
+ 
+****************************************
+  Report : pnet options
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:17 2024
+****************************************
+
+
+--------------------------------------------------------------------
+Layer      Blockage   Min_width   Min_height   Via_additive     Density
+--------------------------------------------------------------------
+METAL1     none          ---         ---       via additive      ---
+METAL2     none          ---         ---       via additive      ---
+METAL3     none          ---         ---       via additive      ---
+METAL4     none          ---         ---       via additive      ---
+METAL5     none          ---         ---       via additive      ---
+METAL6     none          ---         ---       via additive      ---
+METAL7     none          ---         ---       via additive      ---
+METAL8     none          ---         ---       via additive      ---
+Legalizing 12 illegal cells...
+Starting legalizer.
+Initial legalization:  10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0 sec)
+Optimizations pass 1: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 2: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 3: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Legalization complete (0 total sec)
+ 
+****************************************
+  Report : Legalize Displacement
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:17 2024
+****************************************
+
+avg cell displacement:    1.473 um ( 0.40 row height)
+max cell displacement:    3.940 um ( 1.07 row height)
+std deviation:            1.211 um ( 0.33 row height)
+number of cell moved:        42 cells (out of 4252 cells)
+
+Total 0 cells has large displacement (e.g. > 11.070 um or 3 row height)
+
+
+  Placement Legalization Complete
+  -------------------------------
+
+Information: Updating database...
+Unsetting the GR Options
+LR: 3 out of 5 clock nets rerouted
+LR: Clock routing service terminated
+Invalidate design extracted status
+Optimize clock tree Successful...
+Setting hold fix requirement...
+Performing optimization...
+
+  Loading design 'IOTDF'
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+Information: Library Manufacturing Grid(GridResolution) : 5
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Information: Design Library and main library resistance units are matched - 1.000 kohm. 
+Information: Capacitance Unit from Milkyway design library: 'pf' 
+Information: Design Library and main library capacitance units are matched - 1.000 pf. 
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL1 : 0.00022 0.00022 (RCEX-011)
+Information: Library Derived Res for layer METAL1 : 0.00065 0.00065 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL7 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL7 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL8 : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Res for layer METAL8 : 6.7e-05 6.7e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00044 0.00044 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00028 0.00028 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00078 0.00078 (RCEX-011)
+
+                  Incremental high fanout optimization starts
+================================================================
+
+ Collecting Buffer Trees ... Found 0
+
+                  Incremental high fanout optimization completes
+================================================================
+
+
+  Design  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 0
+  Total moveable cell area: 41073.7
+  Total fixed cell area: 118.8
+  Total physical cell area: 41192.5
+  Core area: (5000 5000 243740 241160)
+
+
+
+  Design (Hold)  WNS: 0.2843  TNS: 27.0006  Number of Violating Paths: 130
+
+  Timing and DRC Optimization (Stage 1)
+  --------------------------------------
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01   41192.5      0.00       0.0       0.0                              -27.00
+
+
+  Beginning Phase 1 Design Rule Fixing  (min_path)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01   41192.5      0.00       0.0       0.0                              -27.00
+    0:00:02   42769.4      0.00       0.0       0.0                                0.00
+    0:00:02   42670.9      0.00       0.0       0.0                                0.00
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+    0:00:02   42124.4      0.00       0.0       0.0                                0.00
+
+  Optimization Complete
+  ---------------------
+
+  Placement Optimization (Stage 1)
+  -----------------------------------------------------
+
+Information: Running stand-alone coarse placer in a separate process using temp directory '/tmp'. (PSYN-605)
+33%...50%...67%...83%...100% done.
+
+Information: Analyzing channel congestion ... 
+Information: Channel congestion analysis detected 0 channels, edges and corners
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+ 
+****************************************
+  Report : Chip Summary
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:23 2024
+****************************************
+Std cell utilization: 74.71%  (24817/(33216-0))
+(Non-fixed + Fixed)
+Std cell utilization: 74.66%  (24747/(33216-70))
+(Non-fixed only)
+Chip area:            33216    sites, bbox (5.00 5.00 243.74 241.16) um
+Std cell area:        24817    sites, (non-fixed:24747  fixed:70)
+                      4377     cells, (non-fixed:4373   fixed:4)
+Macro cell area:      0        sites
+                      0        cells
+Placement blockages:  0        sites, (excluding fixed std cells)
+                      70       sites, (include fixed std cells & chimney area)
+                      0        sites, (complete p/g net blockages)
+Routing blockages:    0        sites, (partial p/g net blockages)
+                      0        sites, (routing blockages and signal pre-route)
+Lib cell count:       78 
+Avg. std cell width:  2.82 um 
+Site array:           unit     (width: 0.46 um, height: 3.69 um, rows: 64)
+Physical DB scale:    1000 db_unit = 1 um 
+
+ 
+****************************************
+  Report : pnet options
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:23 2024
+****************************************
+
+
+--------------------------------------------------------------------
+Layer      Blockage   Min_width   Min_height   Via_additive     Density
+--------------------------------------------------------------------
+METAL1     none          ---         ---       via additive      ---
+METAL2     none          ---         ---       via additive      ---
+METAL3     none          ---         ---       via additive      ---
+METAL4     none          ---         ---       via additive      ---
+METAL5     none          ---         ---       via additive      ---
+METAL6     none          ---         ---       via additive      ---
+METAL7     none          ---         ---       via additive      ---
+METAL8     none          ---         ---       via additive      ---
+Legalizing 4276 illegal cells...
+Starting legalizer.
+Initial legalization:  10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0 sec)
+Optimizations pass 1: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 2: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 3: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Legalization complete (0 total sec)
+ 
+****************************************
+  Report : Legalize Displacement
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:23 2024
+****************************************
+
+avg cell displacement:    0.809 um ( 0.22 row height)
+max cell displacement:    2.346 um ( 0.64 row height)
+std deviation:            0.545 um ( 0.15 row height)
+number of cell moved:      3974 cells (out of 4373 cells)
+
+Total 0 cells has large displacement (e.g. > 11.070 um or 3 row height)
+
+
+  Placement Optimization Complete
+  -------------------------------
+
+
+  Design  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 0
+  Total moveable cell area: 42005.6
+  Total fixed cell area: 118.8
+  Total physical cell area: 42124.4
+  Core area: (5000 5000 243740 241160)
+
+
+
+  Design (Hold)  WNS: 0.0720  TNS: 0.2052  Number of Violating Paths: 8
+
+  Timing and DRC Optimization (Stage 2)
+  --------------------------------------
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07   42124.4      0.00       0.0       0.0                               -0.21
+
+
+  Beginning Phase 1 Design Rule Fixing  (min_path)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                             MIN DELAY
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            COST   
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07   42124.4      0.00       0.0       0.0                               -0.21
+    0:00:07   42178.7      0.00       0.0       0.0                                0.00
+    0:00:07   42178.7      0.00       0.0       0.0                                0.00
+    0:00:07   42178.7      0.00       0.0       0.0                                0.00
+    0:00:07   42178.7      0.00       0.0       0.0                                0.00
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+Warning: Warning: Target library does not have any constant lib_cells so tool cannot replace virtual constants.  (OPT-223)
+
+  Optimization Complete
+  ---------------------
+
+  Placement Optimization (Stage 2)
+  -----------------------------------------------------
+
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+ 
+****************************************
+  Report : Chip Summary
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:24 2024
+****************************************
+Std cell utilization: 74.81%  (24849/(33216-0))
+(Non-fixed + Fixed)
+Std cell utilization: 74.76%  (24779/(33216-70))
+(Non-fixed only)
+Chip area:            33216    sites, bbox (5.00 5.00 243.74 241.16) um
+Std cell area:        24849    sites, (non-fixed:24779  fixed:70)
+                      4385     cells, (non-fixed:4381   fixed:4)
+Macro cell area:      0        sites
+                      0        cells
+Placement blockages:  0        sites, (excluding fixed std cells)
+                      70       sites, (include fixed std cells & chimney area)
+                      0        sites, (complete p/g net blockages)
+Routing blockages:    0        sites, (partial p/g net blockages)
+                      0        sites, (routing blockages and signal pre-route)
+Lib cell count:       78 
+Avg. std cell width:  2.82 um 
+Site array:           unit     (width: 0.46 um, height: 3.69 um, rows: 64)
+Physical DB scale:    1000 db_unit = 1 um 
+
+ 
+****************************************
+  Report : pnet options
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:24 2024
+****************************************
+
+
+--------------------------------------------------------------------
+Layer      Blockage   Min_width   Min_height   Via_additive     Density
+--------------------------------------------------------------------
+METAL1     none          ---         ---       via additive      ---
+METAL2     none          ---         ---       via additive      ---
+METAL3     none          ---         ---       via additive      ---
+METAL4     none          ---         ---       via additive      ---
+METAL5     none          ---         ---       via additive      ---
+METAL6     none          ---         ---       via additive      ---
+METAL7     none          ---         ---       via additive      ---
+METAL8     none          ---         ---       via additive      ---
+Legalizing 9 illegal cells...
+Starting legalizer.
+Initial legalization:  10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0 sec)
+Optimizations pass 1: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 2: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Optimizations pass 3: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% (0.0 sec)
+Legalization complete (0 total sec)
+ 
+****************************************
+  Report : Legalize Displacement
+  Design : IOTDF
+  Version: J-2014.09-SP1
+  Date   : Tue May  7 03:55:24 2024
+****************************************
+
+avg cell displacement:    1.400 um ( 0.38 row height)
+max cell displacement:    3.690 um ( 1.00 row height)
+std deviation:            1.099 um ( 0.30 row height)
+number of cell moved:         7 cells (out of 4381 cells)
+
+Total 0 cells has large displacement (e.g. > 11.070 um or 3 row height)
+
+
+  Placement Optimization Complete
+  -------------------------------
+
+
+  Design  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+
+  Nets with DRC Violations: 0
+  Total moveable cell area: 42059.9
+  Total fixed cell area: 118.8
+  Total physical cell area: 42178.7
+  Core area: (5000 5000 243740 241160)
+
+
+
+  Design (Hold)  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+Warning: Die area is not integer multiples of min site height (3690), object's width and height(248740,246160). (PSYN-523)
+Warning: Die area is not integer multiples of min site width (460), object's width and height(248740,246160). (PSYN-523)
+
+**************************************************** 
+Check_legality: Report for Fixed Placement Cells
+Information: Use the -verbose option to get details about the legality violations. (PSYN-054)
+**************************************************** 
+(fixed placement) Cells Not on Row            : 0
+(fixed placement) Cell Overlaps               : 0
+(fixed placement) Cells overlapping blockages : 0
+(fixed placement) Orientation Violations      : 0
+(fixed placement) Site Violations             : 0
+(fixed placement) Power Strap Violations      : 0
+****************************************************** 
+
+****************************************************** 
+Check_legality: Report for Non-fixed Placement Cells
+Information: Use the -verbose option to get details about the legality violations. (PSYN-054)
+****************************************************** 
+Number of Cells Not on Row            : 0
+Number of Cell Overlaps               : 0
+Number of Cells overlapping blockages : 0
+Number of Orientation Violations      : 0
+Number of Site Violations             : 0
+Number of Power Strap Violations      : 0
+******************************************** 
+Information: Updating database...
+Unsetting hold fix requirement...
+clock_opt completed Successfully
+1
+derive_pg_connection -power_pin {VDD} -ground_pin {VSS} -power_net {VDD} -ground_net {VSS}
+Information: connected 135 power ports and 135 ground ports
+1
+# 5. Routing
+route_zrt_group -all_clock_nets
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = METAL1
+Cell Max-Routing-Layer = METAL8
+Via on layer (VIA78) needs more than one tracks
+Warning: Layer METAL7 pitch 0.410 may be too small: wire/via-down 0.410, wire/via-up 0.500. (ZRT-026)
+Transition layer name: METAL7(6)
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used   22  Alloctr   23  Proc 1026 
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_global_options'
+
+Begin global routing.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00,0.00,248.74,246.16)
+Number of routing layers = 8
+layer METAL1, dir Hor, min width = 0.16, min space = 0.18 pitch = 0.41
+layer METAL2, dir Ver, min width = 0.20, min space = 0.21 pitch = 0.46
+layer METAL3, dir Hor, min width = 0.20, min space = 0.21 pitch = 0.41
+layer METAL4, dir Ver, min width = 0.20, min space = 0.21 pitch = 0.46
+layer METAL5, dir Hor, min width = 0.20, min space = 0.21 pitch = 0.41
+layer METAL6, dir Ver, min width = 0.20, min space = 0.21 pitch = 0.46
+layer METAL7, dir Hor, min width = 0.20, min space = 0.21 pitch = 0.41
+layer METAL8, dir Ver, min width = 0.40, min space = 0.42 pitch = 1.00
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Tech Data] Total (MB): Used   23  Alloctr   23  Proc 1026 
+Net statistics:
+Total number of nets     = 4702
+Number of nets to route  = 5
+Number of single or zero port nets = 1
+Number of nets with min-layer-mode soft = 11
+Number of nets with min-layer-mode soft-cost-medium = 11
+Number of nets with max-layer-mode hard = 3
+3 nets are partially connected,
+ of which 0 are detail routed and 3 are global routed.
+4 nets are fully connected,
+ of which 2 are detail routed and 2 are global routed.
+Information: 5 of the existing global routes are deleted. (ZRT-102)
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Build All Nets] Total (MB): Used   24  Alloctr   25  Proc 1026 
+Average gCell capacity  0.87     on layer (1)    METAL1
+Average gCell capacity  7.46     on layer (2)    METAL2
+Average gCell capacity  8.59     on layer (3)    METAL3
+Average gCell capacity  6.33     on layer (4)    METAL4
+Average gCell capacity  6.94     on layer (5)    METAL5
+Average gCell capacity  8.17     on layer (6)    METAL6
+Average gCell capacity  9.08     on layer (7)    METAL7
+Average gCell capacity  3.74     on layer (8)    METAL8
+Average number of tracks per gCell 9.11  on layer (1)    METAL1
+Average number of tracks per gCell 8.21  on layer (2)    METAL2
+Average number of tracks per gCell 9.11  on layer (3)    METAL3
+Average number of tracks per gCell 8.21  on layer (4)    METAL4
+Average number of tracks per gCell 9.11  on layer (5)    METAL5
+Average number of tracks per gCell 8.21  on layer (6)    METAL6
+Average number of tracks per gCell 9.11  on layer (7)    METAL7
+Average number of tracks per gCell 3.79  on layer (8)    METAL8
+Number of gCells = 34848
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Congestion map] Total (MB): Used   24  Alloctr   25  Proc 1026 
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Build Data] Total (MB): Used   24  Alloctr   25  Proc 1026 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used   24  Alloctr   25  Proc 1026 
+Information: Using 1 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used   24  Alloctr   25  Proc 1026 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =     0 Max = 0 GRCs =     0 (0.00%)
+Initial. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL1     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL2     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL3     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL4     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 3987.30
+Initial. Layer METAL1 wire length = 0.00
+Initial. Layer METAL2 wire length = 58.94
+Initial. Layer METAL3 wire length = 1935.10
+Initial. Layer METAL4 wire length = 1595.49
+Initial. Layer METAL5 wire length = 0.00
+Initial. Layer METAL6 wire length = 0.00
+Initial. Layer METAL7 wire length = 275.73
+Initial. Layer METAL8 wire length = 122.05
+Initial. Total Number of Contacts = 1276
+Initial. Via via1 count = 429
+Initial. Via via2 count = 441
+Initial. Via via3 count = 381
+Initial. Via via4 count = 6
+Initial. Via via5 count = 6
+Initial. Via via6 count = 6
+Initial. Via via7 count = 7
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used   24  Alloctr   25  Proc 1026 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =     0 Max = 0 GRCs =     0 (0.00%)
+phase1. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL1     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL2     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL3     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL4     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 3987.30
+phase1. Layer METAL1 wire length = 0.00
+phase1. Layer METAL2 wire length = 58.94
+phase1. Layer METAL3 wire length = 1935.10
+phase1. Layer METAL4 wire length = 1595.49
+phase1. Layer METAL5 wire length = 0.00
+phase1. Layer METAL6 wire length = 0.00
+phase1. Layer METAL7 wire length = 275.73
+phase1. Layer METAL8 wire length = 122.05
+phase1. Total Number of Contacts = 1276
+phase1. Via via1 count = 429
+phase1. Via via2 count = 441
+phase1. Via via3 count = 381
+phase1. Via via4 count = 6
+phase1. Via via5 count = 6
+phase1. Via via6 count = 6
+phase1. Via via7 count = 7
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used   24  Alloctr   25  Proc 1026 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =     0 Max = 0 GRCs =     0 (0.00%)
+phase2. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL1     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL2     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL3     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL4     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 3987.30
+phase2. Layer METAL1 wire length = 0.00
+phase2. Layer METAL2 wire length = 58.94
+phase2. Layer METAL3 wire length = 1935.10
+phase2. Layer METAL4 wire length = 1595.49
+phase2. Layer METAL5 wire length = 0.00
+phase2. Layer METAL6 wire length = 0.00
+phase2. Layer METAL7 wire length = 275.73
+phase2. Layer METAL8 wire length = 122.05
+phase2. Total Number of Contacts = 1276
+phase2. Via via1 count = 429
+phase2. Via via2 count = 441
+phase2. Via via3 count = 381
+phase2. Via via4 count = 6
+phase2. Via via5 count = 6
+phase2. Via via6 count = 6
+phase2. Via via7 count = 7
+phase2. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used   24  Alloctr   25  Proc 1026 
+
+Congestion utilization per direction:
+Average vertical track utilization   =  0.55 %
+Peak    vertical track utilization   = 14.29 %
+Average horizontal track utilization =  0.82 %
+Peak    horizontal track utilization = 15.00 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[GR: Done] Total (MB): Used   24  Alloctr   25  Proc 1026 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[GR: Done] Total (MB): Used   24  Alloctr   25  Proc 1026 
+Updating congestion ...
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:00 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Global Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Global Routing] Total (MB): Used   22  Alloctr   23  Proc 1026 
+
+Start track assignment
+
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_track_options'
+
+Information: Using 1 threads for routing. (ZRT-444)
+
+[Track Assign: Read routes] Elapsed real time: 0:00:00 
+[Track Assign: Read routes] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Read routes] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: Read routes] Total (MB): Used   19  Alloctr   20  Proc 1026 
+
+Start initial assignment
+
+Assign Horizontal partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Number of wires with overlap after iteration 0 = 107 of 1383
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 0] Stage (MB): Used    1  Alloctr    1  Proc   11 
+[Track Assign: Iteration 0] Total (MB): Used   20  Alloctr   20  Proc 1037 
+
+Reroute to fix overlaps
+
+Assign Horizontal partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 1] Stage (MB): Used    1  Alloctr    1  Proc   11 
+[Track Assign: Iteration 1] Total (MB): Used   20  Alloctr   20  Proc 1037 
+
+Number of wires with overlap after iteration 1 = 10 of 819
+
+
+Wire length and via report:
+---------------------------
+Number of METAL1 wires: 1                CONT1: 0
+Number of METAL2 wires: 54               via1: 433
+Number of METAL3 wires: 461              via2: 449
+Number of METAL4 wires: 294              via3: 413
+Number of METAL5 wires: 1                via4: 6
+Number of METAL6 wires: 0                via5: 6
+Number of METAL7 wires: 4                via6: 6
+Number of METAL8 wires: 4                via7: 7
+Total number of wires: 819               vias: 1320
+
+Total METAL1 wire length: 0.5
+Total METAL2 wire length: 94.8
+Total METAL3 wire length: 1933.3
+Total METAL4 wire length: 1592.1
+Total METAL5 wire length: 0.7
+Total METAL6 wire length: 0.0
+Total METAL7 wire length: 276.7
+Total METAL8 wire length: 121.4
+Total wire length: 4019.4
+
+Longest METAL1 wire length: 0.5
+Longest METAL2 wire length: 4.5
+Longest METAL3 wire length: 21.6
+Longest METAL4 wire length: 19.3
+Longest METAL5 wire length: 0.7
+Longest METAL6 wire length: 0.0
+Longest METAL7 wire length: 114.0
+Longest METAL8 wire length: 95.5
+
+
+[Track Assign: Done] Elapsed real time: 0:00:00 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Done] Stage (MB): Used    0  Alloctr    0  Proc   11 
+[Track Assign: Done] Total (MB): Used   18  Alloctr   19  Proc 1037 
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_detail_options'
+
+[Dr init] Elapsed real time: 0:00:00 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Dr init] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[Dr init] Total (MB): Used   21  Alloctr   22  Proc 1037 
+Total number of nets = 4702, of which 0 are not extracted
+Total number of open nets = 4694, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Start DR iteration 0: uniform partition
+Routed  1/49 Partitions, Violations =   0
+Routed  2/49 Partitions, Violations =   0
+Routed  3/49 Partitions, Violations =   0
+Routed  4/49 Partitions, Violations =   0
+Routed  5/49 Partitions, Violations =   0
+Routed  6/49 Partitions, Violations =   0
+Routed  7/49 Partitions, Violations =   0
+Routed  8/49 Partitions, Violations =   0
+Routed  9/49 Partitions, Violations =   0
+Routed  10/49 Partitions, Violations =  0
+Routed  11/49 Partitions, Violations =  0
+Routed  12/49 Partitions, Violations =  0
+Routed  13/49 Partitions, Violations =  0
+Routed  14/49 Partitions, Violations =  0
+Routed  15/49 Partitions, Violations =  0
+Routed  16/49 Partitions, Violations =  0
+Routed  17/49 Partitions, Violations =  0
+Routed  18/49 Partitions, Violations =  0
+Routed  19/49 Partitions, Violations =  1
+Routed  20/49 Partitions, Violations =  1
+Routed  21/49 Partitions, Violations =  1
+Routed  22/49 Partitions, Violations =  1
+Routed  23/49 Partitions, Violations =  1
+Routed  24/49 Partitions, Violations =  1
+Routed  25/49 Partitions, Violations =  0
+Routed  26/49 Partitions, Violations =  0
+Routed  27/49 Partitions, Violations =  0
+Routed  28/49 Partitions, Violations =  0
+Routed  29/49 Partitions, Violations =  0
+Routed  30/49 Partitions, Violations =  0
+Routed  31/49 Partitions, Violations =  0
+Routed  32/49 Partitions, Violations =  0
+Routed  33/49 Partitions, Violations =  0
+Routed  34/49 Partitions, Violations =  0
+Routed  35/49 Partitions, Violations =  0
+Routed  36/49 Partitions, Violations =  0
+Routed  37/49 Partitions, Violations =  0
+Routed  38/49 Partitions, Violations =  0
+Routed  39/49 Partitions, Violations =  0
+Routed  40/49 Partitions, Violations =  0
+Routed  41/49 Partitions, Violations =  0
+Routed  42/49 Partitions, Violations =  0
+Routed  43/49 Partitions, Violations =  0
+Routed  44/49 Partitions, Violations =  0
+Routed  45/49 Partitions, Violations =  0
+Routed  46/49 Partitions, Violations =  0
+Routed  47/49 Partitions, Violations =  0
+Routed  48/49 Partitions, Violations =  0
+Routed  49/49 Partitions, Violations =  0
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+[Iter 0] Elapsed real time: 0:00:00 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 0] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[Iter 0] Total (MB): Used   22  Alloctr   23  Proc 1037 
+
+End DR iteration 0 with 49 parts
+
+Finish DR since reached 0 DRC
+
+[DR] Elapsed real time: 0:00:00 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DR] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DR] Total (MB): Used   18  Alloctr   19  Proc 1037 
+[DR: Done] Elapsed real time: 0:00:00 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DR: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DR: Done] Total (MB): Used   18  Alloctr   19  Proc 1037 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 0 violations
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+
+
+Total Wire Length =                    4220 micron
+Total Number of Contacts =             1263
+Total Number of Wires =                821
+Total Number of PtConns =              446
+Total Number of Routed Wires =       821
+Total Routed Wire Length =           4012 micron
+Total Number of Routed Contacts =       1263
+        Layer    METAL1 :          0 micron
+        Layer    METAL2 :        268 micron
+        Layer    METAL3 :       1951 micron
+        Layer    METAL4 :       1595 micron
+        Layer    METAL5 :          3 micron
+        Layer    METAL6 :          3 micron
+        Layer    METAL7 :        278 micron
+        Layer    METAL8 :        121 micron
+        Via        via7 :          7
+        Via        via6 :          6
+        Via        via5 :          6
+        Via        via4 :          6
+        Via        via3 :        402
+        Via        via2 :        427
+        Via        via1 :        408
+        Via   via1(rot) :          1
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 1263 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 409     vias)
+        Un-optimized = 100.00% (409     vias)
+    Layer VIA23      =  0.00% (0      / 427     vias)
+        Un-optimized = 100.00% (427     vias)
+    Layer VIA34      =  0.00% (0      / 402     vias)
+        Un-optimized = 100.00% (402     vias)
+    Layer VIA45      =  0.00% (0      / 6       vias)
+        Un-optimized = 100.00% (6       vias)
+    Layer VIA56      =  0.00% (0      / 6       vias)
+        Un-optimized = 100.00% (6       vias)
+    Layer VIA67      =  0.00% (0      / 6       vias)
+        Un-optimized = 100.00% (6       vias)
+    Layer VIA78      =  0.00% (0      / 7       vias)
+        Un-optimized = 100.00% (7       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 1263 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 409     vias)
+    Layer VIA23      =  0.00% (0      / 427     vias)
+    Layer VIA34      =  0.00% (0      / 402     vias)
+    Layer VIA45      =  0.00% (0      / 6       vias)
+    Layer VIA56      =  0.00% (0      / 6       vias)
+    Layer VIA67      =  0.00% (0      / 6       vias)
+    Layer VIA78      =  0.00% (0      / 7       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 1263 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 409     vias)
+        Un-optimized = 100.00% (409     vias)
+    Layer VIA23      =  0.00% (0      / 427     vias)
+        Un-optimized = 100.00% (427     vias)
+    Layer VIA34      =  0.00% (0      / 402     vias)
+        Un-optimized = 100.00% (402     vias)
+    Layer VIA45      =  0.00% (0      / 6       vias)
+        Un-optimized = 100.00% (6       vias)
+    Layer VIA56      =  0.00% (0      / 6       vias)
+        Un-optimized = 100.00% (6       vias)
+    Layer VIA67      =  0.00% (0      / 6       vias)
+        Un-optimized = 100.00% (6       vias)
+    Layer VIA78      =  0.00% (0      / 7       vias)
+        Un-optimized = 100.00% (7       vias)
+ 
+
+Total number of nets = 4702
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = antenna checking not active
+Total number of voltage-area violations = no voltage-areas defined
+Topology ECO iteration 1 ended with 0 qualifying violations.
+Updating the database ...
+Information: RC extraction has been freed. (PSYN-503)
+1
+route_zrt_auto
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = METAL1
+Cell Max-Routing-Layer = METAL8
+Via on layer (VIA78) needs more than one tracks
+Warning: Layer METAL7 pitch 0.410 may be too small: wire/via-down 0.410, wire/via-up 0.500. (ZRT-026)
+Transition layer name: METAL7(6)
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used   22  Alloctr   23  Proc 1037 
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_global_options'
+
+Begin global routing.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00,0.00,248.74,246.16)
+Number of routing layers = 8
+layer METAL1, dir Hor, min width = 0.16, min space = 0.18 pitch = 0.41
+layer METAL2, dir Ver, min width = 0.20, min space = 0.21 pitch = 0.46
+layer METAL3, dir Hor, min width = 0.20, min space = 0.21 pitch = 0.41
+layer METAL4, dir Ver, min width = 0.20, min space = 0.21 pitch = 0.46
+layer METAL5, dir Hor, min width = 0.20, min space = 0.21 pitch = 0.41
+layer METAL6, dir Ver, min width = 0.20, min space = 0.21 pitch = 0.46
+layer METAL7, dir Hor, min width = 0.20, min space = 0.21 pitch = 0.41
+layer METAL8, dir Ver, min width = 0.40, min space = 0.42 pitch = 1.00
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Tech Data] Total (MB): Used   23  Alloctr   24  Proc 1037 
+Net statistics:
+Total number of nets     = 4702
+Number of nets to route  = 4694
+Number of single or zero port nets = 1
+Number of nets with min-layer-mode soft = 11
+Number of nets with min-layer-mode soft-cost-medium = 11
+Number of nets with max-layer-mode hard = 3
+7 nets are fully connected,
+ of which 7 are detail routed and 0 are global routed.
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Build All Nets] Total (MB): Used   24  Alloctr   25  Proc 1037 
+Average gCell capacity  0.87     on layer (1)    METAL1
+Average gCell capacity  7.46     on layer (2)    METAL2
+Average gCell capacity  8.59     on layer (3)    METAL3
+Average gCell capacity  6.33     on layer (4)    METAL4
+Average gCell capacity  6.94     on layer (5)    METAL5
+Average gCell capacity  8.17     on layer (6)    METAL6
+Average gCell capacity  9.08     on layer (7)    METAL7
+Average gCell capacity  3.74     on layer (8)    METAL8
+Average number of tracks per gCell 9.11  on layer (1)    METAL1
+Average number of tracks per gCell 8.21  on layer (2)    METAL2
+Average number of tracks per gCell 9.11  on layer (3)    METAL3
+Average number of tracks per gCell 8.21  on layer (4)    METAL4
+Average number of tracks per gCell 9.11  on layer (5)    METAL5
+Average number of tracks per gCell 8.21  on layer (6)    METAL6
+Average number of tracks per gCell 9.11  on layer (7)    METAL7
+Average number of tracks per gCell 3.79  on layer (8)    METAL8
+Number of gCells = 34848
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Congestion map] Total (MB): Used   24  Alloctr   25  Proc 1037 
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Build Data] Total (MB): Used   24  Alloctr   25  Proc 1037 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used   24  Alloctr   25  Proc 1037 
+Information: Using 1 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Initial Routing] Total (MB): Used   27  Alloctr   28  Proc 1037 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =   343 Max = 4 GRCs =   446 (4.97%)
+Initial. H routing: Overflow =    81 Max = 2 (GRCs =  6) GRCs =   114 (2.54%)
+Initial. V routing: Overflow =   261 Max = 4 (GRCs =  3) GRCs =   332 (7.40%)
+Initial. METAL1     Overflow =    11 Max = 1 (GRCs =  7) GRCs =    16 (0.36%)
+Initial. METAL2     Overflow =   255 Max = 4 (GRCs =  3) GRCs =   325 (7.24%)
+Initial. METAL3     Overflow =    70 Max = 2 (GRCs =  6) GRCs =    98 (2.18%)
+Initial. METAL4     Overflow =     6 Max = 1 (GRCs =  6) GRCs =     7 (0.16%)
+Initial. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 101793.91
+Initial. Layer METAL1 wire length = 248.97
+Initial. Layer METAL2 wire length = 33231.17
+Initial. Layer METAL3 wire length = 45356.71
+Initial. Layer METAL4 wire length = 18655.04
+Initial. Layer METAL5 wire length = 1366.42
+Initial. Layer METAL6 wire length = 51.16
+Initial. Layer METAL7 wire length = 1534.00
+Initial. Layer METAL8 wire length = 1350.44
+Initial. Total Number of Contacts = 28926
+Initial. Via via1 count = 14090
+Initial. Via via2 count = 11394
+Initial. Via via3 count = 2514
+Initial. Via via4 count = 284
+Initial. Via via5 count = 221
+Initial. Via via6 count = 226
+Initial. Via via7 count = 197
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used   27  Alloctr   28  Proc 1037 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =   197 Max = 4 GRCs =   227 (2.53%)
+phase1. H routing: Overflow =     7 Max = 1 (GRCs =  3) GRCs =    12 (0.27%)
+phase1. V routing: Overflow =   190 Max = 4 (GRCs =  1) GRCs =   215 (4.79%)
+phase1. METAL1     Overflow =     7 Max = 1 (GRCs =  3) GRCs =    12 (0.27%)
+phase1. METAL2     Overflow =   188 Max = 4 (GRCs =  1) GRCs =   213 (4.74%)
+phase1. METAL3     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL4     Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.04%)
+phase1. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 102102.33
+phase1. Layer METAL1 wire length = 246.18
+phase1. Layer METAL2 wire length = 32408.77
+phase1. Layer METAL3 wire length = 44830.54
+phase1. Layer METAL4 wire length = 19676.62
+phase1. Layer METAL5 wire length = 2004.62
+phase1. Layer METAL6 wire length = 51.16
+phase1. Layer METAL7 wire length = 1534.00
+phase1. Layer METAL8 wire length = 1350.44
+phase1. Total Number of Contacts = 29192
+phase1. Via via1 count = 14086
+phase1. Via via2 count = 11409
+phase1. Via via3 count = 2711
+phase1. Via via4 count = 344
+phase1. Via via5 count = 220
+phase1. Via via6 count = 225
+phase1. Via via7 count = 197
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used   27  Alloctr   28  Proc 1037 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =   103 Max = 3 GRCs =   118 (1.31%)
+phase2. H routing: Overflow =     6 Max = 1 (GRCs =  2) GRCs =    11 (0.25%)
+phase2. V routing: Overflow =    97 Max = 3 (GRCs =  2) GRCs =   107 (2.38%)
+phase2. METAL1     Overflow =     6 Max = 1 (GRCs =  2) GRCs =    11 (0.25%)
+phase2. METAL2     Overflow =    96 Max = 3 (GRCs =  2) GRCs =   106 (2.36%)
+phase2. METAL3     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL4     Overflow =     1 Max = 1 (GRCs =  1) GRCs =     1 (0.02%)
+phase2. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 102127.60
+phase2. Layer METAL1 wire length = 244.34
+phase2. Layer METAL2 wire length = 32396.22
+phase2. Layer METAL3 wire length = 44848.50
+phase2. Layer METAL4 wire length = 19698.31
+phase2. Layer METAL5 wire length = 2004.62
+phase2. Layer METAL6 wire length = 51.16
+phase2. Layer METAL7 wire length = 1534.00
+phase2. Layer METAL8 wire length = 1350.44
+phase2. Total Number of Contacts = 29201
+phase2. Via via1 count = 14086
+phase2. Via via2 count = 11414
+phase2. Via via3 count = 2715
+phase2. Via via4 count = 344
+phase2. Via via5 count = 220
+phase2. Via via6 count = 225
+phase2. Via via7 count = 197
+phase2. completed.
+
+Start GR phase 3
+Current Stage stats:
+[End of Phase3 Routing] Elapsed real time: 0:00:00 
+[End of Phase3 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase3 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase3 Routing] Total (MB): Used   27  Alloctr   28  Proc 1037 
+phase3. Routing result:
+phase3. Both Dirs: Overflow =   102 Max = 3 GRCs =   117 (1.30%)
+phase3. H routing: Overflow =     6 Max = 1 (GRCs =  2) GRCs =    11 (0.25%)
+phase3. V routing: Overflow =    96 Max = 3 (GRCs =  2) GRCs =   106 (2.36%)
+phase3. METAL1     Overflow =     6 Max = 1 (GRCs =  2) GRCs =    11 (0.25%)
+phase3. METAL2     Overflow =    96 Max = 3 (GRCs =  2) GRCs =   106 (2.36%)
+phase3. METAL3     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. METAL4     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. METAL5     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. METAL6     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. METAL7     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. METAL8     Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase3. Total Wire Length = 102129.89
+phase3. Layer METAL1 wire length = 244.34
+phase3. Layer METAL2 wire length = 32396.22
+phase3. Layer METAL3 wire length = 44851.26
+phase3. Layer METAL4 wire length = 19698.31
+phase3. Layer METAL5 wire length = 2004.62
+phase3. Layer METAL6 wire length = 51.16
+phase3. Layer METAL7 wire length = 1533.54
+phase3. Layer METAL8 wire length = 1350.44
+phase3. Total Number of Contacts = 29200
+phase3. Via via1 count = 14086
+phase3. Via via2 count = 11414
+phase3. Via via3 count = 2715
+phase3. Via via4 count = 344
+phase3. Via via5 count = 220
+phase3. Via via6 count = 225
+phase3. Via via7 count = 196
+phase3. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used    4  Alloctr    4  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used   27  Alloctr   28  Proc 1037 
+
+Congestion utilization per direction:
+Average vertical track utilization   = 22.17 %
+Peak    vertical track utilization   = 57.14 %
+Average horizontal track utilization = 18.99 %
+Peak    horizontal track utilization = 60.00 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[GR: Done] Total (MB): Used   27  Alloctr   27  Proc 1037 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used    4  Alloctr    4  Proc    0 
+[GR: Done] Total (MB): Used   27  Alloctr   27  Proc 1037 
+Updating congestion ...
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:00 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Global Routing] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Global Routing] Total (MB): Used   25  Alloctr   26  Proc 1037 
+
+Start track assignment
+
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_track_options'
+
+Information: Using 1 threads for routing. (ZRT-444)
+
+[Track Assign: Read routes] Elapsed real time: 0:00:00 
+[Track Assign: Read routes] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Read routes] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[Track Assign: Read routes] Total (MB): Used   27  Alloctr   27  Proc 1037 
+
+Start initial assignment
+
+Assign Horizontal partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Number of wires with overlap after iteration 0 = 11113 of 37692
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 0] Stage (MB): Used    1  Alloctr    2  Proc    3 
+[Track Assign: Iteration 0] Total (MB): Used   27  Alloctr   28  Proc 1041 
+
+Reroute to fix overlaps
+
+Assign Horizontal partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 1] Stage (MB): Used    1  Alloctr    2  Proc    3 
+[Track Assign: Iteration 1] Total (MB): Used   27  Alloctr   28  Proc 1041 
+
+Number of wires with overlap after iteration 1 = 5185 of 28667
+
+
+Wire length and via report:
+---------------------------
+Number of METAL1 wires: 1662             CONT1: 0
+Number of METAL2 wires: 15011            via1: 15378
+Number of METAL3 wires: 9924             via2: 15116
+Number of METAL4 wires: 1568             via3: 2968
+Number of METAL5 wires: 93               via4: 378
+Number of METAL6 wires: 26               via5: 241
+Number of METAL7 wires: 215              via6: 246
+Number of METAL8 wires: 168              via7: 207
+Total number of wires: 28667             vias: 34534
+
+Total METAL1 wire length: 1103.3
+Total METAL2 wire length: 35719.4
+Total METAL3 wire length: 47502.9
+Total METAL4 wire length: 19198.8
+Total METAL5 wire length: 2119.4
+Total METAL6 wire length: 57.9
+Total METAL7 wire length: 1506.5
+Total METAL8 wire length: 1340.4
+Total wire length: 108548.6
+
+Longest METAL1 wire length: 30.8
+Longest METAL2 wire length: 49.3
+Longest METAL3 wire length: 108.6
+Longest METAL4 wire length: 115.6
+Longest METAL5 wire length: 105.3
+Longest METAL6 wire length: 5.3
+Longest METAL7 wire length: 40.5
+Longest METAL8 wire length: 60.3
+
+
+[Track Assign: Done] Elapsed real time: 0:00:01 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Track Assign: Done] Stage (MB): Used    0  Alloctr    0  Proc    3 
+[Track Assign: Done] Total (MB): Used   26  Alloctr   27  Proc 1041 
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_detail_options'
+
+[Dr init] Elapsed real time: 0:00:00 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Dr init] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[Dr init] Total (MB): Used   28  Alloctr   29  Proc 1041 
+Total number of nets = 4702, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Start DR iteration 0: uniform partition
+Routed  1/49 Partitions, Violations =   0
+Routed  2/49 Partitions, Violations =   5
+Routed  3/49 Partitions, Violations =   13
+Routed  4/49 Partitions, Violations =   21
+Routed  5/49 Partitions, Violations =   17
+Routed  6/49 Partitions, Violations =   13
+Routed  7/49 Partitions, Violations =   6
+Routed  8/49 Partitions, Violations =   31
+Routed  9/49 Partitions, Violations =   29
+Routed  10/49 Partitions, Violations =  32
+Routed  11/49 Partitions, Violations =  47
+Routed  12/49 Partitions, Violations =  28
+Routed  13/49 Partitions, Violations =  57
+Routed  14/49 Partitions, Violations =  61
+Routed  15/49 Partitions, Violations =  61
+Routed  16/49 Partitions, Violations =  51
+Routed  17/49 Partitions, Violations =  64
+Routed  18/49 Partitions, Violations =  34
+Routed  19/49 Partitions, Violations =  29
+Routed  20/49 Partitions, Violations =  39
+Routed  21/49 Partitions, Violations =  43
+Routed  22/49 Partitions, Violations =  43
+Routed  23/49 Partitions, Violations =  45
+Routed  24/49 Partitions, Violations =  52
+Routed  25/49 Partitions, Violations =  48
+Routed  26/49 Partitions, Violations =  51
+Routed  27/49 Partitions, Violations =  51
+Routed  28/49 Partitions, Violations =  52
+Routed  29/49 Partitions, Violations =  39
+Routed  30/49 Partitions, Violations =  32
+Routed  31/49 Partitions, Violations =  39
+Routed  32/49 Partitions, Violations =  35
+Routed  33/49 Partitions, Violations =  29
+Routed  34/49 Partitions, Violations =  27
+Routed  35/49 Partitions, Violations =  14
+Routed  36/49 Partitions, Violations =  39
+Routed  37/49 Partitions, Violations =  39
+Routed  38/49 Partitions, Violations =  43
+Routed  39/49 Partitions, Violations =  41
+Routed  40/49 Partitions, Violations =  18
+Routed  41/49 Partitions, Violations =  27
+Routed  42/49 Partitions, Violations =  35
+Routed  43/49 Partitions, Violations =  31
+Routed  44/49 Partitions, Violations =  13
+Routed  45/49 Partitions, Violations =  20
+Routed  46/49 Partitions, Violations =  17
+Routed  47/49 Partitions, Violations =  14
+Routed  48/49 Partitions, Violations =  4
+Routed  49/49 Partitions, Violations =  2
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      2
+        Internal-only types : 2
+
+[Iter 0] Elapsed real time: 0:00:02 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Iter 0] Stage (MB): Used    4  Alloctr    3  Proc    1 
+[Iter 0] Total (MB): Used   30  Alloctr   31  Proc 1042 
+
+End DR iteration 0 with 49 parts
+
+Start DR iteration 1: non-uniform partition
+Routed  1/2 Partitions, Violations =    1
+Routed  2/2 Partitions, Violations =    0
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+[Iter 1] Elapsed real time: 0:00:02 
+[Iter 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Iter 1] Stage (MB): Used    4  Alloctr    3  Proc    1 
+[Iter 1] Total (MB): Used   30  Alloctr   31  Proc 1042 
+
+End DR iteration 1 with 2 parts
+
+Finish DR since reached 0 DRC
+
+[DR] Elapsed real time: 0:00:02 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[DR] Stage (MB): Used    0  Alloctr    0  Proc    1 
+[DR] Total (MB): Used   26  Alloctr   27  Proc 1042 
+[DR: Done] Elapsed real time: 0:00:02 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[DR: Done] Stage (MB): Used    0  Alloctr    0  Proc    1 
+[DR: Done] Total (MB): Used   26  Alloctr   27  Proc 1042 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 0 violations
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+
+
+Total Wire Length =                    115012 micron
+Total Number of Contacts =             35305
+Total Number of Wires =                30809
+Total Number of PtConns =              6698
+Total Number of Routed Wires =       30809
+Total Routed Wire Length =           112511 micron
+Total Number of Routed Contacts =       35305
+        Layer    METAL1 :       1442 micron
+        Layer    METAL2 :      36321 micron
+        Layer    METAL3 :      49328 micron
+        Layer    METAL4 :      22243 micron
+        Layer    METAL5 :       2212 micron
+        Layer    METAL6 :        157 micron
+        Layer    METAL7 :       1860 micron
+        Layer    METAL8 :       1449 micron
+        Via        via7 :        196
+        Via        via6 :        240
+        Via        via5 :        231
+        Via        via4 :        369
+        Via        via3 :       3728
+        Via        via2 :      15141
+        Via   via2(rot) :          1
+        Via        via1 :      15270
+        Via   via1(rot) :        129
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 35305 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 15399   vias)
+        Un-optimized = 100.00% (15399   vias)
+    Layer VIA23      =  0.00% (0      / 15142   vias)
+        Un-optimized = 100.00% (15142   vias)
+    Layer VIA34      =  0.00% (0      / 3728    vias)
+        Un-optimized = 100.00% (3728    vias)
+    Layer VIA45      =  0.00% (0      / 369     vias)
+        Un-optimized = 100.00% (369     vias)
+    Layer VIA56      =  0.00% (0      / 231     vias)
+        Un-optimized = 100.00% (231     vias)
+    Layer VIA67      =  0.00% (0      / 240     vias)
+        Un-optimized = 100.00% (240     vias)
+    Layer VIA78      =  0.00% (0      / 196     vias)
+        Un-optimized = 100.00% (196     vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 35305 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 15399   vias)
+    Layer VIA23      =  0.00% (0      / 15142   vias)
+    Layer VIA34      =  0.00% (0      / 3728    vias)
+    Layer VIA45      =  0.00% (0      / 369     vias)
+    Layer VIA56      =  0.00% (0      / 231     vias)
+    Layer VIA67      =  0.00% (0      / 240     vias)
+    Layer VIA78      =  0.00% (0      / 196     vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 35305 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 15399   vias)
+        Un-optimized = 100.00% (15399   vias)
+    Layer VIA23      =  0.00% (0      / 15142   vias)
+        Un-optimized = 100.00% (15142   vias)
+    Layer VIA34      =  0.00% (0      / 3728    vias)
+        Un-optimized = 100.00% (3728    vias)
+    Layer VIA45      =  0.00% (0      / 369     vias)
+        Un-optimized = 100.00% (369     vias)
+    Layer VIA56      =  0.00% (0      / 231     vias)
+        Un-optimized = 100.00% (231     vias)
+    Layer VIA67      =  0.00% (0      / 240     vias)
+        Un-optimized = 100.00% (240     vias)
+    Layer VIA78      =  0.00% (0      / 196     vias)
+        Un-optimized = 100.00% (196     vias)
+ 
+
+Total number of nets = 4702
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = antenna checking not active
+Total number of voltage-area violations = no voltage-areas defined
+Topology ECO iteration 1 ended with 0 qualifying violations.
+Updating the database ...
+Information: RC extraction has been freed. (PSYN-503)
+1
+derive_pg_connection -power_pin {VDD} -ground_pin {VSS} -power_net {VDD} -ground_net {VSS}
+Information: connected 0 power ports and 0 ground ports
+1
+insert_stdcell_filler -cell_without_metal "FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1" -connect_to_power {VDD} -connect_to_ground {VSS}
+ VA selected:  
+ignorePGRail 1 ignoreDpt 1 ignoreBetweenFillers 1
+-->clean up DB before adding filler
+User specify 7 filler masters
+
+
+
+=== Filler Cell Insertion ======
+PARAM: respectMacroPadding = FALSE
+PARAM: respectPlacementBlockage = TRUE
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 8 routable metal layers
+    This is considered as a 8-metal-layer design
+    Reading library information from DB ...
+  Reading netlist information from DB ...
+    4385 placeable cells
+    0 cover cells
+    144 IO cells/pins
+    4529 cell instances
+  Sorting cells, nets, pins ...
+    net pin threshold = 33
+  Reading misc information ...
+    array <unit> has 0 vertical and 64 horizontal rows
+    44 pre-routes for placement blockage/checking
+    109 pre-routes for map congestion calculation
+    Auto Set : first cut = horizontal
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+  Processing std cells for voltage threshold type...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+  Preprocessing design ...
+    processing macro cells (if any)
+    processing preroute blockages (if any)
+    processing hard placement blockages (if any)
+    processing soft placement blockages (if any)
+    Auto Set : first cut = horizontal
+    processing std cells
+    Pass I: adjust placeable rows
+    Pass II: mark placed cells
+    split into 64 row segments
+  Processing filler cells...
+Hierarchical update for new filler cells
+
+INFO: Fillers rules in use ...
+
+  ** LR Filler Rules ** 
+
+  ** VT Filler Rules ** 
+
+Filling cell with master <FILL64> and connecting PG nets...
+    The first filler cell name is xofiller!FILL64!1
+    The last filler cell name is xofiller!FILL64!1
+    1 filler cells with master <FILL64> were inserted
+Filling cell with master <FILL32> and connecting PG nets...
+    The first filler cell name is xofiller!FILL32!1
+    The last filler cell name is xofiller!FILL32!4
+    4 filler cells with master <FILL32> were inserted
+Filling cell with master <FILL16> and connecting PG nets...
+    The first filler cell name is xofiller!FILL16!1
+    The last filler cell name is xofiller!FILL16!28
+    28 filler cells with master <FILL16> were inserted
+Filling cell with master <FILL8> and connecting PG nets...
+    The first filler cell name is xofiller!FILL8!1
+    The last filler cell name is xofiller!FILL8!112
+    112 filler cells with master <FILL8> were inserted
+Filling cell with master <FILL4> and connecting PG nets...
+    The first filler cell name is xofiller!FILL4!1
+    The last filler cell name is xofiller!FILL4!438
+    438 filler cells with master <FILL4> were inserted
+Filling cell with master <FILL2> and connecting PG nets...
+    The first filler cell name is xofiller!FILL2!1
+    The last filler cell name is xofiller!FILL2!1612
+    1612 filler cells with master <FILL2> were inserted
+Filling cell with master <FILL1> and connecting PG nets...
+    The first filler cell name is xofiller!FILL1!1
+    The last filler cell name is xofiller!FILL1!1855
+    1855 filler cells with master <FILL1> were inserted
+=== End of Filler Cell Insertion ===
+
+
+-->clean up DB after adding filler
+route_zrt_detail -incremental true -initial_drc_from_input true
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = METAL1
+Cell Max-Routing-Layer = METAL8
+Via on layer (VIA78) needs more than one tracks
+Warning: Layer METAL7 pitch 0.410 may be too small: wire/via-down 0.410, wire/via-up 0.500. (ZRT-026)
+Transition layer name: METAL7(6)
+Printing options for 'set_route_zrt_common_options'
+
+Printing options for 'set_route_zrt_detail_options'
+
+[Dr init] Elapsed real time: 0:00:00 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Dr init] Stage (MB): Used   24  Alloctr   24  Proc    0 
+[Dr init] Total (MB): Used   25  Alloctr   25  Proc 1042 
+Total number of nets = 4702, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Routing in incremental mode, starting from iteration 2
+
+Finish DR since reached 0 DRC
+
+[DR] Elapsed real time: 0:00:00 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DR] Stage (MB): Used   22  Alloctr   22  Proc    0 
+[DR] Total (MB): Used   22  Alloctr   23  Proc 1042 
+[DR: Done] Elapsed real time: 0:00:00 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DR: Done] Stage (MB): Used   22  Alloctr   22  Proc    0 
+[DR: Done] Total (MB): Used   22  Alloctr   23  Proc 1042 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 0 violations
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+
+
+Total Wire Length =                    115013 micron
+Total Number of Contacts =             35305
+Total Number of Wires =                30807
+Total Number of PtConns =              6700
+Total Number of Routed Wires =       30807
+Total Routed Wire Length =           112512 micron
+Total Number of Routed Contacts =       35305
+        Layer    METAL1 :       1442 micron
+        Layer    METAL2 :      36321 micron
+        Layer    METAL3 :      49328 micron
+        Layer    METAL4 :      22243 micron
+        Layer    METAL5 :       2212 micron
+        Layer    METAL6 :        157 micron
+        Layer    METAL7 :       1860 micron
+        Layer    METAL8 :       1450 micron
+        Via        via7 :        196
+        Via        via6 :        240
+        Via        via5 :        231
+        Via        via4 :        369
+        Via        via3 :       3728
+        Via        via2 :      15141
+        Via   via2(rot) :          1
+        Via        via1 :      15270
+        Via   via1(rot) :        129
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 35305 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 15399   vias)
+        Un-optimized = 100.00% (15399   vias)
+    Layer VIA23      =  0.00% (0      / 15142   vias)
+        Un-optimized = 100.00% (15142   vias)
+    Layer VIA34      =  0.00% (0      / 3728    vias)
+        Un-optimized = 100.00% (3728    vias)
+    Layer VIA45      =  0.00% (0      / 369     vias)
+        Un-optimized = 100.00% (369     vias)
+    Layer VIA56      =  0.00% (0      / 231     vias)
+        Un-optimized = 100.00% (231     vias)
+    Layer VIA67      =  0.00% (0      / 240     vias)
+        Un-optimized = 100.00% (240     vias)
+    Layer VIA78      =  0.00% (0      / 196     vias)
+        Un-optimized = 100.00% (196     vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 35305 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 15399   vias)
+    Layer VIA23      =  0.00% (0      / 15142   vias)
+    Layer VIA34      =  0.00% (0      / 3728    vias)
+    Layer VIA45      =  0.00% (0      / 369     vias)
+    Layer VIA56      =  0.00% (0      / 231     vias)
+    Layer VIA67      =  0.00% (0      / 240     vias)
+    Layer VIA78      =  0.00% (0      / 196     vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 35305 vias)
+ 
+    Layer VIA12      =  0.00% (0      / 15399   vias)
+        Un-optimized = 100.00% (15399   vias)
+    Layer VIA23      =  0.00% (0      / 15142   vias)
+        Un-optimized = 100.00% (15142   vias)
+    Layer VIA34      =  0.00% (0      / 3728    vias)
+        Un-optimized = 100.00% (3728    vias)
+    Layer VIA45      =  0.00% (0      / 369     vias)
+        Un-optimized = 100.00% (369     vias)
+    Layer VIA56      =  0.00% (0      / 231     vias)
+        Un-optimized = 100.00% (231     vias)
+    Layer VIA67      =  0.00% (0      / 240     vias)
+        Un-optimized = 100.00% (240     vias)
+    Layer VIA78      =  0.00% (0      / 196     vias)
+        Un-optimized = 100.00% (196     vias)
+ 
+
+Total number of nets = 4702
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = antenna checking not active
+Total number of voltage-area violations = no voltage-areas defined
+Topology ECO iteration 1 ended with 0 qualifying violations.
+Updating the database ...
+Information: RC extraction has been freed. (PSYN-503)
+1
+save_mw_cel
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named IOTDF. (UIG-5)
+1
+1
+icc_shell> write_parasitics -output {IOTDF_pr.spef}
+Information: design not extracted; do extract_rc or read_parasitics before write_parasitics.
+Error: Writing parasitics file failed. (RCEX-036)
+0
+icc_shell> save_mw_cel IOTDF
+Information: Saved design named IOTDF. (UIG-5)
+1
+icc_shell> write_sdc -version 1.9 IOTDF_pr.sdc
+Information: linking reference library : /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13gfsg_fram. (PSYN-878)
+Information: Loading local_link_library attribute {slow.db}. (MWDC-290)
+
+  Linking design 'IOTDF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  IOTDF                       IOTDF.CEL
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb
+
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+1
+icc_shell> write_sdf -version 2.1 IOTDF_pr.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/linjinyu/IC_contest/2019_final/IOTDF_pr.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+1
+icc_shell> write_verilog -wire_declaration -keep_backslash_before_hiersep -no_physical_only_cells IOTDF_apr.v
+Generating description for top level cell.
+Processing module IOTDF
+Elapsed =    0:00:00, CPU =    0:00:00
+Write verilog completed successfully.
+1
+icc_shell> write_parasitics -output {IOTDF_pr.spef}
+Information: design not extracted; do extract_rc or read_parasitics before write_parasitics.
+Error: Writing parasitics file failed. (RCEX-036)
+0
+icc_shell> write_parasitics -output {IOTDF_pr.spef}
+Information: design not extracted; do extract_rc or read_parasitics before write_parasitics.
+Error: Writing parasitics file failed. (RCEX-036)
+0
+icc_shell> extract_parasitics
+Error: unknown command 'extract_parasitics' (CMD-005)
+icc_shell> extract_rc
+  Loading design 'IOTDF'
+
+
+Warning: Port 'in_en' cannot inherit its location, because the port does not connect with any leaf cell pins. Please check the floorplan. (PSYN-1042)
+
+
+Information: Library Manufacturing Grid(GridResolution) : 5
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Information: Design Library and main library resistance units are matched - 1.000 kohm. 
+Information: Capacitance Unit from Milkyway design library: 'pf' 
+Information: Design Library and main library capacitance units are matched - 1.000 pf. 
+Warning: Inconsistent library data found for layer POLY1. (RCEX-018)
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is detail route TLU+. (RCEX-015)
+Information: Start mixed mode parasitic extraction. (RCEX-023)
+Information: Start rc extraction...
+Information: Parasitic source is LPE. (RCEX-040)
+Information: Parasitic mode is RealRC. (RCEX-041)
+Information: Using virtual shield extraction. (RCEX-081)
+Information: Extraction mode is MAX. (RCEX-042)
+Information: Extraction derate is 125/125/125. (RCEX-043)
+Information: Coupling capacitances are lumped to ground. (RCEX-044)
+Information: Start back annotation for parasitic extraction. (RCEX-023)
+Information: End back annotation for parasitic extraction. (RCEX-023)
+Information: Start timing update for parasitic extraction. (RCEX-023)
+Information: End timing update for parasitic extraction. (RCEX-023)
+Information: End parasitic extraction. (RCEX-023)
+1
+icc_shell> write_parasitics -output {IOTDF_pr.spef}
+Information: design is either fully routed or in placement stage.
+Writing SPEF to IOTDF_pr.spef ...
+1
+icc_shell> exit
+icc_shell> set_write_stream_options -map_layer /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/macro.map -child_depth 20 -flatten_via -output_pin geometry
+1
+icc_shell> write_stream -format gds -lib_name IOTDF -cells {IOTDF} IOTDF_apr.gds
+Warning: No Fill/Notch/Gap cell would be output! (MWSTRM-082)
+The layer map file </home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Astro/macro.map> specified through -map_layer is used during stream out!
+Outputting Cell AND2X1.CEL
+Outputting Cell AND3X1.CEL
+Outputting Cell AND2X2.CEL
+Outputting Cell AND2X6.CEL
+Outputting Cell AND2X8.CEL
+Outputting Cell INVX1.CEL
+Outputting Cell IOTDF.CEL
+Warning: Please close or open the cell (IOTDF) in read-only mode. (MWSTRM-023)
+Outputting Cell INVX3.CEL
+Outputting Cell FILL32.CEL
+Outputting Cell FILL16.CEL
+Outputting Cell FILL64.CEL
+Outputting Cell OR2X1.CEL
+Outputting Cell OR3X2.CEL
+Outputting Cell OR2X4.CEL
+Outputting Cell DLY4X1.CEL
+Outputting Cell DFFRX1.CEL
+Outputting Cell INVXL.CEL
+Outputting Cell AOI21X1.CEL
+Outputting Cell AOI21X2.CEL
+Outputting Cell AOI31X1.CEL
+Outputting Cell AOI21X4.CEL
+Outputting Cell OR2XL.CEL
+Outputting Cell INVX20.CEL
+Outputting Cell AOI21XL.CEL
+Outputting Cell AOI22XL.CEL
+Outputting Cell AOI31XL.CEL
+Outputting Cell OA21XL.CEL
+Outputting Cell AOI211X1.CEL
+Outputting Cell AOI211X2.CEL
+Outputting Cell NOR2X1.CEL
+Outputting Cell NOR2X2.CEL
+Outputting Cell NOR3X1.CEL
+Outputting Cell NOR3X2.CEL
+Outputting Cell NOR4X1.CEL
+Outputting Cell NOR2X4.CEL
+Outputting Cell NOR2X6.CEL
+Outputting Cell DFFSRX1.CEL
+Outputting Cell AOI211XL.CEL
+Outputting Cell AOI222XL.CEL
+Outputting Cell NOR2XL.CEL
+Outputting Cell NOR3XL.CEL
+Outputting Cell NOR4XL.CEL
+Outputting Cell OAI21X1.CEL
+Outputting Cell OAI21X2.CEL
+Outputting Cell OAI21X4.CEL
+Outputting Cell NAND2X1.CEL
+Outputting Cell NAND3X1.CEL
+Outputting Cell DFFSRXL.CEL
+Outputting Cell NAND2X2.CEL
+Outputting Cell NAND4X1.CEL
+Outputting Cell NAND3X2.CEL
+Outputting Cell TLATX1.CEL
+Outputting Cell OAI21XL.CEL
+Outputting Cell OAI31XL.CEL
+Outputting Cell OAI22XL.CEL
+Outputting Cell OAI32XL.CEL
+Outputting Cell NOR2BX1.CEL
+Outputting Cell NOR4BX1.CEL
+Outputting Cell XOR2X1.CEL
+Outputting Cell NAND2XL.CEL
+Outputting Cell NAND3XL.CEL
+Outputting Cell NAND4XL.CEL
+Outputting Cell AOI2BB1X1.CEL
+Outputting Cell AOI2BB2X1.CEL
+Outputting Cell OAI211X1.CEL
+Outputting Cell CLKBUFX2.CEL
+Outputting Cell CLKBUFX3.CEL
+Outputting Cell XOR2XL.CEL
+Outputting Cell CLKINVX1.CEL
+Outputting Cell CLKINVX2.CEL
+Outputting Cell OAI211XL.CEL
+Outputting Cell NAND2BX1.CEL
+Outputting Cell NAND3BX1.CEL
+Outputting Cell NAND4BX1.CEL
+Outputting Cell CLKAND2X8.CEL
+Outputting Cell XNOR2X1.CEL
+Outputting Cell CLKINVX20.CEL
+Outputting Cell OAI2BB1X1.CEL
+Outputting Cell OAI2BB1XL.CEL
+Outputting Cell OAI2BB2XL.CEL
+Outputting Cell BUFX2.CEL
+Outputting Cell FILL1.CEL
+Outputting Cell FILL2.CEL
+Outputting Cell FILL4.CEL
+Outputting Cell AO21X1.CEL
+Outputting Cell AO22X1.CEL
+Outputting Cell FILL8.CEL
+Outputting Cell AO21X2.CEL
+====> TOTAL CELLS OUTPUT: 88 <====
+write_gds completed successfully!
+1
+icc_shell> create_macro_fram -library_name {IOTDF} -cell_name {IOTDF}
+
+======== PRINT (create_macro_fram) VARS ========
+-library_name: 
+        IOTDF
+-cell_name: 
+        IOTDF
+-smash_by_hercules: 
+        0
+-preserve_all_metal_blockage: 
+        0
+-routing_blockage_output_layer: 
+        metBlk
+-treat_all_blockage_as_thin_wire: 
+        0
+-treat_metal_blockage_as_thin: 
+        Pl:0 M1:0 M2:0 M3:0 M4:0 M5:0 M6:0 
+        M7:0 M8:0 M9:0 M10:0 M11:0 M12:0
+        M13:0 M14:0 M15:0
+
+-extract_blockage_by_block_core_with_margin: 
+        Pl:-1.000000 M1:-1.000000 M2:-1.000000 
+        M3:-1.000000 M4:-1.000000 M5:-1.000000 
+        M6:-1.000000 M7:-1.000000 M8:-1.000000 
+        M9:-1.000000 M10:-1.000000 M11:-1.000000 
+        M12:-1.000000 M13:-1.000000 M14:-1.000000 
+        M15:-1.000000 
+
+-extract_blockage_by_merge_with_threshold:       in (X-, Y-) direction: 
+        Poly:(0.000, 0.000) M1:(0.000, 0.000) M2:(0.000, 0.000) 
+        M3:(0.000, 0.000) M4:(0.000, 0.000) M5:(0.000, 0.000) 
+        M6:(0.000, 0.000) M7:(0.000, 0.000) M8:(0.000, 0.000) 
+        M9:(0.000, 0.000) M10:(0.000, 0.000) M11:(0.000, 0.000) 
+        M12:(0.000, 0.000) M113:(0.000, 0.000) M14:(0.000, 0.000) 
+        M15:(0.000, 0.000)
+
+-feedthrough_layers: 
+        Poly: M1: M2: M3: M4: M5: 
+        M6: M7: M8: M9: M10: M11: M12: M13: M14: M15:
+
+-identify_macro_pin_by_pin_text: 
+        0
+-extract_pin_connectivity_through: 
+        0
+        Cont:0 V1:0 V2:0 V3:0 V4:0 V5:0 
+        V6:0 V7:0 V8:0 V9:0 V10:0 V11:0 
+        V12:0 V13:0 V14:0 BV1:0 BV2:0
+-poly_pin_text_layers: 
+        
+-m1_pin_text_layers: 
+        
+-m2_pin_text_layers: 
+        
+-m3_pin_text_layers: 
+        
+-m4_pin_text_layers: 
+        
+-m5_pin_text_layers: 
+        
+-m6_pin_text_layers: 
+        
+-m7_pin_text_layers: 
+        
+-m8_pin_text_layers: 
+        
+-m9_pin_text_layers: 
+        
+-m10_pin_text_layers: 
+        
+-m11_pin_text_layers: 
+        
+-m12_pin_text_layers: 
+        
+-m13_pin_text_layers: 
+        
+-m14_pin_text_layers: 
+        
+-m15_pin_text_layers: 
+        
+-nwell_pin_text_layers: 
+        
+-pwell_pin_text_layers: 
+        
+-deep_nwell_pin_text_layers: 
+        
+-deep_pwell_pin_text_layers: 
+        
+-bm1_pin_text_layers: 
+        
+-bm2_pin_text_layers: 
+        
+-bm3_pin_text_layers: 
+        
+-expand_small_pin_on_blockage_for_contact_connection: 
+        0
+-pin_must_connect_area_layer_number: 
+        Pl: M1: M2: M3: M4: M5: M6:
+        M7: M8: M9: M10: M11: M12:
+        M13: M14: M15:
+-auto_pin_must_connect_area_threshold: 
+        Pl:0.000000 M1:0.000000 M2:0.000000 M3:0.000000 M4:0.000000 
+        M5:0.000000 M6:0.000000 M7:0.000000 M8:0.000000 
+        M9:0.000000 M10:0.000000 M11:0.000000 M12:0.000000 
+        M13:0.000000 M14:0.000000 M15:0.000000
+-extract_via_within_pin_area_only: 
+        0
+-extract_via_on_layer: 
+        Cont:0 V1:0 V2:0 V3:0 V4:0 V5:0 
+        V6:0 V7:0 V8:0 V9:0 V10:0 V11:0 
+        V12:0 V13:0 V14:0 BV1:0 BV2:0
+-create_mask_constraint_route_guides: 
+        true
+
+------ GVAR ------
+-slice_signal_pin_vertically: 
+        0
+
+======= END PRINT (create_macro_fram) VARS =======
+------ new BPV starts ... -----
+metal0 has text layer (number, name)= (17, poly)
+layer 17 is registered on poly as text layer
+metal1 has text layer (number, name)= (31, metal1)
+Using [3 x 3] Fat Wire Table for METAL1
+Fat condition [0] is less than minWidth on METAL1
+layer 31 is registered on metal1 as text layer
+metal2 has text layer (number, name)= (32, metal2)
+Using [3 x 3] Fat Wire Table for METAL2
+Fat condition [0] is less than minWidth on METAL2
+layer 32 is registered on metal2 as text layer
+metal3 has text layer (number, name)= (33, metal3)
+Using [3 x 3] Fat Wire Table for METAL3
+Fat condition [0] is less than minWidth on METAL3
+layer 33 is registered on metal3 as text layer
+metal4 has text layer (number, name)= (34, metal4)
+Using [3 x 3] Fat Wire Table for METAL4
+Fat condition [0] is less than minWidth on METAL4
+layer 34 is registered on metal4 as text layer
+metal5 has text layer (number, name)= (35, metal5)
+Using [3 x 3] Fat Wire Table for METAL5
+Fat condition [0] is less than minWidth on METAL5
+layer 35 is registered on metal5 as text layer
+metal6 has text layer (number, name)= (36, metal6)
+Using [3 x 3] Fat Wire Table for METAL6
+Fat condition [0] is less than minWidth on METAL6
+layer 36 is registered on metal6 as text layer
+metal7 has text layer (number, name)= (37, metal7)
+Using [3 x 3] Fat Wire Table for METAL7
+Fat condition [0] is less than minWidth on METAL7
+layer 37 is registered on metal7 as text layer
+metal8 has text layer (number, name)= (38, metal8)
+layer 38 is registered on metal8 as text layer
+cutLayer [polyCont]  --- master via ---> CONT1 
+cutLayer [via1]  --- master via ---> via1 
+cutLayer [via2]  --- master via ---> via2 
+cutLayer [via3]  --- master via ---> via3 
+cutLayer [via4]  --- master via ---> via4 
+cutLayer [via5]  --- master via ---> via5 
+cutLayer [via6]  --- master via ---> via6 
+cutLayer [via7]  --- master via ---> via7 
+Total Hash [29] Single Master Vias
+WARNING : Cannot find any fat via for (polyCont)
+WARNING : Cannot find any fat via for (via1)
+WARNING : Cannot find any fat via for (via2)
+WARNING : Cannot find any fat via for (via3)
+WARNING : Cannot find any fat via for (via4)
+WARNING : Cannot find any fat via for (via5)
+WARNING : Cannot find any fat via for (via6)
+WARNING : Cannot find any fat via for (via7)
+Total Hash [0] Array-Master Vias
+       Processing cell [IOTDF_1138836.CEL] ...
+this cell has 0 rectangle records
+this cell has 16 extrectangle records
+this cell has 0 path records
+this cell has 0 text records
+this cell has 0 polygon records
+The total number of paths in this cell is 0. 
+(Macro Instance Object Layer) .....................
+
+ .......... total 0 layers with Macro instances.
+
+--- All pins have been split into connected components --
+Metal[3] pin access processing ...
+Acc-edge scanBox: [0, 0] - [248740, 3280]
+Acc-edge metal scanBox: [0, 0] - [248740, 3280]
+Acc-edge scanBox: [245460, 0] - [248740, 246160]
+Acc-edge metal scanBox: [245460, 2235] - [248740, 243925]
+Acc-edge scanBox: [0, 242880] - [248740, 246160]
+Acc-edge metal scanBox: [0, 242880] - [248740, 246160]
+Acc-edge scanBox: [0, 0] - [3280, 246160]
+Acc-edge metal scanBox: [0, 2235] - [3280, 243925]
+Metal[2] pin access processing ...
+Acc-edge scanBox: [0, 0] - [248740, 3680]
+Acc-edge metal scanBox: [2830, 0] - [245910, 3680]
+Acc-edge scanBox: [245060, 0] - [248740, 246160]
+Acc-edge metal scanBox: [245060, 0] - [248740, 246160]
+Acc-edge scanBox: [0, 242480] - [248740, 246160]
+Acc-edge metal scanBox: [2830, 242480] - [245910, 246160]
+Acc-edge scanBox: [0, 0] - [3680, 246160]
+Acc-edge metal scanBox: [0, 0] - [3680, 246160]
+[End of bpvFindAccessEdgesOnRouteLayer]
+[Mask 1]: Blockage_B1 is doing fat merge.
+[Mask 2]: Blockage_B1 is doing fat merge.
+[Mask 3]: Blockage_B1 is doing fat merge.
+[Mask 4]: Blockage_B1 is doing fat merge.
+[Mask 5]: Blockage_B1 is doing fat merge.
+[Mask 6]: Blockage_B1 is doing fat merge.
+[Mask 7]: Blockage_B1 is doing fat merge.
+[Mask 8]: Blockage_B1 is doing fat merge.
+PinHashOnLayer [2]: 
+   busy,    clk,    fn_sel[0],    fn_sel[1],    fn_sel[2],  
+   in_en,    iot_in[0],    iot_in[1],    iot_in[2],    iot_in[3],  
+   iot_in[4],    iot_in[5],    iot_in[6],    iot_in[7],    iot_out[0],  
+   iot_out[10],    iot_out[11],    iot_out[127],    iot_out[12],    iot_out[13],  
+   iot_out[14],    iot_out[15],    iot_out[16],    iot_out[17],    iot_out[18],  
+   iot_out[1],    iot_out[2],    iot_out[3],    iot_out[4],    iot_out[55],  
+   iot_out[56],    iot_out[57],    iot_out[58],    iot_out[59],    iot_out[5],  
+   iot_out[60],    iot_out[61],    iot_out[62],    iot_out[63],    iot_out[64],  
+   iot_out[65],    iot_out[66],    iot_out[67],    iot_out[68],    iot_out[69],  
+   iot_out[6],    iot_out[70],    iot_out[71],    iot_out[72],    iot_out[73],  
+   iot_out[74],    iot_out[75],    iot_out[76],    iot_out[77],    iot_out[78],  
+   iot_out[79],    iot_out[7],    iot_out[80],    iot_out[81],    iot_out[82],  
+   iot_out[83],    iot_out[84],    iot_out[85],    iot_out[86],    iot_out[87],  
+   iot_out[88],    iot_out[89],    iot_out[8],    iot_out[90],    iot_out[9],  
+   rst,    valid, 
+   ----- Total 72 pins hashed on Mask Layer 2. 
+PinHashOnLayer [3]: 
+   iot_out[100],    iot_out[101],    iot_out[102],    iot_out[103],    iot_out[104],  
+   iot_out[105],    iot_out[106],    iot_out[107],    iot_out[108],    iot_out[109],  
+   iot_out[110],    iot_out[111],    iot_out[112],    iot_out[113],    iot_out[114],  
+   iot_out[115],    iot_out[116],    iot_out[117],    iot_out[118],    iot_out[119],  
+   iot_out[120],    iot_out[121],    iot_out[122],    iot_out[123],    iot_out[124],  
+   iot_out[125],    iot_out[126],    iot_out[19],    iot_out[20],    iot_out[21],  
+   iot_out[22],    iot_out[23],    iot_out[24],    iot_out[25],    iot_out[26],  
+   iot_out[27],    iot_out[28],    iot_out[29],    iot_out[30],    iot_out[31],  
+   iot_out[32],    iot_out[33],    iot_out[34],    iot_out[35],    iot_out[36],  
+   iot_out[37],    iot_out[38],    iot_out[39],    iot_out[40],    iot_out[41],  
+   iot_out[42],    iot_out[43],    iot_out[44],    iot_out[45],    iot_out[46],  
+   iot_out[47],    iot_out[48],    iot_out[49],    iot_out[50],    iot_out[51],  
+   iot_out[52],    iot_out[53],    iot_out[54],    iot_out[91],    iot_out[92],  
+   iot_out[93],    iot_out[94],    iot_out[95],    iot_out[96],    iot_out[97],  
+   iot_out[98],    iot_out[99], 
+   ----- Total 72 pins hashed on Mask Layer 3. 
+mark port (iot_out[54]) with direction (2) and type (0)
+mark port (iot_out[53]) with direction (2) and type (0)
+mark port (iot_out[52]) with direction (2) and type (0)
+mark port (iot_out[51]) with direction (2) and type (0)
+mark port (iot_out[50]) with direction (2) and type (0)
+mark port (iot_out[49]) with direction (2) and type (0)
+mark port (iot_out[48]) with direction (2) and type (0)
+mark port (iot_out[47]) with direction (2) and type (0)
+mark port (iot_out[46]) with direction (2) and type (0)
+mark port (iot_out[45]) with direction (2) and type (0)
+mark port (iot_out[44]) with direction (2) and type (0)
+mark port (iot_out[43]) with direction (2) and type (0)
+mark port (iot_out[42]) with direction (2) and type (0)
+mark port (iot_out[41]) with direction (2) and type (0)
+mark port (iot_out[40]) with direction (2) and type (0)
+mark port (iot_out[39]) with direction (2) and type (0)
+mark port (iot_out[38]) with direction (2) and type (0)
+mark port (iot_out[37]) with direction (2) and type (0)
+mark port (iot_out[36]) with direction (2) and type (0)
+mark port (iot_out[35]) with direction (2) and type (0)
+mark port (iot_out[34]) with direction (2) and type (0)
+mark port (iot_out[33]) with direction (2) and type (0)
+mark port (iot_out[32]) with direction (2) and type (0)
+mark port (iot_out[31]) with direction (2) and type (0)
+mark port (iot_out[30]) with direction (2) and type (0)
+mark port (iot_out[29]) with direction (2) and type (0)
+mark port (iot_out[28]) with direction (2) and type (0)
+mark port (iot_out[27]) with direction (2) and type (0)
+mark port (iot_out[26]) with direction (2) and type (0)
+mark port (iot_out[25]) with direction (2) and type (0)
+mark port (iot_out[24]) with direction (2) and type (0)
+mark port (iot_out[23]) with direction (2) and type (0)
+mark port (iot_out[22]) with direction (2) and type (0)
+mark port (iot_out[21]) with direction (2) and type (0)
+mark port (iot_out[20]) with direction (2) and type (0)
+mark port (iot_out[19]) with direction (2) and type (0)
+mark port (iot_out[18]) with direction (2) and type (0)
+mark port (iot_out[17]) with direction (2) and type (0)
+mark port (iot_out[16]) with direction (2) and type (0)
+mark port (iot_out[15]) with direction (2) and type (0)
+mark port (iot_out[14]) with direction (2) and type (0)
+mark port (iot_out[13]) with direction (2) and type (0)
+mark port (iot_out[12]) with direction (2) and type (0)
+mark port (iot_out[11]) with direction (2) and type (0)
+mark port (iot_out[10]) with direction (2) and type (0)
+mark port (iot_out[9]) with direction (2) and type (0)
+mark port (iot_out[8]) with direction (2) and type (0)
+mark port (iot_out[7]) with direction (2) and type (0)
+mark port (iot_out[6]) with direction (2) and type (0)
+mark port (iot_out[5]) with direction (2) and type (0)
+mark port (iot_out[4]) with direction (2) and type (0)
+mark port (iot_out[3]) with direction (2) and type (0)
+mark port (iot_out[2]) with direction (2) and type (0)
+mark port (iot_out[1]) with direction (2) and type (0)
+mark port (iot_out[0]) with direction (2) and type (0)
+mark port (fn_sel[2]) with direction (1) and type (0)
+mark port (fn_sel[1]) with direction (1) and type (0)
+mark port (fn_sel[0]) with direction (1) and type (0)
+mark port (iot_in[7]) with direction (1) and type (0)
+mark port (iot_in[6]) with direction (1) and type (0)
+mark port (iot_in[5]) with direction (1) and type (0)
+mark port (iot_in[4]) with direction (1) and type (0)
+mark port (iot_in[3]) with direction (1) and type (0)
+mark port (iot_in[2]) with direction (1) and type (0)
+mark port (iot_in[1]) with direction (1) and type (0)
+mark port (iot_in[0]) with direction (1) and type (0)
+mark port (valid) with direction (2) and type (0)
+mark port (busy) with direction (2) and type (0)
+mark port (in_en) with direction (1) and type (0)
+mark port (rst) with direction (1) and type (0)
+Info: GPort table is inconsistent at port [clk] 
+==> mark port (clk) with netType (4)
+port (clk) with direction (1) and type (0)
+mark port (clk) with direction (1) and type (0)
+mark port (iot_out[127]) with direction (2) and type (0)
+mark port (iot_out[126]) with direction (2) and type (0)
+mark port (iot_out[125]) with direction (2) and type (0)
+mark port (iot_out[124]) with direction (2) and type (0)
+mark port (iot_out[123]) with direction (2) and type (0)
+mark port (iot_out[122]) with direction (2) and type (0)
+mark port (iot_out[121]) with direction (2) and type (0)
+mark port (iot_out[120]) with direction (2) and type (0)
+mark port (iot_out[119]) with direction (2) and type (0)
+mark port (iot_out[118]) with direction (2) and type (0)
+mark port (iot_out[117]) with direction (2) and type (0)
+mark port (iot_out[116]) with direction (2) and type (0)
+mark port (iot_out[115]) with direction (2) and type (0)
+mark port (iot_out[114]) with direction (2) and type (0)
+mark port (iot_out[113]) with direction (2) and type (0)
+mark port (iot_out[112]) with direction (2) and type (0)
+mark port (iot_out[111]) with direction (2) and type (0)
+mark port (iot_out[110]) with direction (2) and type (0)
+mark port (iot_out[109]) with direction (2) and type (0)
+mark port (iot_out[108]) with direction (2) and type (0)
+mark port (iot_out[107]) with direction (2) and type (0)
+mark port (iot_out[106]) with direction (2) and type (0)
+mark port (iot_out[105]) with direction (2) and type (0)
+mark port (iot_out[104]) with direction (2) and type (0)
+mark port (iot_out[103]) with direction (2) and type (0)
+mark port (iot_out[102]) with direction (2) and type (0)
+mark port (iot_out[101]) with direction (2) and type (0)
+mark port (iot_out[100]) with direction (2) and type (0)
+mark port (iot_out[99]) with direction (2) and type (0)
+mark port (iot_out[98]) with direction (2) and type (0)
+mark port (iot_out[97]) with direction (2) and type (0)
+mark port (iot_out[96]) with direction (2) and type (0)
+mark port (iot_out[95]) with direction (2) and type (0)
+mark port (iot_out[94]) with direction (2) and type (0)
+mark port (iot_out[93]) with direction (2) and type (0)
+mark port (iot_out[92]) with direction (2) and type (0)
+mark port (iot_out[91]) with direction (2) and type (0)
+mark port (iot_out[90]) with direction (2) and type (0)
+mark port (iot_out[89]) with direction (2) and type (0)
+mark port (iot_out[88]) with direction (2) and type (0)
+mark port (iot_out[87]) with direction (2) and type (0)
+mark port (iot_out[86]) with direction (2) and type (0)
+mark port (iot_out[85]) with direction (2) and type (0)
+mark port (iot_out[84]) with direction (2) and type (0)
+mark port (iot_out[83]) with direction (2) and type (0)
+mark port (iot_out[82]) with direction (2) and type (0)
+mark port (iot_out[81]) with direction (2) and type (0)
+mark port (iot_out[80]) with direction (2) and type (0)
+mark port (iot_out[79]) with direction (2) and type (0)
+mark port (iot_out[78]) with direction (2) and type (0)
+mark port (iot_out[77]) with direction (2) and type (0)
+mark port (iot_out[76]) with direction (2) and type (0)
+mark port (iot_out[75]) with direction (2) and type (0)
+mark port (iot_out[74]) with direction (2) and type (0)
+mark port (iot_out[73]) with direction (2) and type (0)
+mark port (iot_out[72]) with direction (2) and type (0)
+mark port (iot_out[71]) with direction (2) and type (0)
+mark port (iot_out[70]) with direction (2) and type (0)
+mark port (iot_out[69]) with direction (2) and type (0)
+mark port (iot_out[68]) with direction (2) and type (0)
+mark port (iot_out[67]) with direction (2) and type (0)
+mark port (iot_out[66]) with direction (2) and type (0)
+mark port (iot_out[65]) with direction (2) and type (0)
+mark port (iot_out[64]) with direction (2) and type (0)
+mark port (iot_out[63]) with direction (2) and type (0)
+mark port (iot_out[62]) with direction (2) and type (0)
+mark port (iot_out[61]) with direction (2) and type (0)
+mark port (iot_out[60]) with direction (2) and type (0)
+mark port (iot_out[59]) with direction (2) and type (0)
+mark port (iot_out[58]) with direction (2) and type (0)
+mark port (iot_out[57]) with direction (2) and type (0)
+mark port (iot_out[56]) with direction (2) and type (0)
+mark port (iot_out[55]) with direction (2) and type (0)
+Made macro IOTDF.
+1
+icc_shell> get_attribute [get_die_area] bbox
+{0.000 0.000} {248.740 246.160}
+icc_shell> close_mw_cel
+Removing physical design 'IOTDF'
+1
+icc_shell> close_mw_lib
+1
+icc_shell> exit
+
+Thank you...
+

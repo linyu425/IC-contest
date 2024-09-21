@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-INCDIR
+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/src
+-DEFINE
+FSDB_FILE=\"SME.fsdb\"
+-DEFINE
+MD1

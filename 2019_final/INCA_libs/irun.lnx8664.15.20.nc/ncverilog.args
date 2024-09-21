@@ -1,0 +1,12 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++ncmaxdelays
+testfixture.v
+IOTDF_apr.v
++define+F6+SDF
++access+r
++nc64bit
+-v
+tsmc13_neg.v

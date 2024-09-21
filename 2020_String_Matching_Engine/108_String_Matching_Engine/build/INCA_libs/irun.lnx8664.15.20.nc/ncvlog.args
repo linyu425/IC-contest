@@ -1,0 +1,24 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/sim/tb_term.sv
+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/src/SME.v
+-INCDIR
+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/src
+-DEFINE
+FSDB_FILE=\"SME.fsdb\"
+-DEFINE
+MD1
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

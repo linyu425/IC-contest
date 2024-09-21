@@ -1,0 +1,74 @@
+irun: 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s084: Started on Jul 17, 2024 at 16:58:35 CST
+irun
+	/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/sim/testfixture1.v
+	/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src/def.v
+	/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src/SET.v
+	+incdir+/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src
+	+access+r
+	+define+FSDB_FILE="SET.fsdb"
+	+define+MD1
+file: /home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/sim/testfixture1.v
+	module worklib.testfixture1:v
+		errors: 0, warnings: 0
+file: /home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src/def.v
+file: /home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src/SET.v
+	module worklib.SET:v
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory /home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testfixture1
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SET:v <0x4339233b>
+			streams:  10, words: 12358
+		worklib.testfixture1:v <0x28adb154>
+			streams:   9, words: 14046
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               23      23
+		Scalar wires:             5       -
+		Vectored wires:           4       -
+		Always blocks:            3       3
+		Initial blocks:           5       5
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture1:v
+Loading snapshot worklib.testfixture1:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+--------------------------- [ Function 1. Simulation START !! ] ---------------------------
+ Pattern           0 at Mode 0 is PASS !
+ Pattern           1 at Mode 0 is PASS !
+ Pattern           2 at Mode 0 is PASS !
+ Pattern           3 at Mode 0 is FAIL !. Expected candidate =  27, but the Response candidate =  28 !! 
+ Pattern           4 at Mode 0 is FAIL !. Expected candidate =   1, but the Response candidate =   3 !! 
+ Pattern           5 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  13 !! 
+ Pattern           6 at Mode 0 is FAIL !. Expected candidate =  20, but the Response candidate =  23 !! 
+ Pattern           7 at Mode 0 is FAIL !. Expected candidate =  15, but the Response candidate =  21 !! 
+ Pattern           8 at Mode 0 is PASS !
+ Pattern           9 at Mode 0 is PASS !
+ Pattern          10 at Mode 0 is FAIL !. Expected candidate =  12, but the Response candidate =  13 !! 
+ Pattern          11 at Mode 0 is FAIL !. Expected candidate =   1, but the Response candidate =   3 !! 
+ Pattern          12 at Mode 0 is FAIL !. Expected candidate =   4, but the Response candidate =   5 !! 
+ Pattern          13 at Mode 0 is FAIL !. Expected candidate =  11, but the Response candidate =  12 !! 
+ Pattern          14 at Mode 0 is PASS !
+ Pattern          15 at Mode 0 is PASS !
+ Pattern          16 at Mode 0 is PASS !
+ Pattern          17 at Mode 0 is FAIL !. Expected candidate =   9, but the Response candidate =  12 !! 
+============================================================================
+
+ (>_<) FAIL!! The simulation FAIL result is too many ! Please check your code @@ 
+
+============================================================================
+Simulation complete via $finish(1) at time 22170 NS + 0
+../sim/testfixture1.v:140 	$finish;
+ncsim> exit
+TOOL:	irun	15.20-s084: Exiting on Jul 17, 2024 at 17:01:06 CST  (total: 00:02:31)

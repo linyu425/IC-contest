@@ -1,0 +1,25 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx86.15.20.nc
+-RUNMODE
+/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/sim/testfixture1.v
+/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src/def.v
+/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src/SET.v
+-INCDIR
+/home/linjinyu/IC_contest/2015_SET/icc2015cb_pre/src
+-DEFINE
+FSDB_FILE=\"SET.fsdb\"
+-DEFINE
+MD1
+-CDSLIB
+./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx86.15.20.nc/xllibs
+-ALLOWUNBOUND

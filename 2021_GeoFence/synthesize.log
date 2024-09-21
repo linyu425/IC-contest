@@ -1,0 +1,511 @@
+mkdir -p /home/linjinyu/IC_contest/109_GeoFence/syn;
+rm -rf /home/linjinyu/IC_contest/109_GeoFence/syn/*; \
+cd /home/linjinyu/IC_contest/109_GeoFence/build; \
+cp /home/linjinyu/IC_contest/109_GeoFence/script/synopsys_dc.setup /home/linjinyu/IC_contest/109_GeoFence/build/.synopsys_dc.setup; \
+dcnxt_shell -f /home/linjinyu/IC_contest/109_GeoFence/script/dc_syn.tcl;
+
+                            Design Compiler (R) NXT 
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+set top geofence
+geofence
+#Read All Files
+read_file -format verilog  ../src/${top}.v
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Loading verilog file '/home/linjinyu/IC_contest/109_GeoFence/src/geofence.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:56: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:57: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:58: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:59: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:61: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:62: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:63: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:64: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:66: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:67: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:68: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:69: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:78: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:84: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:87: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:98: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:101: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:105: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:109: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:112: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:130: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/linjinyu/IC_contest/109_GeoFence/src/geofence.v:201: unsigned to signed assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 93 in file
+	'/home/linjinyu/IC_contest/109_GeoFence/src/geofence.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            95            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 123 in file
+	'/home/linjinyu/IC_contest/109_GeoFence/src/geofence.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           124            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine geofence line 46 in file
+		'/home/linjinyu/IC_contest/109_GeoFence/src/geofence.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine geofence line 71 in file
+		'/home/linjinyu/IC_contest/109_GeoFence/src/geofence.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  outer_counter_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  outer_counter_reg  | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine geofence line 151 in file
+		'/home/linjinyu/IC_contest/109_GeoFence/src/geofence.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        s_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     sqrt_1_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|      R_reg_reg      | Flip-flop |  66   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    tri_area_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    six_area_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      X_reg_reg      | Flip-flop |  60   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        c_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      Y_reg_reg      | Flip-flop |  60   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/linjinyu/IC_contest/109_GeoFence/src/geofence.db:geofence'
+Loaded 1 design.
+Current design is 'geofence'.
+geofence
+current_design [get_designs ${top}]
+Current design is 'geofence'.
+{geofence}
+link
+
+  Linking design 'geofence'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  geofence                    /home/linjinyu/IC_contest/109_GeoFence/src/geofence.db
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+# Setting Clock Constraits
+source -echo -verbose ../script/${top}.sdc
+# operating conditions and boundary conditions #
+set cycle 50.0
+50.0
+create_clock -name clk  -period $cycle   [get_ports  clk] 
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      0.5  [all_clocks]
+1
+set_ideal_network           [get_ports clk]
+1
+#Don't touch the basic env setting as below
+set_input_delay  0   -clock clk [remove_from_collection [all_inputs] [get_ports clk]] -clock_fall
+1
+set_output_delay 0    -clock clk [all_outputs]  -clock_fall
+1
+set_load         1   [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sat Mar 16 23:18:07 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              24
+    Cells do not drive (LINT-1)                                    24
+--------------------------------------------------------------------------------
+
+Warning: In design 'geofence', cell 'B_235' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'B_236' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'B_237' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'B_238' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'B_239' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7400' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7406' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7412' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7418' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7436' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7463' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7467' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7488' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7489' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7490' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7495' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7496' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'B_246' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7536' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7578' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7588' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7589' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7590' does not drive any nets. (LINT-1)
+Warning: In design 'geofence', cell 'C7591' does not drive any nets. (LINT-1)
+1
+set high_fanout_net_threshold 0
+0
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+# Synthesis all design
+#Synthesis all design
+#compile -map_effort high -area_effort high
+#compile -map_effort high -area_effort high -inc
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1912                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 272                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 340                                    |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 24 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'geofence'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'geofence'
+Information: Added key list 'DesignWare' to design 'geofence'. (DDB-72)
+Information: The register 'c_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 's_reg[11]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'geofence'.
+  Processing 'geofence_DW_sqrt_J1_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:09   89004.9      0.00       0.0    4202.2                           86216704.0000      0.00  
+    0:00:09   88706.1      0.00       0.0    4202.2                           85887800.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:09   88597.5      0.00       0.0    4540.8                           85748128.0000      0.00  
+    0:00:09   88597.5      0.00       0.0    4540.8                           85748128.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Selecting critical implementations
+  Structuring 'geofence_DW_sqrt_0'
+  Mapping 'geofence_DW_sqrt_0'
+  Structuring 'geofence_DW_sqrt_1'
+  Mapping 'geofence_DW_sqrt_1'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'geofence_DW01_add_0'
+  Mapping 'geofence_DW01_add_1'
+  Mapping 'geofence_DW01_add_2'
+  Mapping 'geofence_DW01_add_3'
+  Mapping 'geofence_DW01_add_4'
+  Mapping 'geofence_DW01_add_5'
+  Mapping 'geofence_DW01_add_6'
+  Structuring 'geofence_DW_sqrt_2'
+  Mapping 'geofence_DW_sqrt_2'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'geofence_DW01_add_7'
+  Mapping 'geofence_DW01_add_8'
+  Mapping 'geofence_DW01_add_9'
+  Mapping 'geofence_DW01_add_10'
+  Mapping 'geofence_DW01_add_11'
+  Mapping 'geofence_DW01_add_12'
+  Mapping 'geofence_DW01_add_13'
+  Structuring 'geofence_DW_sqrt_2'
+  Mapping 'geofence_DW_sqrt_2'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:14   61709.0      0.72       0.7    1593.1                           55895248.0000      0.00  
+    0:00:14   62333.6      0.00       0.0    1532.2                           56791644.0000      0.00  
+    0:00:14   62333.6      0.00       0.0    1532.2                           56791644.0000      0.00  
+    0:00:14   62323.4      0.00       0.0    1532.2                           56787128.0000      0.00  
+    0:00:15   61673.3      0.00       0.0    1528.4                           56318592.0000      0.00  
+    0:00:15   61563.0      0.00       0.0    1528.4                           56189752.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:17   60125.3      0.00       0.0    1466.7                           54515692.0000      0.00  
+    0:00:17   60125.3      0.00       0.0    1466.7                           54515692.0000      0.00  
+    0:00:17   60125.3      0.00       0.0    1466.7                           54515692.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:18   59823.2      0.00       0.0    1282.6                           53161628.0000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:18   59902.9      0.00       0.0       0.0                           53210920.0000      0.00  
+    0:00:18   59902.9      0.00       0.0       0.0                           53210920.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:18   59902.9      0.00       0.0       0.0                           53210920.0000      0.00  
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+    0:00:19   58590.9      0.00       0.0       0.0                           51769652.0000      0.00  
+    0:00:19   58590.9      0.00       0.0       0.0                           51769652.0000      0.00  
+    0:00:19   58590.9      0.00       0.0       0.0                           51769652.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:19   58582.4      0.00       0.0       0.0                           51720416.0000      0.00  
+    0:00:20   56056.6      0.00       0.0       0.0                           49086528.0000      0.00  
+    0:00:20   56056.6      0.00       0.0       0.0                           49086528.0000      0.00  
+    0:00:20   56056.6      0.00       0.0       0.0                           49086528.0000      0.00  
+    0:00:20   56114.3      0.00       0.0       0.0                           48963900.0000      0.00  
+    0:00:21   55949.7      0.00       0.0       0.0                           48742456.0000      0.00  
+    0:00:21   55949.7      0.00       0.0       0.0                           48742456.0000      0.00  
+    0:00:21   55949.7      0.00       0.0       0.0                           48742456.0000      0.00  
+    0:00:21   55949.7      0.00       0.0       0.0                           48742456.0000      0.00  
+    0:00:21   55949.7      0.00       0.0       0.0                           48742456.0000      0.00  
+    0:00:21   55949.7      0.00       0.0       0.0                           48742456.0000      0.00  
+    0:00:22   55759.6      0.00       0.0       0.0                           48595296.0000      0.00  
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+write -format ddc     -hierarchy -output "${top}_syn.ddc"
+Writing ddc file 'geofence_syn.ddc'.
+1
+write_sdf -version 1.0 ../syn/${top}_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/linjinyu/IC_contest/109_GeoFence/syn/geofence_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write -format verilog -hierarchy -output ../syn/${top}_syn.v
+Writing verilog file '/home/linjinyu/IC_contest/109_GeoFence/syn/geofence_syn.v'.
+1
+report_area > area.log
+report_timing > timing.log
+report_qor   >  ${top}_syn.qor
+Warning: Cannot use command line editor for terminal type 'xterm'.  (UI-74)
+dcnxt_shell> 
+Memory usage for this session 211 Mbytes.
+Memory usage for this session including child processes 235 Mbytes.
+CPU usage for this session 81 seconds ( 0.02 hours ).
+Elapsed time for this session 94 seconds ( 0.03 hours ).
+
+Thank you...

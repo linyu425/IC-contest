@@ -1,0 +1,113 @@
+s1(20Mar2024:21:06:46):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s2(20Mar2024:21:09:36):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s3(20Mar2024:21:13:19):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s4(20Mar2024:21:15:10):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s5(20Mar2024:21:18:41):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s6(22Mar2024:16:43:54):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s7(22Mar2024:16:45:25):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s8(22Mar2024:21:54:52):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s9(22Mar2024:21:55:15):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s10(22Mar2024:21:56:53):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s11(22Mar2024:22:00:11):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s12(22Mar2024:22:25:33):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s13(22Mar2024:22:28:03):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s14(22Mar2024:22:30:08):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s15(22Mar2024:22:36:29):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s16(22Mar2024:23:32:14):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s17(22Mar2024:23:34:16):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s18(22Mar2024:23:34:32):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s19(22Mar2024:23:37:40):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s20(22Mar2024:23:43:45):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s21(22Mar2024:23:45:46):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s22(22Mar2024:23:54:01):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s23(23Mar2024:00:00:36):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s24(23Mar2024:00:02:10):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s25(23Mar2024:00:02:51):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s26(23Mar2024:00:04:14):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s27(23Mar2024:00:05:30):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s28(23Mar2024:23:04:30):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s29(23Mar2024:23:04:56):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s30(23Mar2024:23:05:27):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s31(23Mar2024:23:06:52):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s32(23Mar2024:23:10:43):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s33(23Mar2024:23:13:17):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s34(23Mar2024:23:14:13):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s35(23Mar2024:23:15:10):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s36(23Mar2024:23:17:25):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s37(23Mar2024:23:20:43):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s38(23Mar2024:23:22:50):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s39(23Mar2024:23:23:01):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s40(23Mar2024:23:24:20):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s41(23Mar2024:23:24:47):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s42(24Mar2024:00:40:37):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s43(24Mar2024:00:49:04):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s44(24Mar2024:00:56:23):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s45(24Mar2024:00:57:18):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s46(24Mar2024:01:02:45):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s47(24Mar2024:01:15:25):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s48(24Mar2024:01:22:58):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s49(24Mar2024:01:23:44):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s50(24Mar2024:01:26:13):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s51(24Mar2024:01:29:12):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s52(24Mar2024:01:30:15):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s53(24Mar2024:01:31:11):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s54(24Mar2024:01:31:49):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s55(24Mar2024:01:35:40):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s56(24Mar2024:01:42:16):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s57(24Mar2024:01:58:03):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s58(24Mar2024:02:21:28):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s59(24Mar2024:02:23:49):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s60(24Mar2024:02:33:31):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s61(24Mar2024:02:33:53):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s62(24Mar2024:02:34:10):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s63(24Mar2024:02:34:20):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s64(24Mar2024:02:55:29):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s65(24Mar2024:02:58:08):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s66(24Mar2024:02:59:40):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s67(24Mar2024:03:00:38):  ncverilog testfixture.v DT.v +define+TB1 
+s68(24Mar2024:03:00:43):  ncverilog testfixture.v DT.v +define+TB2 
+s69(24Mar2024:03:01:26):  ncverilog testfixture.v DT.v +define+TB1 
+s70(24Mar2024:03:01:32):  ncverilog testfixture.v DT.v +define+TB2 
+s71(24Mar2024:03:01:41):  ncverilog testfixture.v DT.v +define+TB1 
+s72(24Mar2024:03:02:56):  ncverilog testfixture.v DT.v +define+TB1 
+s73(24Mar2024:03:03:15):  ncverilog testfixture.v DT.v +define+TB1 
+s74(24Mar2024:03:03:22):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s75(24Mar2024:03:05:10):  ncverilog testfixture.v DT.v 
+s76(24Mar2024:03:05:27):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s77(24Mar2024:03:05:34):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s78(24Mar2024:03:11:04):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s79(24Mar2024:03:11:13):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s80(24Mar2024:03:12:09):  ncverilog testfixture.v DT_syn.v –v tsmc13_neg.v +define+SDF +define+TB1 
+s81(24Mar2024:03:12:27):  ncverilog testfixture.v ./syn/DT_syn.v –v tsmc13_neg.v +define+SDF +define+TB1 
+s82(24Mar2024:03:13:37):  ncverilog testfixture.v ./syn/DT_syn.v –v tsmc13_neg.v +define+SDF +define+TB1 
+s83(24Mar2024:03:14:06):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB1 
+s84(24Mar2024:03:14:18):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 
+s85(24Mar2024:03:14:29):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB1 
+s86(24Mar2024:03:21:55):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s87(24Mar2024:03:22:03):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s88(24Mar2024:03:22:26):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s89(24Mar2024:03:22:31):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s90(24Mar2024:03:24:23):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s91(24Mar2024:03:26:10):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s92(24Mar2024:03:26:27):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s93(24Mar2024:03:41:31):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s94(24Mar2024:03:41:50):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s95(24Mar2024:03:42:56):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s96(24Mar2024:03:51:46):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s97(24Mar2024:03:51:58):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s98(24Mar2024:04:00:17):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s99(24Mar2024:04:00:42):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s100(24Mar2024:04:06:06):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s101(24Mar2024:04:06:11):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s102(24Mar2024:04:10:12):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB_FILE="DT.fsdb" 
+s103(24Mar2024:04:12:57):  ncverilog testfixture.v DT.v +define+TB1 +nc64bit +access+r +define+FSDB 
+s104(24Mar2024:04:13:12):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s105(24Mar2024:04:13:38):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s106(24Mar2024:04:13:43):  ncverilog testfixture.v DT.v +define+TB2 +nc64bit +access+r +define+FSDB 
+s107(24Mar2024:04:21:29):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB1 
+s108(24Mar2024:04:21:37):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 
+s109(24Mar2024:04:23:52):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 
+s110(24Mar2024:04:26:30):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB1 
+s111(24Mar2024:04:27:02):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 
+s112(26Mar2024:23:33:47):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit +define+TB1 
+s113(26Mar2024:23:34:18):  ncverilog testfixture.v ./syn/DT_syn.v -v tsmc13_neg.v +define+SDF +access+r +nc64bit +define+TB2 

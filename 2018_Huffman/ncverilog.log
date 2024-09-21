@@ -1,0 +1,1669 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Mar 13, 2024 at 21:53:05 CST
+ncverilog
+	tb.v
+	./build/huffman_syn.v
+	-v
+	tsmc13_neg.v
+	+nc64bit
+	+access+r
+	+define+tb3
+	+define+FSDB_FILE="huffman.fsdb"
+	+define+SDF
+file: tb.v
+  `define PAT "./pattern3.dat"
+                              |
+ncvlog: *W,MACRDF (tb.v,20|30): text macro 'PAT' redefined - replaced with new definition.
+  `define EXP "./golden3.dat"
+                             |
+ncvlog: *W,MACRDF (tb.v,21|29): text macro 'EXP' redefined - replaced with new definition.
+	module worklib.tb:v
+		errors: 0, warnings: 0
+file: ./build/huffman_syn.v
+	module worklib.huffman_DW01_add_0:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_0:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_1:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_2:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_3:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_4:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_5:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_6:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_7:v
+		errors: 0, warnings: 0
+	module worklib.huffman_DW01_inc_8:v
+		errors: 0, warnings: 0
+	module worklib.huffman:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \huffman_code_reg[4][7]  ( .D(n686), .CK(clk), .RN(n1128), .QN(n152)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,391|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[3][7]  ( .D(n702), .CK(clk), .RN(n1129), .QN(n160)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,393|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[2][7]  ( .D(n718), .CK(clk), .RN(n1130), .QN(n168)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,395|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][7]  ( .D(n734), .CK(clk), .RN(n1131), .QN(n176)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,397|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][7]  ( .D(n750), .CK(clk), .RN(n1124), .QN(n184)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,399|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[5][7]  ( .D(n766), .CK(clk), .RN(n1124), .QN(n144)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,401|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][6]  ( .D(n751), .CK(clk), .RN(n1127), .QN(n185)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,403|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][2]  ( .D(n755), .CK(clk), .RN(n1127), .QN(n189)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,409|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][3]  ( .D(n754), .CK(clk), .RN(n1127), .QN(n188)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,411|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][4]  ( .D(n753), .CK(clk), .RN(n1127), .QN(n187)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,413|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][5]  ( .D(n752), .CK(clk), .RN(n1127), .QN(n186)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,415|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[0][1]  ( .D(n756), .CK(clk), .RN(n1127), .QN(n190)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,417|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][6]  ( .D(n735), .CK(clk), .RN(n1132), .QN(n177)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,431|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][5]  ( .D(n736), .CK(clk), .RN(n1132), .QN(n178)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,449|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][4]  ( .D(n737), .CK(clk), .RN(n1132), .QN(n179)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,451|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][3]  ( .D(n738), .CK(clk), .RN(n1132), .QN(n180)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,453|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][2]  ( .D(n739), .CK(clk), .RN(n1125), .QN(n181)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,455|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huffman_code_reg[1][1]  ( .D(n740), .CK(clk), .RN(n1125), .QN(n182)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,457|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \counter_fin_reg[3]  ( .D(n1050), .CK(clk), .RN(n1123), .Q(
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,501|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_fin_reg[1]  ( .D(n1053), .CK(clk), .RN(n1123), .Q(
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,507|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_fin_reg[0]  ( .D(n1052), .CK(clk), .RN(n1123), .Q(
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,509|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_fin_reg[6]  ( .D(n1047), .CK(clk), .RN(n1123), .Q(
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,555|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_fin_reg[4]  ( .D(n1049), .CK(clk), .RN(n1123), .Q(
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,569|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_fin_reg[5]  ( .D(n1048), .CK(clk), .RN(n1123), .Q(
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,597|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_init_reg[3]  ( .D(n987), .CK(clk), .RN(n1122), .Q(
+                             |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,601|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_init_reg[4]  ( .D(n986), .CK(clk), .RN(n1121), .Q(
+                             |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,603|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_init_reg[6]  ( .D(n991), .CK(clk), .RN(n1122), .Q(
+                             |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,605|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \counter_init_reg[5]  ( .D(n985), .CK(clk), .RN(n1121), .Q(
+                             |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,607|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[1][9]  ( .D(n920), .CK(clk), .RN(n1113), .QN(n124)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,633|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[0][9]  ( .D(n930), .CK(clk), .RN(n1114), .QN(n134)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,635|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[2][9]  ( .D(n910), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,637|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][9]  ( .D(n900), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,639|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][9]  ( .D(n984), .CK(clk), .RN(n1111), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,645|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFSX1 \min1_value_reg[8]  ( .D(n873), .CK(clk), .SN(n1132), .QN(n115) );
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,647|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): Q
+
+  DFFRX1 \group_values_reg[4][9]  ( .D(n890), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,648|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[0][6]  ( .D(n933), .CK(clk), .RN(n1114), .QN(n137)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,658|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[1][6]  ( .D(n923), .CK(clk), .RN(n1113), .QN(n127)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,676|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFSX1 \min1_value_reg[0]  ( .D(n977), .CK(clk), .SN(n1132), .QN(n123) );
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,692|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): Q
+
+  DFFRX1 \group_values_reg[2][6]  ( .D(n913), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,693|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][6]  ( .D(n903), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,709|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][6]  ( .D(n883), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,723|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][6]  ( .D(n893), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,727|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[0][8]  ( .D(n931), .CK(clk), .RN(n1116), .QN(n135)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,731|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[0][0]  ( .D(n939), .CK(clk), .RN(n1113), .QN(n143)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,737|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[1][8]  ( .D(n921), .CK(clk), .RN(n1113), .QN(n125)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,739|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[0][7]  ( .D(n932), .CK(clk), .RN(n1114), .QN(n136)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,743|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[0][3]  ( .D(n936), .CK(clk), .RN(n1113), .QN(n140)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,745|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[2][8]  ( .D(n911), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,747|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[1][0]  ( .D(n929), .CK(clk), .RN(n1112), .QN(n133)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,749|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[0][1]  ( .D(n938), .CK(clk), .RN(n1113), .QN(n142)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,751|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[1][7]  ( .D(n922), .CK(clk), .RN(n1113), .QN(n126)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,753|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[1][3]  ( .D(n926), .CK(clk), .RN(n1112), .QN(n130)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,755|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[2][0]  ( .D(n919), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,757|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][8]  ( .D(n901), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,759|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[1][1]  ( .D(n928), .CK(clk), .RN(n1112), .QN(n132)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,761|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[0][2]  ( .D(n937), .CK(clk), .RN(n1113), .QN(n141)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,763|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[5][8]  ( .D(n881), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,765|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[2][7]  ( .D(n912), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,767|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[2][3]  ( .D(n916), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,769|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][8]  ( .D(n891), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,771|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][0]  ( .D(n909), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,773|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[2][1]  ( .D(n918), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,775|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[1][2]  ( .D(n927), .CK(clk), .RN(n1112), .QN(n131)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,777|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[5][0]  ( .D(n889), .CK(clk), .RN(n1111), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,779|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[0][5]  ( .D(n934), .CK(clk), .RN(n1113), .QN(n138)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,781|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[3][7]  ( .D(n902), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,783|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][3]  ( .D(n906), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,785|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][0]  ( .D(n899), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,787|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][7]  ( .D(n882), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,789|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][3]  ( .D(n886), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,791|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][1]  ( .D(n908), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,793|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[2][2]  ( .D(n917), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,795|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[0][4]  ( .D(n935), .CK(clk), .RN(n1113), .QN(n139)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,797|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[4][7]  ( .D(n892), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,799|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][3]  ( .D(n896), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,801|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[1][5]  ( .D(n924), .CK(clk), .RN(n1113), .QN(n128)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,803|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[5][1]  ( .D(n888), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,805|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][1]  ( .D(n898), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,807|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][2]  ( .D(n907), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,809|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[1][4]  ( .D(n925), .CK(clk), .RN(n1113), .QN(n129)
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,811|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \group_values_reg[2][5]  ( .D(n914), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,813|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][2]  ( .D(n887), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,815|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][2]  ( .D(n897), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,817|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[2][4]  ( .D(n915), .CK(clk), .RN(n1114), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,819|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][5]  ( .D(n904), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,821|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][5]  ( .D(n884), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,823|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[3][4]  ( .D(n905), .CK(clk), .RN(n1115), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,825|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][5]  ( .D(n894), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,827|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[5][4]  ( .D(n885), .CK(clk), .RN(n1112), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,829|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \group_values_reg[4][4]  ( .D(n895), .CK(clk), .RN(n1116), .Q(
+                                |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,831|32): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFSX1 \min2_value_reg[6]  ( .D(n865), .CK(clk), .SN(n1056), .Q(
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,871|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): QN
+
+  DFFSX1 \min2_value_reg[9]  ( .D(n983), .CK(clk), .SN(n1055), .Q(
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,873|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): QN
+
+  DFFSX1 \min2_value_reg[7]  ( .D(n864), .CK(clk), .SN(n1055), .Q(
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,875|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): QN
+
+  DFFSX1 \min2_value_reg[2]  ( .D(n869), .CK(clk), .SN(n1056), .Q(
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,877|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): QN
+
+  DFFSX1 \min2_value_reg[4]  ( .D(n867), .CK(clk), .SN(n1055), .Q(
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,879|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): QN
+
+  huffman_DW01_add_0 add_278 ( .A({N795, N796, N797, N798, N799, N800, N801, 
+                           |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2297|27): 1 output port was not connected:
+ncelab: (./build/huffman_syn.v,8): CO
+
+  DFFRX2 \pr_table_reg[5][0]  ( .D(n1005), .CK(clk), .RN(n1055), .Q(CNT6[0])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2319|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][0]  ( .D(n1021), .CK(clk), .RN(n1056), .Q(CNT4[0])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2321|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][0]  ( .D(n1013), .CK(clk), .RN(n1056), .Q(CNT5[0])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2323|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][0]  ( .D(n1029), .CK(clk), .RN(n1056), .Q(CNT3[0])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2325|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][0]  ( .D(n1037), .CK(clk), .RN(n1056), .Q(CNT2[0])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2327|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][7]  ( .D(n999), .CK(clk), .RN(n1056), .Q(CNT6[7]) );
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2329|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][7]  ( .D(n1015), .CK(clk), .RN(n1055), .Q(CNT4[7])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2330|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][7]  ( .D(n1007), .CK(clk), .RN(n1055), .Q(CNT5[7])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2332|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][7]  ( .D(n1023), .CK(clk), .RN(n1055), .Q(CNT3[7])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2334|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][7]  ( .D(n1031), .CK(clk), .RN(n1055), .Q(CNT2[7])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2336|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][6]  ( .D(n1000), .CK(clk), .RN(n1056), .Q(CNT6[6])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2338|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][5]  ( .D(n1001), .CK(clk), .RN(n1055), .Q(CNT6[5])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2340|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][4]  ( .D(n1002), .CK(clk), .RN(n1056), .Q(CNT6[4])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2342|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][3]  ( .D(n1003), .CK(clk), .RN(n1055), .Q(CNT6[3])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2344|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][2]  ( .D(n1004), .CK(clk), .RN(n1056), .Q(CNT6[2])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2346|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[5][1]  ( .D(n1006), .CK(clk), .RN(n1055), .Q(CNT6[1])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2348|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][6]  ( .D(n1016), .CK(clk), .RN(n1055), .Q(CNT4[6])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2350|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][5]  ( .D(n1017), .CK(clk), .RN(n1056), .Q(CNT4[5])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2352|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][4]  ( .D(n1018), .CK(clk), .RN(n1055), .Q(CNT4[4])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2354|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][3]  ( .D(n1019), .CK(clk), .RN(n1056), .Q(CNT4[3])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2356|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][2]  ( .D(n1020), .CK(clk), .RN(n1055), .Q(CNT4[2])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2358|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[3][1]  ( .D(n1022), .CK(clk), .RN(n1056), .Q(CNT4[1])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2360|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][6]  ( .D(n1008), .CK(clk), .RN(n1055), .Q(CNT5[6])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2362|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][5]  ( .D(n1009), .CK(clk), .RN(n1056), .Q(CNT5[5])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2364|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][4]  ( .D(n1010), .CK(clk), .RN(n1055), .Q(CNT5[4])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2366|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][3]  ( .D(n1011), .CK(clk), .RN(n1056), .Q(CNT5[3])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2368|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][2]  ( .D(n1012), .CK(clk), .RN(n1055), .Q(CNT5[2])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2370|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[4][1]  ( .D(n1014), .CK(clk), .RN(n1056), .Q(CNT5[1])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2372|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][6]  ( .D(n1024), .CK(clk), .RN(n1055), .Q(CNT3[6])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2374|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][5]  ( .D(n1025), .CK(clk), .RN(n1056), .Q(CNT3[5])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2376|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][4]  ( .D(n1026), .CK(clk), .RN(n1055), .Q(CNT3[4])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2378|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][3]  ( .D(n1027), .CK(clk), .RN(n1056), .Q(CNT3[3])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2380|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][2]  ( .D(n1028), .CK(clk), .RN(n1055), .Q(CNT3[2])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2382|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[2][1]  ( .D(n1030), .CK(clk), .RN(n1056), .Q(CNT3[1])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2384|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][6]  ( .D(n1032), .CK(clk), .RN(n1055), .Q(CNT2[6])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2386|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][5]  ( .D(n1033), .CK(clk), .RN(n1056), .Q(CNT2[5])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2388|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][4]  ( .D(n1034), .CK(clk), .RN(n1055), .Q(CNT2[4])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2390|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][3]  ( .D(n1035), .CK(clk), .RN(n1056), .Q(CNT2[3])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2392|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][2]  ( .D(n1036), .CK(clk), .RN(n1055), .Q(CNT2[2])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2394|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pr_table_reg[1][1]  ( .D(n1038), .CK(clk), .RN(n1056), .Q(CNT2[1])
+                            |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2396|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[0]  ( .D(n732), .CK(clk), .RN(n1056), .Q(HC3[0]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2398|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[0]  ( .D(n764), .CK(clk), .RN(n1055), .Q(HC1[0]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2399|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[0]  ( .D(n748), .CK(clk), .RN(n1056), .Q(HC2[0]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2400|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[6]  ( .D(n678), .CK(clk), .RN(n1055), .Q(HC6[6]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2401|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[5]  ( .D(n679), .CK(clk), .RN(n1056), .Q(HC6[5]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2402|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[4]  ( .D(n680), .CK(clk), .RN(n1055), .Q(HC6[4]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2403|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[3]  ( .D(n681), .CK(clk), .RN(n1056), .Q(HC6[3]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2404|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[2]  ( .D(n682), .CK(clk), .RN(n1055), .Q(HC6[2]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2405|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[1]  ( .D(n683), .CK(clk), .RN(n1056), .Q(HC6[1]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2406|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[6]  ( .D(n694), .CK(clk), .RN(n1055), .Q(HC5[6]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2407|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[5]  ( .D(n695), .CK(clk), .RN(n1056), .Q(HC5[5]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2408|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[4]  ( .D(n696), .CK(clk), .RN(n1055), .Q(HC5[4]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2409|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[3]  ( .D(n697), .CK(clk), .RN(n1056), .Q(HC5[3]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2410|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[2]  ( .D(n698), .CK(clk), .RN(n1055), .Q(HC5[2]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2411|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[1]  ( .D(n699), .CK(clk), .RN(n1056), .Q(HC5[1]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2412|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[6]  ( .D(n710), .CK(clk), .RN(n1055), .Q(HC4[6]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2413|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[5]  ( .D(n711), .CK(clk), .RN(n1056), .Q(HC4[5]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2414|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[4]  ( .D(n712), .CK(clk), .RN(n1055), .Q(HC4[4]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2415|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[3]  ( .D(n713), .CK(clk), .RN(n1056), .Q(HC4[3]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2416|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[2]  ( .D(n714), .CK(clk), .RN(n1055), .Q(HC4[2]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2417|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[0]  ( .D(n700), .CK(clk), .RN(n1056), .Q(HC5[0]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2418|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[0]  ( .D(n716), .CK(clk), .RN(n1055), .Q(HC4[0]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2419|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[2]  ( .D(n746), .CK(clk), .RN(n1056), .Q(HC2[2]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2420|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[0]  ( .D(n684), .CK(clk), .RN(n1055), .Q(HC6[0]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2421|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[5]  ( .D(n743), .CK(clk), .RN(n1055), .Q(HC2[5]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2422|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[4]  ( .D(n744), .CK(clk), .RN(n1056), .Q(HC2[4]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2423|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[3]  ( .D(n761), .CK(clk), .RN(n1056), .Q(HC1[3]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2424|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[2]  ( .D(n762), .CK(clk), .RN(n1055), .Q(HC1[2]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2425|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[6]  ( .D(n726), .CK(clk), .RN(n1055), .Q(HC3[6]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2426|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[5]  ( .D(n727), .CK(clk), .RN(n1056), .Q(HC3[5]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2427|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[4]  ( .D(n728), .CK(clk), .RN(n1055), .Q(HC3[4]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2428|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[3]  ( .D(n729), .CK(clk), .RN(n1056), .Q(HC3[3]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2429|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[2]  ( .D(n730), .CK(clk), .RN(n1055), .Q(HC3[2]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2430|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[6]  ( .D(n758), .CK(clk), .RN(n1055), .Q(HC1[6]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2431|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[5]  ( .D(n759), .CK(clk), .RN(n1056), .Q(HC1[5]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2432|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[1]  ( .D(n715), .CK(clk), .RN(n1056), .Q(HC4[1]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2433|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[4]  ( .D(n760), .CK(clk), .RN(n1055), .Q(HC1[4]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2434|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[6]  ( .D(n742), .CK(clk), .RN(n1056), .Q(HC2[6]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2435|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[3]  ( .D(n745), .CK(clk), .RN(n1055), .Q(HC2[3]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2436|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[1]  ( .D(n731), .CK(clk), .RN(n1056), .Q(HC3[1]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2437|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[1]  ( .D(n763), .CK(clk), .RN(n1056), .Q(HC1[1]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2438|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[1]  ( .D(n747), .CK(clk), .RN(n1055), .Q(HC2[1]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2439|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC6_reg[7]  ( .D(n677), .CK(clk), .RN(n1055), .Q(HC6[7]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2440|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC5_reg[7]  ( .D(n693), .CK(clk), .RN(n1056), .Q(HC5[7]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2441|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC2_reg[7]  ( .D(n741), .CK(clk), .RN(n1056), .Q(HC2[7]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2442|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC4_reg[7]  ( .D(n709), .CK(clk), .RN(n1055), .Q(HC4[7]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2443|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC3_reg[7]  ( .D(n725), .CK(clk), .RN(n1056), .Q(HC3[7]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2444|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \HC1_reg[7]  ( .D(n757), .CK(clk), .RN(n1055), .Q(HC1[7]) );
+                    |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2445|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[5]  ( .D(n769), .CK(clk), .RN(n1055), .Q(M6[5]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2446|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[4]  ( .D(n771), .CK(clk), .RN(n1056), .Q(M6[4]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2447|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[0]  ( .D(n779), .CK(clk), .RN(n1055), .Q(M6[0]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2448|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[6]  ( .D(n767), .CK(clk), .RN(n1056), .Q(M6[6]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2449|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[3]  ( .D(n773), .CK(clk), .RN(n1055), .Q(M6[3]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2450|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[1]  ( .D(n777), .CK(clk), .RN(n1056), .Q(M6[1]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2451|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[7]  ( .D(n781), .CK(clk), .RN(n1056), .Q(M5[7]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2452|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[5]  ( .D(n785), .CK(clk), .RN(n1055), .Q(M5[5]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2453|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[4]  ( .D(n787), .CK(clk), .RN(n1056), .Q(M5[4]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2454|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[3]  ( .D(n789), .CK(clk), .RN(n1055), .Q(M5[3]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2455|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[2]  ( .D(n791), .CK(clk), .RN(n1056), .Q(M5[2]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2456|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[1]  ( .D(n793), .CK(clk), .RN(n1055), .Q(M5[1]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2457|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[0]  ( .D(n795), .CK(clk), .RN(n1056), .Q(M5[0]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2458|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[7]  ( .D(n797), .CK(clk), .RN(n1055), .Q(M4[7]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2459|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[6]  ( .D(n799), .CK(clk), .RN(n1056), .Q(M4[6]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2460|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[5]  ( .D(n801), .CK(clk), .RN(n1055), .Q(M4[5]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2461|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[4]  ( .D(n803), .CK(clk), .RN(n1056), .Q(M4[4]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2462|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[3]  ( .D(n805), .CK(clk), .RN(n1055), .Q(M4[3]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2463|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[2]  ( .D(n807), .CK(clk), .RN(n1056), .Q(M4[2]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2464|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[1]  ( .D(n809), .CK(clk), .RN(n1055), .Q(M4[1]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2465|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M4_reg[0]  ( .D(n811), .CK(clk), .RN(n1056), .Q(M4[0]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2466|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[7]  ( .D(n813), .CK(clk), .RN(n1055), .Q(M3[7]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2467|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[7]  ( .D(n861), .CK(clk), .RN(n1055), .Q(M6[7]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2468|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M6_reg[2]  ( .D(n775), .CK(clk), .RN(n1055), .Q(M6[2]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2469|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M5_reg[6]  ( .D(n783), .CK(clk), .RN(n1056), .Q(M5[6]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2470|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[6]  ( .D(n815), .CK(clk), .RN(n1056), .Q(M3[6]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2471|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[5]  ( .D(n817), .CK(clk), .RN(n1055), .Q(M3[5]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2472|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[4]  ( .D(n819), .CK(clk), .RN(n1056), .Q(M3[4]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2473|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[3]  ( .D(n821), .CK(clk), .RN(n1055), .Q(M3[3]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2474|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[2]  ( .D(n823), .CK(clk), .RN(n1056), .Q(M3[2]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2475|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[1]  ( .D(n825), .CK(clk), .RN(n1055), .Q(M3[1]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2476|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M3_reg[0]  ( .D(n827), .CK(clk), .RN(n1056), .Q(M3[0]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2477|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[7]  ( .D(n829), .CK(clk), .RN(n1055), .Q(M2[7]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2478|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[6]  ( .D(n831), .CK(clk), .RN(n1056), .Q(M2[6]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2479|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[5]  ( .D(n833), .CK(clk), .RN(n1055), .Q(M2[5]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2480|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[4]  ( .D(n835), .CK(clk), .RN(n1056), .Q(M2[4]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2481|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[3]  ( .D(n837), .CK(clk), .RN(n1055), .Q(M2[3]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2482|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[2]  ( .D(n839), .CK(clk), .RN(n1056), .Q(M2[2]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2483|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[1]  ( .D(n841), .CK(clk), .RN(n1055), .Q(M2[1]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2484|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M2_reg[0]  ( .D(n843), .CK(clk), .RN(n1056), .Q(M2[0]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2485|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[7]  ( .D(n845), .CK(clk), .RN(n1055), .Q(M1[7]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2486|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[6]  ( .D(n847), .CK(clk), .RN(n1056), .Q(M1[6]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2487|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[5]  ( .D(n849), .CK(clk), .RN(n1055), .Q(M1[5]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2488|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[4]  ( .D(n851), .CK(clk), .RN(n1056), .Q(M1[4]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2489|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[3]  ( .D(n853), .CK(clk), .RN(n1055), .Q(M1[3]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2490|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[2]  ( .D(n855), .CK(clk), .RN(n1056), .Q(M1[2]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2491|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[1]  ( .D(n857), .CK(clk), .RN(n1055), .Q(M1[1]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2492|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFRX2 \M1_reg[0]  ( .D(n859), .CK(clk), .RN(n1056), .Q(M1[0]) );
+                   |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2493|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+  DFFSX2 \min2_idx_reg[2]  ( .D(n982), .CK(clk), .SN(n1056), .QN(n292) );
+                         |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2494|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18652): Q
+
+  DFFSX2 \min2_idx_reg[1]  ( .D(n975), .CK(clk), .SN(n1056), .QN(n293) );
+                         |
+ncelab: *W,CUVWSP (./build/huffman_syn.v,2495|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18652): Q
+
+	Reading SDF file from location "./build/huffman_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     huffman_syn.sdf.X
+		Log file:              
+		Backannotation scope:  tb.u_huffman
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.r642.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8184>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.r642.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8185>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.r642.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8188>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.r642.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8189>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.r642.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8211>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.r642.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8212>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.r642.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8215>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.r642.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8216>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.r642.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8229>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.r642.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8230>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.r642.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8233>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.r642.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8234>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.r642.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8247>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.r642.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8248>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.r642.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8251>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.r642.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8252>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.r642.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8265>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.r642.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8266>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.r642.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8269>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.r642.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8270>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.r642.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8283>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.r642.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8284>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.r642.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8287>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.r642.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8288>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_119.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8299>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_119.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8300>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_119.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8303>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_119.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8304>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_119.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8326>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_119.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8327>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_119.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8330>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_119.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8331>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_119.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8344>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_119.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8345>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_119.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8348>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_119.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8349>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_119.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8362>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_119.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8363>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_119.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8366>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_119.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8367>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_119.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8380>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_119.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8381>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_119.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8384>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_119.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8385>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_119.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8398>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_119.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8399>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_119.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8402>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_119.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8403>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_197.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8414>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_197.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8415>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_197.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8418>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_197.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8419>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_197.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8441>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_197.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8442>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_197.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8445>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_197.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8446>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_197.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8459>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_197.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8460>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_197.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8463>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_197.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8464>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_197.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8477>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_197.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8478>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_197.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8481>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_197.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8482>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_197.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8495>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_197.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8496>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_197.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8499>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_197.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8500>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_197.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8513>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_197.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8514>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_197.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8517>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_197.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8518>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_251.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8529>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_251.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8530>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_251.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8533>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_251.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8534>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_251.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8556>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_251.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8557>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_251.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8560>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_251.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8561>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_251.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8574>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_251.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8575>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_251.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8578>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_251.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8579>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_251.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8592>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_251.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8593>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_251.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8596>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_251.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8597>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_251.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8610>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_251.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8611>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_251.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8614>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_251.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8615>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_251.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8628>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_251.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8629>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_251.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8632>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_251.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8633>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_251.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8646>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_251.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8647>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_251.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8650>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_251.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8651>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_254.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8662>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_254.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8663>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_254.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8666>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_254.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8667>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_254.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8689>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_254.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8690>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_254.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8693>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_254.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8694>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_254.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8707>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_254.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8708>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_254.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8711>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_254.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8712>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_254.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8725>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_254.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8726>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_254.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8729>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_254.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8730>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_254.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8743>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_254.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8744>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_254.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8747>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_254.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8748>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_254.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8761>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_254.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8762>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_254.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8765>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_254.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8766>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_254.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8779>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_254.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8780>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_254.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8783>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_254.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8784>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_257.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8795>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_257.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8796>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_257.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8799>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_257.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8800>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_257.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8822>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_257.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8823>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_257.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8826>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_257.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8827>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_257.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8840>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_257.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8841>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_257.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8844>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_257.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8845>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_257.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8858>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_257.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8859>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_257.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8862>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_257.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8863>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_257.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8876>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_257.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8877>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_257.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8880>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_257.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 8881>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_257.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8894>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_257.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8895>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_257.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8898>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_257.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 8899>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_257.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8912>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_257.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8913>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_257.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8916>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_257.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 8917>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_260.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8928>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_260.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8929>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_260.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8932>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_260.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 8933>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_260.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8955>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_260.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8956>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_260.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8959>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_260.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 8960>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_260.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8973>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_260.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8974>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_260.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8977>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_260.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 8978>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_260.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8991>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_260.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8992>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_260.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8995>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_260.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 8996>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_260.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9009>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_260.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9010>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_260.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9013>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_260.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9014>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_260.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9027>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_260.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9028>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_260.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9031>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_260.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9032>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_260.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9045>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_260.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9046>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_260.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9049>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_260.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9050>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_263.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9061>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_263.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9062>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_263.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9065>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_263.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9066>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_263.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9088>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_263.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9089>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_263.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9092>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_263.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9093>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_263.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9106>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_263.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9107>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_263.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9110>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_263.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9111>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_263.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9124>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_263.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9125>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_263.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9128>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_263.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9129>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_263.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9142>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_263.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9143>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_263.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9146>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_263.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9147>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_263.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9160>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_263.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9161>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_263.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9164>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_263.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9165>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_263.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9178>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_263.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9179>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_263.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9182>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_263.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9183>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_266.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9194>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_266.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9195>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_266.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9198>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_266.U2 of module XOR2X1 <./build/huffman_syn.sdf, line 9199>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_266.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9221>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_266.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9222>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_266.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9225>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_266.U1_1_1 of module ADDHXL <./build/huffman_syn.sdf, line 9226>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_266.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9239>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_266.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9240>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_266.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9243>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_266.U1_1_2 of module ADDHXL <./build/huffman_syn.sdf, line 9244>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_266.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9257>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_266.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9258>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_266.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9261>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_266.U1_1_3 of module ADDHXL <./build/huffman_syn.sdf, line 9262>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_266.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9275>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_266.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9276>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_266.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9279>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_266.U1_1_4 of module ADDHXL <./build/huffman_syn.sdf, line 9280>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_266.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9293>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_266.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9294>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_266.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9297>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_266.U1_1_5 of module ADDHXL <./build/huffman_syn.sdf, line 9298>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_266.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9311>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_266.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9312>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_266.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9315>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_266.U1_1_6 of module ADDHXL <./build/huffman_syn.sdf, line 9316>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_278.U5 of module XOR2X1 <./build/huffman_syn.sdf, line 9327>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_278.U5 of module XOR2X1 <./build/huffman_syn.sdf, line 9328>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_278.U5 of module XOR2X1 <./build/huffman_syn.sdf, line 9331>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_278.U5 of module XOR2X1 <./build/huffman_syn.sdf, line 9332>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_278.U4 of module XOR2X1 <./build/huffman_syn.sdf, line 9343>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_278.U4 of module XOR2X1 <./build/huffman_syn.sdf, line 9344>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_278.U4 of module XOR2X1 <./build/huffman_syn.sdf, line 9347>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_278.U4 of module XOR2X1 <./build/huffman_syn.sdf, line 9348>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.add_278.U3 of module XOR2X1 <./build/huffman_syn.sdf, line 9359>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.add_278.U3 of module XOR2X1 <./build/huffman_syn.sdf, line 9360>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.add_278.U3 of module XOR2X1 <./build/huffman_syn.sdf, line 9363>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.add_278.U3 of module XOR2X1 <./build/huffman_syn.sdf, line 9364>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_7 of module ADDFXL <./build/huffman_syn.sdf, line 9404>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_7 of module ADDFXL <./build/huffman_syn.sdf, line 9405>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_7 of module ADDFXL <./build/huffman_syn.sdf, line 9410>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_7 of module ADDFXL <./build/huffman_syn.sdf, line 9411>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_7 of module ADDFXL <./build/huffman_syn.sdf, line 9414>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_7 of module ADDFXL <./build/huffman_syn.sdf, line 9415>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_1 of module ADDFXL <./build/huffman_syn.sdf, line 9435>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_1 of module ADDFXL <./build/huffman_syn.sdf, line 9436>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_1 of module ADDFXL <./build/huffman_syn.sdf, line 9441>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_1 of module ADDFXL <./build/huffman_syn.sdf, line 9442>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_1 of module ADDFXL <./build/huffman_syn.sdf, line 9445>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_1 of module ADDFXL <./build/huffman_syn.sdf, line 9446>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_2 of module ADDFXL <./build/huffman_syn.sdf, line 9466>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_2 of module ADDFXL <./build/huffman_syn.sdf, line 9467>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_2 of module ADDFXL <./build/huffman_syn.sdf, line 9472>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_2 of module ADDFXL <./build/huffman_syn.sdf, line 9473>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_2 of module ADDFXL <./build/huffman_syn.sdf, line 9476>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_2 of module ADDFXL <./build/huffman_syn.sdf, line 9477>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_3 of module ADDFXL <./build/huffman_syn.sdf, line 9497>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_3 of module ADDFXL <./build/huffman_syn.sdf, line 9498>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_3 of module ADDFXL <./build/huffman_syn.sdf, line 9503>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_3 of module ADDFXL <./build/huffman_syn.sdf, line 9504>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_3 of module ADDFXL <./build/huffman_syn.sdf, line 9507>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_3 of module ADDFXL <./build/huffman_syn.sdf, line 9508>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_4 of module ADDFXL <./build/huffman_syn.sdf, line 9528>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_4 of module ADDFXL <./build/huffman_syn.sdf, line 9529>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_4 of module ADDFXL <./build/huffman_syn.sdf, line 9534>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_4 of module ADDFXL <./build/huffman_syn.sdf, line 9535>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_4 of module ADDFXL <./build/huffman_syn.sdf, line 9538>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_4 of module ADDFXL <./build/huffman_syn.sdf, line 9539>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_5 of module ADDFXL <./build/huffman_syn.sdf, line 9559>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_5 of module ADDFXL <./build/huffman_syn.sdf, line 9560>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_5 of module ADDFXL <./build/huffman_syn.sdf, line 9565>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_5 of module ADDFXL <./build/huffman_syn.sdf, line 9566>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_5 of module ADDFXL <./build/huffman_syn.sdf, line 9569>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_5 of module ADDFXL <./build/huffman_syn.sdf, line 9570>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.add_278.U1_6 of module ADDFXL <./build/huffman_syn.sdf, line 9590>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.add_278.U1_6 of module ADDFXL <./build/huffman_syn.sdf, line 9591>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.add_278.U1_6 of module ADDFXL <./build/huffman_syn.sdf, line 9596>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.add_278.U1_6 of module ADDFXL <./build/huffman_syn.sdf, line 9597>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.add_278.U1_6 of module ADDFXL <./build/huffman_syn.sdf, line 9600>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.add_278.U1_6 of module ADDFXL <./build/huffman_syn.sdf, line 9601>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1853 of module XOR2X1 <./build/huffman_syn.sdf, line 10096>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1853 of module XOR2X1 <./build/huffman_syn.sdf, line 10097>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1853 of module XOR2X1 <./build/huffman_syn.sdf, line 10100>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1853 of module XOR2X1 <./build/huffman_syn.sdf, line 10101>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1603 of module XOR2X1 <./build/huffman_syn.sdf, line 13032>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1603 of module XOR2X1 <./build/huffman_syn.sdf, line 13033>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1603 of module XOR2X1 <./build/huffman_syn.sdf, line 13036>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1603 of module XOR2X1 <./build/huffman_syn.sdf, line 13037>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1602 of module XOR2X1 <./build/huffman_syn.sdf, line 13048>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1602 of module XOR2X1 <./build/huffman_syn.sdf, line 13049>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1602 of module XOR2X1 <./build/huffman_syn.sdf, line 13052>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1602 of module XOR2X1 <./build/huffman_syn.sdf, line 13053>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1601 of module XOR2X1 <./build/huffman_syn.sdf, line 13064>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1601 of module XOR2X1 <./build/huffman_syn.sdf, line 13065>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1601 of module XOR2X1 <./build/huffman_syn.sdf, line 13068>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1601 of module XOR2X1 <./build/huffman_syn.sdf, line 13069>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1593 of module XOR2X1 <./build/huffman_syn.sdf, line 13160>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1593 of module XOR2X1 <./build/huffman_syn.sdf, line 13161>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1593 of module XOR2X1 <./build/huffman_syn.sdf, line 13164>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1593 of module XOR2X1 <./build/huffman_syn.sdf, line 13165>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1592 of module XOR2X1 <./build/huffman_syn.sdf, line 13176>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1592 of module XOR2X1 <./build/huffman_syn.sdf, line 13177>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1592 of module XOR2X1 <./build/huffman_syn.sdf, line 13180>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1592 of module XOR2X1 <./build/huffman_syn.sdf, line 13181>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1590 of module XOR2X1 <./build/huffman_syn.sdf, line 13202>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1590 of module XOR2X1 <./build/huffman_syn.sdf, line 13203>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1590 of module XOR2X1 <./build/huffman_syn.sdf, line 13206>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1590 of module XOR2X1 <./build/huffman_syn.sdf, line 13207>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1589 of module XOR2X1 <./build/huffman_syn.sdf, line 13218>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1589 of module XOR2X1 <./build/huffman_syn.sdf, line 13219>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1589 of module XOR2X1 <./build/huffman_syn.sdf, line 13222>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1589 of module XOR2X1 <./build/huffman_syn.sdf, line 13223>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1588 of module XOR2X1 <./build/huffman_syn.sdf, line 13234>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1588 of module XOR2X1 <./build/huffman_syn.sdf, line 13235>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1588 of module XOR2X1 <./build/huffman_syn.sdf, line 13238>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1588 of module XOR2X1 <./build/huffman_syn.sdf, line 13239>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1585 of module XOR2X1 <./build/huffman_syn.sdf, line 13273>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1585 of module XOR2X1 <./build/huffman_syn.sdf, line 13274>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1585 of module XOR2X1 <./build/huffman_syn.sdf, line 13277>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1585 of module XOR2X1 <./build/huffman_syn.sdf, line 13278>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1584 of module XOR2X1 <./build/huffman_syn.sdf, line 13289>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1584 of module XOR2X1 <./build/huffman_syn.sdf, line 13290>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1584 of module XOR2X1 <./build/huffman_syn.sdf, line 13293>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1584 of module XOR2X1 <./build/huffman_syn.sdf, line 13294>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1064 of module XOR2X1 <./build/huffman_syn.sdf, line 19509>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1064 of module XOR2X1 <./build/huffman_syn.sdf, line 19510>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1064 of module XOR2X1 <./build/huffman_syn.sdf, line 19513>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1064 of module XOR2X1 <./build/huffman_syn.sdf, line 19514>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1063 of module XOR2X1 <./build/huffman_syn.sdf, line 19525>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1063 of module XOR2X1 <./build/huffman_syn.sdf, line 19526>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1063 of module XOR2X1 <./build/huffman_syn.sdf, line 19529>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1063 of module XOR2X1 <./build/huffman_syn.sdf, line 19530>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.U1060 of module ADDFXL <./build/huffman_syn.sdf, line 19574>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.U1060 of module ADDFXL <./build/huffman_syn.sdf, line 19575>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.U1060 of module ADDFXL <./build/huffman_syn.sdf, line 19580>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.U1060 of module ADDFXL <./build/huffman_syn.sdf, line 19581>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.U1060 of module ADDFXL <./build/huffman_syn.sdf, line 19584>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.U1060 of module ADDFXL <./build/huffman_syn.sdf, line 19585>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1059 of module XOR2X1 <./build/huffman_syn.sdf, line 19596>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1059 of module XOR2X1 <./build/huffman_syn.sdf, line 19597>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1059 of module XOR2X1 <./build/huffman_syn.sdf, line 19600>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1059 of module XOR2X1 <./build/huffman_syn.sdf, line 19601>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1058 of module XOR2X1 <./build/huffman_syn.sdf, line 19612>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1058 of module XOR2X1 <./build/huffman_syn.sdf, line 19613>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1058 of module XOR2X1 <./build/huffman_syn.sdf, line 19616>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1058 of module XOR2X1 <./build/huffman_syn.sdf, line 19617>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1054 of module XOR2X1 <./build/huffman_syn.sdf, line 19659>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1054 of module XOR2X1 <./build/huffman_syn.sdf, line 19660>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1054 of module XOR2X1 <./build/huffman_syn.sdf, line 19663>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1054 of module XOR2X1 <./build/huffman_syn.sdf, line 19664>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1053 of module XOR2X1 <./build/huffman_syn.sdf, line 19675>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1053 of module XOR2X1 <./build/huffman_syn.sdf, line 19676>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1053 of module XOR2X1 <./build/huffman_syn.sdf, line 19679>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1053 of module XOR2X1 <./build/huffman_syn.sdf, line 19680>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance tb.u_huffman.U1046 of module ADDFXL <./build/huffman_syn.sdf, line 19764>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance tb.u_huffman.U1046 of module ADDFXL <./build/huffman_syn.sdf, line 19765>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) S) of instance tb.u_huffman.U1046 of module ADDFXL <./build/huffman_syn.sdf, line 19770>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) S) of instance tb.u_huffman.U1046 of module ADDFXL <./build/huffman_syn.sdf, line 19771>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance tb.u_huffman.U1046 of module ADDFXL <./build/huffman_syn.sdf, line 19774>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance tb.u_huffman.U1046 of module ADDFXL <./build/huffman_syn.sdf, line 19775>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1036 of module XOR2X1 <./build/huffman_syn.sdf, line 19878>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1036 of module XOR2X1 <./build/huffman_syn.sdf, line 19879>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1036 of module XOR2X1 <./build/huffman_syn.sdf, line 19882>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1036 of module XOR2X1 <./build/huffman_syn.sdf, line 19883>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U1035 of module XOR2X1 <./build/huffman_syn.sdf, line 19894>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U1035 of module XOR2X1 <./build/huffman_syn.sdf, line 19895>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U1035 of module XOR2X1 <./build/huffman_syn.sdf, line 19898>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U1035 of module XOR2X1 <./build/huffman_syn.sdf, line 19899>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance tb.u_huffman.U989 of module XNOR2X1 <./build/huffman_syn.sdf, line 20332>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance tb.u_huffman.U989 of module XNOR2X1 <./build/huffman_syn.sdf, line 20333>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance tb.u_huffman.U989 of module XNOR2X1 <./build/huffman_syn.sdf, line 20336>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance tb.u_huffman.U989 of module XNOR2X1 <./build/huffman_syn.sdf, line 20337>.
+	Annotation completed with 0 Errors and 386 Warnings
+	SDF statistics: No. of Pathdelays = 5673  Annotated = 100.00% -- No. of Tchecks = 2316  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        5673	        5673	      100.00
+		      $width	        1158	        1158	      100.00
+		  $setuphold	        1158	        1158	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.huffman:v <0x20a88eec>
+			streams:   0, words:     0
+		worklib.tb:v <0x69fefa61>
+			streams:  22, words: 24916
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 1510      79
+		UDPs:                     386       1
+		Primitives:              4502       8
+		Timing outputs:          1944      25
+		Registers:                397      17
+		Scalar wires:            2339       -
+		Expanded wires:             8       1
+		Vectored wires:             6       -
+		Always blocks:              2       2
+		Initial blocks:             9       9
+		Cont. assignments:          6       8
+		Pseudo assignments:         1       1
+		Timing checks:           3474     457
+		Interconnect:            4911       -
+		Delayed tcheck signals:  1158     413
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'huffman.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+./pattern3.dat and ./golden3.dat were used for this simulation.
+Check CNT : PASS
+Check HC : PASS
+Check M : PASS
+You PASS the contest now.
+Simulation complete via $finish(1) at time 3550 NS + 0
+./tb.v:178                  $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Mar 13, 2024 at 21:53:07 CST  (total: 00:00:02)

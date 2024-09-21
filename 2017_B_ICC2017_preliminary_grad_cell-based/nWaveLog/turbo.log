@@ -1,0 +1,4 @@
+Command Line: /home/nfs_cad/synopsys/verdi/cur/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux caidcpuserver1 5.15.0-97-generic #107~20.04.1-Ubuntu SMP Fri Feb 9 14:20:11 UTC 2024 x86_64)
+Failed to delete /home/linjinyu/IC_contest/105_B_ICC2017_preliminary_grad_cell-based/B_ICC2017_preliminary_grad_cell-based/BSSLib.lib++
+au time 62782.172729 266.862190 411.627689 delta 263942144 263942144 total 658497536 658497536

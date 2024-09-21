@@ -1,0 +1,26 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+tb.v
+./build/huffman_syn.v
+-VFILE
+tsmc13_neg.v
+-DEFINE
+tb3
+-DEFINE
+FSDB_FILE=\"huffman.fsdb\"
+-DEFINE
+SDF
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

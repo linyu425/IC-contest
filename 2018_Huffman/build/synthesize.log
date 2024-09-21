@@ -1,0 +1,421 @@
+
+                            Design Compiler (R) NXT 
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Read all Files
+read_verilog ../huffman.v
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'fast'
+  Loading link library 'gtech'
+Loading verilog file '/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v
+Warning:  /home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v:219: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 51 in file
+	'/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            52            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 203 in file
+	'/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           248            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine huffman line 97 in file
+		'/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   counter_fin_reg   | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  counter_init_reg   | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine huffman line 203 in file
+		'/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       HC6_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       M1_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       M2_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    min1_idx_reg     | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+|   min1_value_reg    | Flip-flop |  10   |  Y  | N  | N  | Y  | N  | N  | N  |
+|  group_values_reg   | Flip-flop |  60   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       M4_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  huffman_code_reg   | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       M3_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      mask_reg       | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       M6_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    pr_table_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      group_reg      | Flip-flop |   6   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      group_reg      | Flip-flop |  30   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    min2_idx_reg     | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+|   min2_value_reg    | Flip-flop |  10   |  Y  | N  | N  | Y  | N  | N  | N  |
+|       M5_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       HC1_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       HC2_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       HC3_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       HC4_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       HC5_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine huffman line 393 in file
+		'/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cur_state_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.db:huffman'
+Loaded 1 design.
+Current design is 'huffman'.
+huffman
+current_design huffman
+Current design is 'huffman'.
+{huffman}
+link
+
+  Linking design 'huffman'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  huffman                     /home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/huffman.db
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  fast (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+# Setting Clock Constraits
+source -echo -verbose ../huffman.sdc
+# operating conditions and boundary conditions #
+set cycle  10.0        ;#clock period defined by designer
+10.0
+create_clock -period $cycle [get_ports  clk]
+1
+set_dont_touch_network      [get_clocks clk]
+1
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+1
+set_output_delay 0.5    -clock clk [all_outputs] 
+1
+set_load         0.1     [all_outputs]
+1
+set_drive        1     [all_inputs]
+1
+set_operating_conditions  -max slow  -min fast
+Using operating conditions 'slow' found in library 'slow'.
+Using operating conditions 'fast' found in library 'fast'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+# Synthesis all design
+compile -map_effort high -area_effort high
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT                                                               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2146                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 386                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 306                                    |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition slow set on design huffman has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'huffman'
+Information: Added key list 'DesignWare' to design 'huffman'. (DDB-72)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'huffman_DW_cmp_0'
+  Mapping 'huffman_DW_cmp_1'
+  Processing 'huffman_DW01_add_0'
+  Processing 'huffman_DW01_inc_0'
+  Processing 'huffman_DW01_inc_1'
+  Processing 'huffman_DW01_inc_2'
+  Processing 'huffman_DW01_inc_3'
+  Processing 'huffman_DW01_inc_4'
+  Processing 'huffman_DW01_inc_5'
+  Processing 'huffman_DW01_inc_6'
+  Processing 'huffman_DW01_inc_7'
+  Processing 'huffman_DW01_inc_8'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width2' (rpl)
+  Processing 'DW01_add_width2'
+  Building model 'DW01_add_width3' (rpl)
+  Processing 'DW01_add_width3'
+  Building model 'DW01_add_width6' (rpl)
+  Processing 'DW01_add_width6'
+  Processing 'huffman_DW01_add_1'
+  Processing 'DW01_add_width3_DW01_add_2'
+  Processing 'DW01_add_width2_DW01_add_3'
+  Processing 'huffman_DW01_add_2_DW01_add_4'
+  Processing 'DW01_add_width3_DW01_add_5'
+  Processing 'DW01_add_width2_DW01_add_6'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   46783.7      0.00       0.0       0.0                          
+    0:00:04   46783.7      0.00       0.0       0.0                          
+    0:00:04   46783.7      0.00       0.0       0.0                          
+    0:00:04   46783.7      0.00       0.0       0.0                          
+    0:00:04   46783.7      0.00       0.0       0.0                          
+    0:00:05   24809.2      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   24727.7      0.00       0.0       0.0                          
+    0:00:05   23587.1      0.00       0.0    9878.6                          
+    0:00:05   23582.0      0.00       0.0    9904.3                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   23582.0      0.00       0.0    9904.3                          
+    0:00:06   23753.4      0.00       0.0    5590.7 CNT4[3]                  
+    0:00:06   23901.1      0.00       0.0    3784.2 HC4[4]                   
+    0:00:06   24099.7      0.00       0.0    1768.2 M5[7]                    
+    0:00:06   24288.1      0.00       0.0     262.6 M2[1]                    
+    0:00:06   24328.8      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   24328.8      0.00       0.0       0.0                          
+    0:00:06   24328.8      0.00       0.0       0.0                          
+    0:00:06   24220.2      0.00       0.0       0.0                          
+    0:00:06   24194.7      0.06       0.6       0.0                          
+    0:00:06   24171.0      0.00       0.0       0.0                          
+    0:00:06   24143.8      0.00       0.0       0.0                          
+    0:00:06   24130.2      0.00       0.0       0.0                          
+    0:00:06   24130.2      0.00       0.0       0.0                          
+    0:00:06   24130.2      0.00       0.0       0.0                          
+    0:00:06   24070.8      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+    0:00:06   24057.2      0.00       0.0       0.0                          
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+compile -map_effort high -area_effort high -inc
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT                                                               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1500                                   |
+| Number of User Hierarchies                              | 10                                     |
+| Sequential Cell Count                                   | 386                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 0                                      |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 8 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition slow set on design huffman has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Selecting implementations
+  Building model 'DW01_NAND2'
+  Building model 'DW01_inc_width7' (rpl)
+  Building model 'DW01_inc_width8' (rpl)
+  Building model 'DW01_add_width10' (rpl)
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   24057.2      0.00       0.0       0.0                          
+    0:00:01   24057.2      0.00       0.0       0.0                          
+    0:00:01   23349.4      0.00       0.0    7434.7                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   23349.4      0.00       0.0    7434.7                          
+    0:00:01   23486.9      0.00       0.0    5442.2 CNT5[2]                  
+    0:00:01   23634.6      0.00       0.0    3652.6 HC4[6]                   
+    0:00:01   23848.5      0.00       0.0    1577.6 M5[3]                    
+    0:00:01   24031.8      0.00       0.0     112.6 M1[2]                    
+    0:00:02   24057.2      0.00       0.0       0.0                          
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db'
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+write -format ddc  -hierarchy -output "huffman_syn.ddc"
+Writing ddc file 'huffman_syn.ddc'.
+1
+write_sdf huffman_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/build/huffman_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_file -format verilog -hierarchy -output huffman_syn.v
+Writing verilog file '/home/linjinyu/IC_contest/106_B_ICC2018_priliminary_grad_cell_based/build/huffman_syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+report_area > area.log
+report_timing > timing.log
+report_qor > huffman_syn.qor
+Warning: Cannot use command line editor for terminal type 'xterm'.  (UI-74)
+dcnxt_shell> 
+Memory usage for this session 237 Mbytes.
+Memory usage for this session including child processes 237 Mbytes.
+CPU usage for this session 12 seconds ( 0.00 hours ).
+Elapsed time for this session 213 seconds ( 0.06 hours ).
+
+Thank you...

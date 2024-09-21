@@ -1,0 +1,15 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Mar 13, 2024 at 20:34:16 CST
+ncverilog
+	tb.v
+	./build/huffman_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+	+nc64bit
+	+access+r
+	+define+tb1
+	+define+FSDB_FILE="huffman.fsdb"
+ncverilog: *E,FILEMIS: Cannot find the provided file tb.v.
+ncverilog: *E,FILEMIS: Cannot find the provided file ./build/huffman_syn.v.
+TOOL:	ncverilog	15.20-s084: Exiting on Mar 13, 2024 at 20:34:16 CST  (total: 00:00:00)

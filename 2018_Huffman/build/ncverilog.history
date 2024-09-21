@@ -1,0 +1,1 @@
+s1(13Mar2024:20:34:16):  ncverilog tb.v ./build/huffman_syn.v -v tsmc13_neg.v +define+SDF +nc64bit +access+r +define+tb1 +define+FSDB_FILE="huffman.fsdb" 

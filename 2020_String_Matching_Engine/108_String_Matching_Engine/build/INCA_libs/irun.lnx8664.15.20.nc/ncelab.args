@@ -1,0 +1,23 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++incdir+/home/YuChengWang/IC_Contest_Practice/108_String_Matching_Engine/src
++nc64bit
++access+r
++define+FSDB_FILE=\"SME.fsdb\"
++define+MD1
+-noshowtop
+-ACCESS
++r
+-MESSAGES
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE
