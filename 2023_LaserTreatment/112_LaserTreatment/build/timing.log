@@ -1,0 +1,85 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: T-2022.03
+Date   : Mon Mar 25 19:19:01 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: counter_reg[2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: count_reg[5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LASER              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  counter_reg[2]/CK (DFFRX4)               0.00       0.50 r
+  counter_reg[2]/Q (DFFRX4)                0.52       1.02 r
+  U3572/Y (NAND2X4)                        0.14       1.16 f
+  U3573/Y (NOR2X8)                         0.31       1.47 r
+  U2521/Y (INVX6)                          0.14       1.60 f
+  U2519/Y (INVX16)                         0.16       1.76 r
+  U2208/Y (NAND2XL)                        0.18       1.94 f
+  U2242/Y (NAND3XL)                        0.35       2.29 r
+  U2503/Y (AOI21X2)                        0.19       2.48 f
+  U2782/Y (NAND4X4)                        0.21       2.68 r
+  U2770/Y (NAND2X2)                        0.20       2.88 f
+  U2835/Y (NAND3X2)                        0.15       3.03 r
+  U2854/Y (NAND2X2)                        0.17       3.20 f
+  U3884/Y (OAI21X4)                        0.19       3.39 r
+  U2745/Y (NAND2X2)                        0.17       3.56 f
+  U3887/Y (AOI2BB2X4)                      0.19       3.76 r
+  U2735/Y (MXI2X2)                         0.21       3.97 r
+  U3120/Y (CLKXOR2X4)                      0.41       4.38 f
+  U3134/Y (NOR2X4)                         0.25       4.63 r
+  U2883/Y (AOI21X2)                        0.17       4.80 f
+  U2839/Y (NAND2X2)                        0.14       4.94 r
+  U2713/Y (OAI31X2)                        0.19       5.14 f
+  U2702/Y (NOR2X2)                         0.19       5.32 r
+  U2317/Y (CLKINVX1)                       0.14       5.47 f
+  U2313/Y (NAND2X1)                        0.17       5.64 r
+  U2624/Y (INVX1)                          0.12       5.75 f
+  U2272/Y (NOR2BX1)                        0.26       6.01 f
+  U2694/Y (NOR4X2)                         0.34       6.36 r
+  U2311/Y (NOR2X4)                         0.16       6.52 f
+  U3922/Y (XNOR2X4)                        0.18       6.70 f
+  U3962/Y (OAI21X4)                        0.19       6.88 r
+  U3963/Y (XNOR2X4)                        0.17       7.05 f
+  U3965/Y (OAI22X4)                        0.14       7.19 r
+  U3975/CO (ADDFHX4)                       0.35       7.55 r
+  U2836/CO (ADDFHX4)                       0.20       7.74 r
+  U3157/Y (NAND2X4)                        0.11       7.85 f
+  U3972/Y (NOR2X4)                         0.12       7.97 r
+  U3973/Y (XNOR2X4)                        0.15       8.12 f
+  U3974/Y (NOR2BX4)                        0.11       8.23 r
+  count_reg[5]/D (DFFRX2)                  0.00       8.23 r
+  data arrival time                                   8.23
+
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  count_reg[5]/CK (DFFRX2)                 0.00       8.40 r
+  library setup time                      -0.16       8.24
+  data required time                                  8.24
+  -----------------------------------------------------------
+  data required time                                  8.24
+  data arrival time                                  -8.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

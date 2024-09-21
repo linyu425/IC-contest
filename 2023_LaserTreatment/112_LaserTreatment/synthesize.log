@@ -1,0 +1,532 @@
+mkdir -p /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/syn;
+rm -rf /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/syn/*; \
+cd /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/build; \
+cp /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/script/synopsys_dc.setup /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/build/.synopsys_dc.setup; \
+dcnxt_shell -f /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/script/dc_syn.tcl;
+
+                            Design Compiler (R) NXT 
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+set top LASER
+LASER
+#Read All Files
+read_file -autoread -top ${top} -recursive {../src} -library ${top}
+== READ_FILE autoread for top design 'LASER' ==
+
+Starting READ_FILE autoread mode...
+Warning: Defining design library 'LASER' at directory '/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/build/LASER_autoread'. (AUTOREAD-107)
+Information: Adding '/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src'. (AUTOREAD-105)
+Information: Adding '/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.  (AUTOREAD-100)
+Information: Scanning file { LASER.v }. (AUTOREAD-303)
+Compiling source file /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v
+Presto compilation completed successfully.
+Elaborating top design LASER
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/home/nfs_cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 96 in file
+	'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            97            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 126 in file
+	'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           133            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LASER line 91 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LASER line 126 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   row_counter_reg   | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   col_counter_reg   | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     counter_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LASER line 168 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      X_reg_reg      | Flip-flop |  160  |  Y  | N  | Y  | N  | N  | N  | N  |
+|      Y_reg_reg      | Flip-flop |  160  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LASER line 183 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       max_reg       | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LASER line 197 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     non_imp_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LASER line 212 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LASER line 226 in file
+		'/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/src/LASER.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     max_C1X_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     max_C2Y_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     max_C2X_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   max_current_reg   | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     circle_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     max_C1Y_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (LASER)
+Elaborated 1 design.
+Current design is now 'LASER'.
+Autoread command completed successfully.
+current_design [get_designs ${top}]
+Current design is 'LASER'.
+{LASER}
+link
+
+  Linking design 'LASER'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  LASER                       /home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/build/LASER.db
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#Setting Clock Constraints
+source -echo -verbose ../script/${top}.sdc
+# operating conditions and boundary conditions #
+set cycle 8.0
+8.0
+create_clock -name CLK  -period $cycle   [get_ports  CLK] 
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      0.5  [all_clocks]
+1
+set_ideal_network           [get_ports CLK]
+1
+#Don't touch the basic env setting as below
+set_input_delay  1   -clock CLK [remove_from_collection [all_inputs] [get_ports CLK]] 
+1
+set_output_delay 1    -clock CLK [all_outputs]  
+1
+set_load         1   [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+#set_max_fanout 20 [all_inputs]
+check_design
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Mar 25 19:18:41 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              58
+    Cells do not drive (LINT-1)                                    58
+--------------------------------------------------------------------------------
+
+Warning: In design 'LASER', cell 'C15272' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15273' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15276' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15277' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15319' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15359' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15440' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15480' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15560' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15599' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15678' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15717' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15795' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15833' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15910' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15948' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15992' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15993' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15996' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C15997' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16000' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16001' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16004' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16005' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16047' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16087' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16168' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16208' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16289' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16329' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16410' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16450' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16530' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16569' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16648' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16687' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16766' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16805' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16884' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C16923' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17001' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17039' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17116' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17154' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17231' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17269' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17346' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17384' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'B_4329' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17482' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17500' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17503' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17506' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17532' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17542' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17543' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17555' does not drive any nets. (LINT-1)
+Warning: In design 'LASER', cell 'C17559' does not drive any nets. (LINT-1)
+1
+set high_fanout_net_threshold 0
+0
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+#set_max_area 0
+#Synthesis all design
+# compile -map_effort high -area_effort high
+#compile -map_effort high -area_effort high -inc
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 10665                                  |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 380                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 2413                                   |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 58 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'LASER'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LASER'
+Information: Added key list 'DesignWare' to design 'LASER'. (DDB-72)
+ Implement Synthetic for 'LASER'.
+Information: Added key list 'DesignWare' to design 'LASER_RSOP_707'. (DDB-72)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'counter_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'counter_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:10   78223.0      0.00       0.0   12021.0                           64886444.0000      0.00  
+    0:00:10   75692.2      0.18       0.2   12021.0                           62687012.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:10   75807.6      0.01       0.0   12021.0                           62845040.0000      0.00  
+    0:00:10   75807.6      0.01       0.0   12021.0                           62845040.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'LASER_DP_OP_714_129_3452_2'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:11   35171.8      3.17      15.1   14962.4                           26613872.0000      0.00  
+    0:00:11   36263.3      0.00       0.0   14929.4                           27858268.0000      0.00  
+    0:00:11   36263.3      0.00       0.0   14929.4                           27858268.0000      0.00  
+    0:00:12   36263.3      0.00       0.0   14929.4                           27858268.0000      0.00  
+    0:00:12   35165.0      0.97       4.3   14964.8                           27023616.0000      0.00  
+    0:00:12   35127.7      1.05       4.7   14964.8                           27008440.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:13   33990.4      0.47       1.6   14908.0                           26010240.0000      0.00  
+    0:00:13   33920.8      0.01       0.0   14913.3                           25918626.0000      0.00  
+    0:00:13   33920.8      0.01       0.0   14913.3                           25918626.0000      0.00  
+    0:00:13   33640.8      0.01       0.0   14913.3                           25582334.0000      0.00  
+    0:00:13   33640.8      0.01       0.0   14913.3                           25582334.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:14   34005.7      0.00       0.0   14971.5                           25951966.0000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:14   34158.5      0.00       0.0       0.0                           26190760.0000      0.00  
+    0:00:14   34158.5      0.00       0.0       0.0                           26190760.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:14   34158.5      0.00       0.0       0.0                           26190760.0000      0.00  
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:00:15   33153.6      0.00       0.0       0.0                           24753392.0000      0.00  
+    0:00:15   33153.6      0.00       0.0       0.0                           24753392.0000      0.00  
+    0:00:15   33153.6      0.00       0.0       0.0                           24753392.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:15   32961.8      0.00       0.0       0.0                           24549858.0000      0.00  
+    0:00:16   31682.0      0.00       0.0       0.0                           23092716.0000      0.00  
+    0:00:16   31682.0      0.00       0.0       0.0                           23092716.0000      0.00  
+    0:00:16   31682.0      0.00       0.0       0.0                           23092716.0000      0.00  
+    0:00:16   31682.0      0.00       0.0       0.0                           23092716.0000      0.00  
+    0:00:16   31378.1      0.00       0.0       0.0                           22764026.0000      0.00  
+    0:00:16   31378.1      0.00       0.0       0.0                           22764026.0000      0.00  
+    0:00:16   31378.1      0.00       0.0       0.0                           22764026.0000      0.00  
+    0:00:16   31378.1      0.00       0.0       0.0                           22764026.0000      0.00  
+    0:00:16   31378.1      0.00       0.0       0.0                           22764026.0000      0.00  
+    0:00:16   31378.1      0.00       0.0       0.0                           22764026.0000      0.00  
+    0:00:16   30829.9      0.00       0.0       0.0                           22325330.0000      0.00  
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+write -format ddc -hierarchy -output "${top}_syn.ddc"
+Writing ddc file 'LASER_syn.ddc'.
+1
+write_file -format verilog -hierarchy -output ../syn/${top}_syn.v
+Writing verilog file '/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/syn/LASER_syn.v'.
+1
+write_sdf -version 2.0 -context verilog  ../syn/${top}_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/linjinyu/IC_contest/2023_LaserTreatment/112_LaserTreatment/syn/LASER_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc -version 2.0 ${top}.sdc
+1
+report_area > area.log
+report_timing > timing.log
+report_qor > ${top}_syn.qor
+Warning: Cannot use command line editor for terminal type 'xterm'.  (UI-74)
+dcnxt_shell> 
+Memory usage for this session 206 Mbytes.
+Memory usage for this session including child processes 233 Mbytes.
+CPU usage for this session 20 seconds ( 0.01 hours ).
+Elapsed time for this session 10304 seconds ( 2.86 hours ).
+
+Thank you...
